@@ -1,1 +1,1 @@
-Offical Website of TEDxIITGuwahati
+# Official Website of TEDxIITGuwahati
