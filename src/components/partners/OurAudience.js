@@ -1,9 +1,5 @@
 import React from 'react';
 import styles from './partners.module.css';
-import attendies from '../../styles/svgs/attendees.svg';
-import socreach from '../../styles/svgs/social_reach.svg';
-import ytview from '../../styles/svgs/youtube_views.svg';
-import imp from '../../styles/svgs/impressions.svg';
 
 const Strip = ({ image, title, content }) => {
   return (
@@ -17,10 +13,10 @@ const Strip = ({ image, title, content }) => {
 
 const OurAudience = () => {
   const sponsorshipItems = [
-    { title: 'ATTENDEES', content: '25k in 2022', image: attendies },
-    { title: 'SOCIAL REACH', content: '100K+ Fans & Followers', image: socreach },
-    { title: 'YOUTUBE VIEWS', content: '1m+ views', image: ytview },
-    { title: 'IMPRESSIONS', content: '32M+ Impressions', image: imp },
+    { title: 'ATTENDEES', content: '25k in 2022', image: '/svgs/attendees.svg'},
+    { title: 'SOCIAL REACH', content: '100K+ Fans & Followers', image: '/svgs/social_reach.svg' },
+    { title: 'YOUTUBE VIEWS', content: '1m+ views', image:  '/svgs/youtube_views.svg' },
+    { title: 'IMPRESSIONS', content: '32M+ Impressions', image: '/svgs/impressions.svg' },
   ];
   
 
@@ -46,7 +42,7 @@ const OurAudience = () => {
           </h1>
           <p style={{width:'60vw'}}>
             <span className={styles.content}>
-            Since 2019, TEDxPearlStreet has been working to galvanize the local community, bringing together corporations, community organizations, entrepreneurs, and individuals, providing a platform for exceptional ideas, and a catalyst for profound change.
+            Since 2019, TEDxIITGuwahati has been working to galvanize the local community, bringing together corporations, community organizations, entrepreneurs, and individuals, providing a platform for exceptional ideas, and a catalyst for profound change.
             </span>
           </p>
         </div>

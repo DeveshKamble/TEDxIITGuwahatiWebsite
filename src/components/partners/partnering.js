@@ -12,7 +12,7 @@ const Partnering = () => {
       </div>
       <p style={{ width: '65vw' }}>
         <span className={styles.content}>
-          We’re looking for a select group of strategic partners to help us grow the impact of TEDxPearlStreet over the next five years to help us reach <strong>100,000+ Washingtonians</strong> through our live in-person events and <strong>100+ million global citizens</strong> through our virtual events and videos.
+          We’re looking for a select group of strategic partners to help us grow the impact of TEDxIITGuwahati over the next five years to help us reach <strong>100,000+ Washingtonians</strong> through our live in-person events and <strong>100+ million global citizens</strong> through our virtual events and videos.
         </span>
       </p>
       <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} className={styles.button}>

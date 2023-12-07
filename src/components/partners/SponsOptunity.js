@@ -1,8 +1,5 @@
 import React from 'react';
 import styles from './partners.module.css';
-import yround from '../../styles/svgs/year-round.svg';
-import lvconf from '../../styles/svgs/attendees.svg';
-import support from '../../styles/svgs/kind_support.svg';
 
 const Strip = ({ image, title, content }) => {
   return (
@@ -20,9 +17,9 @@ const SponsOptunity = () => {
   const subject = process.env.EMAIL_SUBJECT;
 
   const sponsorshipItems = [
-    { title: 'YEAR <br/>ROUND', content: 'Executive Committee<br/> Host Committee<br/> Special Events<br/>Sustainability Partner', image: yround },
-    { title: 'LIVE CONFERENCES', content: 'Global Partner<br/>Technology Lounge Host<br/> Connection Cafe Host<br/>After Party Host', image: lvconf },
-    { title: 'IN-KIND SUPPORT', content: 'Media Partner<br/> Marketing PR Partner<br/> Co-Working Partner<br/>Printing Partner', image: support },
+    { title: 'YEAR <br/>ROUND', content: 'Executive Committee<br/> Host Committee<br/> Special Events<br/>Sustainability Partner', image: '/svgs/year-round.svg' },
+    { title: 'LIVE CONFERENCES', content: 'Global Partner<br/>Technology Lounge Host<br/> Connection Cafe Host<br/>After Party Host', image: '/svgs/attendees.svg' },
+    { title: 'IN-KIND SUPPORT', content: 'Media Partner<br/> Marketing PR Partner<br/> Co-Working Partner<br/>Printing Partner', image: '/svgs/kind_support.svg' },
   ];
 
   const containerStyle = {

@@ -1,8 +1,4 @@
 import React from 'react'
-import infaud from '../../styles/svgs/inf_aud.svg';
-import brndalign from '../../styles/svgs/brand_alignment.svg';
-import corpinf from '../../styles/svgs/corp_obj.svg';
-import leader from '../../styles/svgs/leadership.svg';
 import styles from './partners.module.css'
 
 const Strip = ({ image, title, content }) => {
@@ -18,10 +14,10 @@ const Strip = ({ image, title, content }) => {
 const Wypar = () => {
 
   const sponsorshipItems = [
-    { title: 'Influential Audience', content: 'Connect your brand with the most influential, audience in the Washington DC metropolitan area - dreamers, doers, influencers.', image: infaud },
-    { title: 'Brand Alignment', content: 'Align your brand with TEDxPearlStreet and our mission to spread ideas, build community, and change lives.', image: brndalign },
-    { title: 'Corporate Objectives', content: 'Achieve specific corporate objectives with our customized and integrated approach to partnerships.', image: corpinf },
-    { title: 'Thought Leadership', content: 'Be a leader in bringing together corporations, start-ups, entrepreneurs, and individuals who are inspired by remarkable thinking', image: leader },
+    { title: 'Influential Audience', content: 'Connect your brand with the most influential, audience in the Washington DC metropolitan area - dreamers, doers, influencers.', image: '/svgs/inf_aud.svg' },
+    { title: 'Brand Alignment', content: 'Align your brand with TEDxIITGuwahati and our mission to spread ideas, build community, and change lives.', image: '/svgs/brand_alignment.svg' },
+    { title: 'Corporate Objectives', content: 'Achieve specific corporate objectives with our customized and integrated approach to partnerships.', image: '/svgs/corp_obj.svg' },
+    { title: 'Thought Leadership', content: 'Be a leader in bringing together corporations, start-ups, entrepreneurs, and individuals who are inspired by remarkable thinking', image: '/svgs/leadership.svg' },
   ];
 
   const containerStyle = {
