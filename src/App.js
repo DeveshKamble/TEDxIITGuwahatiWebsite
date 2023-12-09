@@ -9,8 +9,10 @@ import Registration from './pages/registration/Registration'
 import Privacy from './pages/privacy/Privacy'
 import Terms from './pages/terms/Terms'
 
+
 function App() {
   return (
+    
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,6 +25,11 @@ function App() {
         <Route path="/Registration" element={<Registration/>}></Route>
       </Routes>
     </Router>
+
+
+  
+
+    
   );
 }
 
