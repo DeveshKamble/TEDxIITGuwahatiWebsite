@@ -28,19 +28,18 @@ const ContactUs = () => {
             <NavBar></NavBar>
             <div className={styles.main}>
                 <div className={styles.content}>
-                    <p className={styles.title}>Contact TEDxIITGUWAHATI</p>
-                    <p className={styles.para}>If you would like to subscribe to our Newsletter, have a question about an upcoming event, would like to explore a partnership with TEDxGUWAHATI, or want to send us a comment or suggestion, simply fill out the form below and we’ll get back to you shortly.</p>
-                    {/* <img className={styles.image} src="/Images/contactUs/contactUsImage.jpg" alt="image" /> */}
-                    <div className={styles.image}></div>
+                    <p className={styles.title}>Contact TEDxIITGuwahati</p>
+                    <p className={styles.para}>If you would like to subscribe to our Newsletter, have a question about an upcoming event, would like to explore a partnership with TEDxGuwahati, or want to send us a comment or suggestion, simply fill out the form below and we’ll get back to you shortly.</p>
+                    <img className={styles.image} src="/Images/contactUs/contactUsImage_cropped.jpg" alt="image" />
                 </div>
                 <div className={styles.formContainer}>
                     <form name='submit-to-google-sheet' className='form' onSubmit={(e) => Submit(e)}>
                         <input className={styles.formField} type="text" name='FirstName' placeholder='First Name*' required title='Please' />
-                        <input className={styles.formField} type="text" name='LastName' placeholder='Last Name*' required />
+                        <input className={styles.formField} type="text" name='LastName' placeholder='Last Name' />
                         <input className={styles.formField} type="email" name='Email' placeholder='Email*' required />
                         <input className={styles.formField} type="tel" name="ContactNumber" placeholder='Contact Number*' required />
                         <textarea className={`${styles.comments} ${styles.formField}`} name='Comments' placeholder="Comments" cols="30" rows="1"></textarea>
-                        <p className={styles.checkboxContainer} ><input className={styles.checkbox} name="Checkbox" type="checkbox" />Sign me up for the TEDxIITGUWAHATI newsletter</p>
+                        <p className={styles.checkboxContainer} ><input className={styles.checkbox} name="Checkbox" type="checkbox" />Sign me up for the TEDxIITGuwahati newsletter</p>
                         <button className={styles.button} type="submit">Submit <p className={styles.arrow}> &#8594; </p></button>
                         {successMsg ? (<p className={styles.successMsg}>Thank you for your response</p>) : <></>}
                         <p className={styles.privacy}>This form collects your name and email address so we can follow up with your request to become a partner. We never sell, rent, or share this information with outside parties.</p>

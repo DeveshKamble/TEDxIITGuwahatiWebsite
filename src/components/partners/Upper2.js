@@ -22,7 +22,7 @@ const Upper2 = () => {
           </p>
         </div>
         <div style={{}}>
-          <img src='./Images/DSC04279.png' alt="image" style={{ width: '100%', height: 'auto' }} />
+          <img src='./Images/partners/DSC04279.png' alt="image" style={{ width: '100%', height: 'auto' }} />
         </div>
       </div>
     </section>
