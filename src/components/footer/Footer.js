@@ -1,5 +1,5 @@
 import React from 'react';
-import './footerStyles.module.css';
+import footerCSS from  './footer.module.css';
 import {
     AiFillInstagram,
     AiFillLinkedin,
@@ -10,41 +10,41 @@ import {
 
 const Footer = () => {
     return (
-        <footer id="footer">
-            <div className="footer-col-1">
+        <footer class={footerCSS.footer}>
+            <div className={footerCSS.footer_col_1}>
                 <a href="#" className="logoTED" title="TEDxIITGuwahati">
                     <img src="./Images/footer/WhiteTextLogo.png" alt="TEDxIITGuwahati" />
                 </a>
-                <div className="social">
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <AiFillInstagram size={32} />
+                <div className={footerCSS.footer_social}>
+                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                        <AiFillInstagram size={25} />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <AiFillLinkedin size={32} />
+                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                        <AiFillLinkedin size={25} />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <AiFillTwitterCircle size={32} />
+                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                        <AiFillTwitterCircle size={25} />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <AiFillFacebook size={32} />
+                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                        <AiFillFacebook size={25} />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer">
-                        <AiFillYoutube size={32} />
+                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                        <AiFillYoutube size={25} />
                     </a>
                 </div>
             </div>
-            <div className="footer-col-2">
-                <h4>Quick Links</h4>
-                <a href="#" title="Events">Events</a>
-                <a href="#" title="About Us">About Us</a>
-                <a href="#" title="Contact Us">Contact Us</a>
-                <a href="#" title="Privacy Policies">Privacy Policies</a>
-                <a href="#" title="Terms and Conditions">Terms and Conditions</a>
-                <a href="#" title="Refund Policies">Refund Policies</a>
+            <div className={footerCSS.footer_col_2}>
+                <h4 className={footerCSS.quick_links}>Quick Links</h4>
+                <a href="#" title="Events" className={footerCSS.links_col_2}>Events</a>
+                <a href="#" title="About Us" className={footerCSS.links_col_2}>About Us</a>
+                <a href="#" title="Contact Us" className={footerCSS.links_col_2}>Contact Us</a>
+                <a href="#" title="Privacy Policies" className={footerCSS.links_col_2}>Privacy Policies</a>
+                <a href="#" title="Terms and Conditions" className={footerCSS.links_col_2}>Terms and Conditions</a>
+                <a href="#" title="Refund Policies" className={footerCSS.links_col_2}>Refund Policies</a>
             </div>
-            <div className="footer-col-3">
-                <h6>What is TEDx?</h6>
-                <div className="col-2">
+                <h6 className={footerCSS.footer_col_3_h6}> ¿What is TEDx?</h6>
+            <div className={footerCSS.footer_col_3}>
+                <div className='col-2'>
                     <p>
                         This independent TEDx event is organized under license from TED.<br />
                         In the same spirit of spreading ideas, TED has created a program called TEDx.<br />
@@ -56,7 +56,7 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-            <div className="credits">
+            <div className={footerCSS.credits}>
                 Copyright ©2024 - TEDxIITGuwahati
             </div>
         </footer>
