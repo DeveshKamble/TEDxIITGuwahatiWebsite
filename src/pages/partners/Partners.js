@@ -15,7 +15,7 @@ const Partners = () => {
     <>
       <div className={styles.main}>
         {/* <NavBar /> */}
-        {windowWidth >= 400 && <Partnering />}
+        {windowWidth >= 800 && <Partnering />}
         <Upper2 />
         <Wypar />
         <OurAudience />
