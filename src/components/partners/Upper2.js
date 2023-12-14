@@ -9,11 +9,11 @@ const Upper2 = () => {
   console.log('Subject:', subject);
 
   return (
-    <section style={{ background: '#F7F7F7' }}>
-      <div style={{display:'grid' , gridTemplateColumns:'1fr 1fr', justifyContent: 'center', alignItems: 'center'}}>
-        <div style={{display:'grid' , gridTemplateRows:'1fr 5fr 1fr', justifyContent: 'center', alignItems: 'center',width:'50vw'}} className={styles.title} >
+    <section style={{ background: `url('./Images/partners/DSC04279.png')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateRows: '1fr 5fr 1fr', justifyContent: 'center', alignItems: 'center', width: '50vw', backgroundColor: 'rgba(0, 0, 0, 0.7)' }} className={styles.title}>
           <div>
-            <span>Partner with The Avengers</span>
+            <span style={{ color: '#fff' }}>Partner with TEDxIITGuwahati</span>
           </div>
           <div>
             <div
@@ -23,9 +23,10 @@ const Upper2 = () => {
                 letterSpacing: '-0.5px',
                 margin: '0',
                 padding: '0',
+                color: '#fff',
               }}
             >
-              In a world with short attention spans, TEDxIITGuwahati <br/>makes reaching your target audience easy and cost-effective.<br/> Our audience interacts with our messaging year-round. With <br/>email engagement rates of 20%, we’ll share your<br/> sponsorship message alongside our trusted content, giving <br/>your brand the lift you’re looking for. Want to get in front of <br/>our largest audiences? Our video views have topped 1+ <br/>million in just the last three years. Become a sponsor and get <br/>in front of an engaged and large audience.
+              In a world with short attention spans, TEDxIITGuwahati <br />makes reaching your target audience easy and cost-effective.<br /> Our audience interacts with our messaging year-round. With <br />email engagement rates of 20%, we’ll share your<br /> sponsorship message alongside our trusted content, giving <br />your brand the lift you’re looking for. Want to get in front of <br />our largest audiences? Our video views have topped 1+ <br />million in just the last three years. Become a sponsor and get <br />in front of an engaged and large audience.
             </div>
           </div>
           <div>
@@ -37,11 +38,6 @@ const Upper2 = () => {
             </a>
           </div>
         </div>
-    <div>
-          <img src='./Images/partners/DSC04279.png' alt="imag" style={{ width: '45vw', height: 'auto' }} />
-
-    </div>
-        
       </div>
     </section>
   );

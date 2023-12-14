@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './partners.module.css';
-import  UseStrip from './CustomHook/Strip';
 
 const Strip = ({ image, title, content }) => {
   
@@ -42,7 +41,6 @@ const Strip = ({ image, title, content }) => {
 const SponsOptunity = () => {
   const email = process.env.EMAIL_ADDRESS;
   const subject = process.env.EMAIL_SUBJECT;
-  // const Strip = UseStrip();
 
   const sponsorshipItems = [
     { title: 'ALL YEAR ROUND', content: 'Executive Committee<br/> Host Committee<br/> Special Events<br/>Sustainability Partner', image: '/svgs/year-round.svg' },
