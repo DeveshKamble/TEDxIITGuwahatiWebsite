@@ -4,21 +4,43 @@ import styles from './partners.module.css';
 const Strip = ({ image, title, content }) => {
   return (
     <div>
-      <img src={image} alt={title} style={{ width: '85%' }} />
-      <h1 style={{fontSize:'30px'}}>{title}</h1>
-      <p className={styles.content} dangerouslySetInnerHTML={{ __html: content }} />
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1em' }}>
+        <img
+          src={image}
+          alt={title}
+          style={{
+            width: '45%',
+            margin: 'auto'
+          }} />
+        <div
+          style={{
+            fontSize: '24px',
+            fontWeight: '350',
+            textAlign: 'center'
+          }}>
+          {title}
+        </div>
+        <p className={styles.content}
+          style={{
+            width: '55vw',
+            textAlign: 'center',
+            fontWeight: '250'
+          }}
+
+          dangerouslySetInnerHTML={{ __html: content }} />
+      </div>
     </div>
   );
-}
+};
 
 const OurAudience = () => {
   const sponsorshipItems = [
-    { title: 'ATTENDEES', content: '25k in 2022', image: '/svgs/attendees.svg'},
+    { title: 'ATTENDEES', content: '25k in 2022', image: '/svgs/attendees.svg' },
     { title: 'SOCIAL REACH', content: '100K+ Fans & Followers', image: '/svgs/social_reach.svg' },
-    { title: 'YOUTUBE VIEWS', content: '1m+ views', image:  '/svgs/youtube_views.svg' },
+    { title: 'YOUTUBE VIEWS', content: '1m+ views', image: '/svgs/youtube_views.svg' },
     { title: 'IMPRESSIONS', content: '32M+ Impressions', image: '/svgs/impressions.svg' },
   ];
-  
+
 
   const containerStyle = {
     display: 'flex',
@@ -27,22 +49,24 @@ const OurAudience = () => {
   };
 
   const itemStyle = {
-    width: '100%', // Each item takes full width initially
-    marginBottom: '16px', // Add some spacing between items
-    boxSizing: 'border-box', // Include padding and border in the width
-    maxWidth: '200px', // Set max width to 200px for responsiveness
+    width: '100em',
+    marginBottom: '16px',
+    boxSizing: 'border-box',
+    maxWidth: '200px',
   };
 
   return (
-    <section style={{background:'#F7F7F7'}}>
+    <section style={{ background: '#F7F7F7' }}>
       <div>
-        <div style={{padding:'40px',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center'}}>
+        <div style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
           <h1 className={styles.title}>
+            <span>
             Our Audience
+            </span>
           </h1>
-          <p style={{width:'60vw'}}>
-            <span className={styles.content}>
-            Since 2019, TEDxIITGuwahati has been working to galvanize the local community, bringing together corporations, community organizations, entrepreneurs, and individuals, providing a platform for exceptional ideas, and a catalyst for profound change.
+          <p style={{ width: '45vw' }} className={styles.content}>
+            <span >
+              Since 2019, TEDxIITGuwahati has been working to galvanize the local community, bringing together corporations, community organizations, entrepreneurs, and individuals, providing a platform for exceptional ideas, and a catalyst for profound change.
             </span>
           </p>
         </div>

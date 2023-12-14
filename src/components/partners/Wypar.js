@@ -1,15 +1,18 @@
 import React from 'react'
 import styles from './partners.module.css'
+import useWindowWidth from '../partners/CustomHook/UseWindowWidth'
 
-const Strip = ({ image, title, content }) => {
+const Strip = ({ image, title, content,pwidth }) => {
   return (
     <div>
-      <img src={image} alt={title} style={{ width: '80%' }} />
-      <div style={{fontSize:'30px',fontWeight:'bold'}}>{title}</div>
-      <p className={styles.content} style={{width:'25vw'}} dangerouslySetInnerHTML={{ __html: content }} />
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center',gap:'1em' }}>
+        <img src={image} alt={title} style={{ width: '45%', margin: 'auto' }} />
+        <div style={{ fontSize: '30px', fontWeight: '350', textAlign: 'center' }}>{title}</div>
+        <p className={styles.content} style={{ width: pwidth, textAlign: 'center',fontWeight: '250' }} dangerouslySetInnerHTML={{ __html: content }} />
+      </div>
     </div>
   );
-}
+};
 
 const Wypar = () => {
 
@@ -23,19 +26,22 @@ const Wypar = () => {
   const containerStyle = {
     display: 'flex',
     justifyContent: 'space-evenly',
-    flexWrap: 'wrap',
+    flexWrap: 'wrap'
   };
 
   const itemStyle = {
-    width: '100%',
-    marginBottom: '16px', 
+    width: '100vw',
+    marginBottom: '6em', 
     boxSizing: 'border-box',
-    maxWidth: '200px',
+    maxWidth: '300px',
     display:'flex',
     flexDirection:'column',
     justifyContent:'center',
-    alignItems:'center'
+    alignItems:'center',
   };
+
+  const windowWidth = useWindowWidth();
+  const pWidth = windowWidth < 400 ? '75vw' : '75vw';
 
   return (
     <section>
@@ -47,18 +53,18 @@ const Wypar = () => {
         </div>
         <div style={containerStyle}>
         <div style={itemStyle}>
-            <Strip title={sponsorshipItems[0].title} content={sponsorshipItems[0].content} image={sponsorshipItems[0].image} />
+            <Strip title={sponsorshipItems[0].title} content={sponsorshipItems[0].content} image={sponsorshipItems[0].image} pWidth={pWidth} />
           </div>
           <div style={itemStyle}>
-            <Strip title={sponsorshipItems[1].title} content={sponsorshipItems[1].content} image={sponsorshipItems[1].image} />
+            <Strip title={sponsorshipItems[1].title} content={sponsorshipItems[1].content} image={sponsorshipItems[1].image} pWidth={pWidth} />
           </div>
         </div>
         <div style={containerStyle}>
         <div style={itemStyle}>
-            <Strip title={sponsorshipItems[2].title} content={sponsorshipItems[2].content} image={sponsorshipItems[2].image} />
+            <Strip title={sponsorshipItems[2].title} content={sponsorshipItems[2].content} image={sponsorshipItems[2].image} pWidth={pWidth}/>
           </div>
           <div style={itemStyle}>
-            <Strip title={sponsorshipItems[3].title} content={sponsorshipItems[3].content} image={sponsorshipItems[3].image} />
+            <Strip title={sponsorshipItems[3].title} content={sponsorshipItems[3].content} image={sponsorshipItems[3].image} pWidth={pWidth}/>
           </div>
         </div>
       </div>
