@@ -20,9 +20,9 @@ const Strip = ({ image, title, content }) => {
           }}>
           {title}
         </div>
-        <p className={styles.content}
+        <span className={styles.content}
           style={{
-            width: '55vw',
+            // width: '55vw',
             textAlign: 'center',
             fontWeight: '250'
           }}

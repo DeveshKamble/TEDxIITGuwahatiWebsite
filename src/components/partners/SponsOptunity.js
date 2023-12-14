@@ -30,9 +30,9 @@ const Strip = ({ image, title, content }) => {
         >
           {title}
         </div>
-        <p className={styles.content} style={{ width: '55vw', textAlign: 'center', fontWeight: '250' }}>
+        <span className={styles.content} style={{  textAlign: 'center', fontWeight: '250' }}>
           {linesWithMargin}
-        </p>
+        </span>
       </div>
     </div>
   );
@@ -44,7 +44,7 @@ const SponsOptunity = () => {
 
   const sponsorshipItems = [
     { title: 'ALL YEAR ROUND', content: 'Executive Committee<br/> Host Committee<br/> Special Events<br/>Sustainability Partner', image: '/svgs/year-round.svg' },
-    { title: 'LIVE CONFERENCES', content: 'Global Partner<br/>Technology Lounge Host<br/> Connection Cafe Host<br/>After Party Host', image: '/svgs/attendees.svg' },
+    { title: 'LIVE CONFERENCES', content: 'Global Partner<br/>Tech. Lounge Host<br/> Connection Cafe Host<br/>After Party Host', image: '/svgs/attendees.svg' },
     { title: 'IN-KIND SUPPORT', content: 'Media Partner<br/> Marketing PR Partner<br/> Co-Working Partner<br/>Printing Partner', image: '/svgs/kind_support.svg' },
   ];
 
@@ -70,7 +70,7 @@ const SponsOptunity = () => {
               Sponsorship Opportunities
             </span>
           </h1>
-          <p style={{ width: '35vw' }} className={styles.content}>
+          <p style={{ width: '45vw' }} className={styles.content}>
             Below are just a few of this year's sponsorship opportunities. To learn more, just click the button below
           </p>
         </div>
