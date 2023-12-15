@@ -3,10 +3,23 @@
   background-size: 595px auto;
   padding-top: 80px;
   padding : 32px 32px 0 32px ;
-  display : block;
- 
+  
  
 }
+
+.footer_main{
+
+
+  display : flex;
+
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+ 
+
+
+}
+
+
 
 .footer_col_1 {
   width: 320px;
@@ -20,17 +33,16 @@
 }
 
 .social_icon {
-   text-align: center;
-   font-size: 20px;
-  background: #fff;
-  color: #ff2b06;
   width: 32px;
-  height: 25px;
-   text-decoration: none;
-  border-radius: 30%;
-  display:inline-block;
+  height: 32px;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 50%;
+  display: inline-block;
   margin-right: 16px;
   line-height: 34px;
+  font-size: 21px;
  }
 
 
@@ -92,17 +104,12 @@
 .credits {
   clear: both;
   color: #fff;
-  padding: 80px 0 16px;
+  padding: 48px 0 16px;
   font-size: 13px;
  
 }
 
 
-
-.logoTED {
-  width: 256px;
-  display: block;
-}
 
 .logoTED {
   width: 256px;
