@@ -1,4 +1,3 @@
-// Strip.js
 import React, { useState, useEffect } from 'react';
 import styles from '../partners.module.css';
 

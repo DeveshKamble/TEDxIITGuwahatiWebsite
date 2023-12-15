@@ -15,7 +15,8 @@
 }
 
 .button {
-    display: inline-block;
+    display: block;
+    margin: auto;
     padding: 10px 20px;
     background-color: #E62B1E;
     color: white;
@@ -43,7 +44,7 @@
     font-size: 18px;
     color: black;
     font-weight: 250;
-    text-align: center;
+    /* text-align: center; */
   }
 
   

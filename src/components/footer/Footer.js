@@ -1,5 +1,5 @@
 import React from 'react';
-import footerCSS from  './footer.module.css';
+import footerCSS from  './footerStyles.module.css';
 import {
     AiFillInstagram,
     AiFillLinkedin,
