@@ -1,36 +1,39 @@
 import React from 'react';
 import footerCSS from  './footerStyles.module.css';
 import {
-    AiFillInstagram,
-    AiFillLinkedin,
-    AiFillTwitterCircle,
-    AiFillFacebook,
-    AiFillYoutube
-} from 'react-icons/ai';
+    FaInstagram,
+    FaLinkedinIn,
+    FaTwitter,
+    FaFacebookF,
+    FaYoutube
+} from 'react-icons/fa';
 
 const Footer = () => {
     return (
         <footer class={footerCSS.footer}>
+            <div class={footerCSS.footer_main}>
             <div className={footerCSS.footer_col_1}>
-                <a href="#" className="logoTED" title="TEDxIITGuwahati">
-                    <img src="./Images/footer/WhiteTextLogo.png" alt="TEDxIITGuwahati" />
+                <a href="#" className={footerCSS.logoTED} title="TEDxIITGuwahati">
+                    <img src="/Images/footer/WhiteTextLogo.png" alt="TEDxIITGuwahati" />
                 </a>
                 <div className={footerCSS.footer_social}>
                     <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
-                        <AiFillInstagram size={25} />
+                        <FaInstagram />
+                    </a>
+                    
+                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                        <FaLinkedinIn />
                     </a>
                     <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
-                        <AiFillLinkedin size={25} />
+                        <FaTwitter />
                     </a>
                     <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
-                        <AiFillTwitterCircle size={25} />
+                        <FaFacebookF />
                     </a>
                     <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
-                        <AiFillFacebook size={25} />
+                        <FaYoutube />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
-                        <AiFillYoutube size={25} />
-                    </a>
+                    
                 </div>
             </div>
             <div className={footerCSS.footer_col_2}>
@@ -42,9 +45,12 @@ const Footer = () => {
                 <a href="#" title="Terms and Conditions" className={footerCSS.links_col_2}>Terms and Conditions</a>
                 <a href="#" title="Refund Policies" className={footerCSS.links_col_2}>Refund Policies</a>
             </div>
-                <h6 className={footerCSS.footer_col_3_h6}> ¿What is TEDx?</h6>
+                
             <div className={footerCSS.footer_col_3}>
                 <div className='col-2'>
+
+                <h6 className={footerCSS.footer_col_3_h6}> What is TEDx?</h6>
+
                     <p>
                         This independent TEDx event is organized under license from TED.<br />
                         In the same spirit of spreading ideas, TED has created a program called TEDx.<br />
@@ -55,6 +61,7 @@ const Footer = () => {
                         TEDxIITGuwahati is a non-profit organization made up of volunteers. Their mission is to spread transformative ideas.
                     </p>
                 </div>
+            </div>
             </div>
             <div className={footerCSS.credits}>
                 Copyright ©2024 - TEDxIITGuwahati
