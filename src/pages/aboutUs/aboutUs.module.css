@@ -15,7 +15,7 @@
   width: 48%;
   height: 100vh;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .contentbox {
@@ -23,20 +23,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #ee3624;
-  border-radius: 4rem;
-  box-shadow: 0 5px 15px -8px rgb(0 0 0);
+  /* background: #ee3624; */
+  /* color: black; */
+  /* border-radius: 4rem; */
+  box-shadow: 0 5px 5px -8px rgb(0 0 0);
 }
 
 .heading {
-  color: #fff;
-  font-size: 5.5rem;
+  color: #ee3624;
+  font-size: 5rem;
   font-weight: 800;
 }
 
 .content {
   padding: 2rem 4rem;
-  color: #fff;
+  color: #000;
 }
 
 .innerbox2 {
@@ -44,8 +45,6 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .contentbox2 {
@@ -60,7 +59,7 @@
 
 .heading2 {
   color: #ee3624;
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 800;
   padding-top: 1rem;
   display: flex;
@@ -69,10 +68,11 @@
 .content2 {
   padding: 0rem 2rem;
   color: #000;
-  padding-bottom: 5rem;
+  margin-bottom: 0.5rem;
 }
 
 .contentbox3 {
+  width: 45rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,6 +85,10 @@
 
 .vdoframe {
   border-radius: 3rem;
+}
+
+.outerBox2 {
+  /* border: 2px solid black; */
 }
 
 .mainContent {
@@ -149,4 +153,29 @@
 
 .imgTitlePost {
   font-weight: 300;
+}
+
+@media screen and (width < 1000px) {
+  .main {
+    flex-direction: column;
+  }
+  .imgBox {
+    width: 80%;
+    height: 80%;
+  }
+  .imgTitle {
+    width: 80%;
+  }
+}
+@media (width < 1300px) and (width > 1000px) {
+  .main {
+    flex-direction: column;
+  }
+  .imgBox {
+    width: 80%;
+    height: 80%;
+  }
+  .imgTitle {
+    width: 80%;
+  }
 }
