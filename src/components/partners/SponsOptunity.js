@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './partners.module.css';
+import useWindowWidth from '../partners/CustomHook/UseWindowWidth';
 
 const Strip = ({ image, title, content }) => {
   
@@ -12,7 +13,6 @@ const Strip = ({ image, title, content }) => {
       {index < contentLines.length - 1 && <div style={{ marginBottom: '10px' }} />}
     </React.Fragment>
   ));
-
   return (
     <div>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1em' }}>
@@ -48,6 +48,10 @@ const SponsOptunity = () => {
     { title: 'IN-KIND SUPPORT', content: 'Media Partner<br/> Marketing PR Partner<br/> Co-Working Partner<br/>Printing Partner', image: '/svgs/kind_support.svg' },
   ];
 
+  const windowWidth = useWindowWidth();
+  const titlewidth = windowWidth < 435 ? styles.title_under435: styles.title;
+  const contentwidth = windowWidth<800? '70vw':'45vw';
+
   const containerStyle = {
     display: 'flex',
     justifyContent: 'space-evenly',
@@ -61,16 +65,18 @@ const SponsOptunity = () => {
     maxWidth: '200px',
   };
 
+  
+
   return (
     <section>
       <div>
         <div style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
-          <h1 className={styles.title}>
+          <h1 className={titlewidth}>
             <span>
               Sponsorship Opportunities
             </span>
           </h1>
-          <p style={{ width: '45vw' }} className={styles.content}>
+          <p style={{ width: contentwidth }} className={styles.content}>
             Below are just a few of this year's sponsorship opportunities. To learn more, just click the button below
           </p>
         </div>

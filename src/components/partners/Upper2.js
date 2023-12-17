@@ -6,6 +6,7 @@ const Upper2 = () => {
   const email = process.env.REACT_APP_EMAIL_ADDRESS;
   const subject = process.env.REACT_APP_EMAIL_SUBJECT;
   const windowWidth = useWindowWidth();
+  const titlewidth = windowWidth < 435 ? styles.title_under435: styles.title;
 
   console.log('Email:', email);
   console.log('Subject:', subject);
@@ -15,7 +16,7 @@ const Upper2 = () => {
     windowWidth < 800 ?
     <section style={{ background: '#F7F7F7' }}>
     <div style={{ display: 'grid', gridTemplateColumns: '1fr', justifyContent: 'center', alignItems: 'center' }}>
-      <div style={{ display: 'grid', gridTemplateRows: 'auto 1fr auto', justifyContent: 'center', alignItems: 'center',   }} className={styles.title}>
+      <div style={{ display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center',   }} className={titlewidth}>
         <div>
           <span >Partner with TEDxIITGuwahati</span>
         </div>
@@ -29,13 +30,14 @@ const Upper2 = () => {
               padding: '20px 30px 20px 30px',
             }}
           >
-            In a world with short attention spans, TEDxIITGuwahati <br />makes reaching your target audience easy and cost-effective.<br /> Our audience interacts with our messaging year-round. With <br />email engagement rates of 20%, we’ll share your<br /> sponsorship message alongside our trusted content, giving <br />your brand the lift you’re looking for. Want to get in front of <br />our largest audiences? Our video views have topped 1+ <br />million in just the last three years. Become a sponsor and get <br />in front of an engaged and large audience.
+            In a world with short attention spans, TEDxIITGuwahati makes reaching your target audience easy and cost-effective. Our audience interacts with our messaging year-round. With email engagement rates of 20%, we’ll share your sponsorship message alongside our trusted content, giving your brand the lift you’re looking for. Want to get in front ofour largest audiences? Our video views have topped 1+ million in just the last three years. Become a sponsor and get in front of an engaged and large audience.
           </div>
         </div>
         <div>
           <a
             href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}
             className={styles.button}
+            style={{margin:'10px'}}
           >
             <span>Get Started</span>
           </a>
