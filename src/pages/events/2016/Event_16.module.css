@@ -107,6 +107,9 @@ header h2{
     color: #e62b1e;
     transition: 0.4s;
 }
+.speaker:hover img{
+    border-radius: 6px;
+}
 .speaker:hover h3{
    color: #000;
 }

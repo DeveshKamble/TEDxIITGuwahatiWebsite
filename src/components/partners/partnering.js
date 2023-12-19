@@ -16,7 +16,7 @@ const Partnering = () => {
         </span>
       </p>
       <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} className={styles.button}>
-        <span>Get Started</span>
+        <span>Sponsor TEDxIITGuwahati</span>
       </a>
     </section>
   );

@@ -97,7 +97,7 @@ const Event_23 = () => {
             <Card2 name='Abhinav' about='Media and Branding Head' image = {Abhinav}/>
             <Card2 name='P.N.V Sai Vamsi' about='Speakers Core' image={vamsi}/>
             <Card2 name='Pavan Dev' about='Curation Core' image={pavan}/>
-              
+        
             </div>
           </div>
         </main>

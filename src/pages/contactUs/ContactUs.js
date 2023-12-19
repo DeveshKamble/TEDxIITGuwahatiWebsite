@@ -1,6 +1,7 @@
 import styles from './contactUs.module.css'
 import NavBar from '../../components/navbar/Navbar'
 import { useState } from 'react'
+import Footer from '../../components/footer/Footer'
 
 const ContactUs = () => {
     const [successMsg, setSuccessMsg] = useState(false)
@@ -47,6 +48,7 @@ const ContactUs = () => {
                     </form>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

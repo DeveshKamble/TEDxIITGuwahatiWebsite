@@ -7,6 +7,7 @@ import Wypar from '../../components/partners/Wypar';
 import OurAudience from '../../components/partners/OurAudience';
 import SponsOptunity from '../../components/partners/SponsOptunity';
 import useWindowWidth from '../../components/partners/CustomHook/UseWindowWidth';
+import Footer from '../../components/footer/Footer';
 
 const Partners = () => {
   const windowWidth =useWindowWidth();
@@ -14,12 +15,13 @@ const Partners = () => {
   return (
     <>
       <div className={styles.main}>
-        {/* <NavBar /> */}
+        <NavBar />
         {windowWidth >= 800 && <Partnering />}
         <Upper2 />
         <Wypar />
         <OurAudience />
         <SponsOptunity />
+        <Footer/>
       </div>
     </>
   );
