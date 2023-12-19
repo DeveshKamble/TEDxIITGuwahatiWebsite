@@ -382,9 +382,13 @@ header h2{
     flex-direction: column;
     align-items: center;
   }
+  .speakerImg img{
+    height: 200px;
+    width: 200px;
+  }
   .speakerImg h2{
     margin-top: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 600;
     text-align: center;
   }

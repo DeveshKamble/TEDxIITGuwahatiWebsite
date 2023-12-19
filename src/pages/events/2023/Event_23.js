@@ -112,44 +112,7 @@ const Event_23 = () => {
             func={closeModal}
           />
         )}
-        {/* {showModal && <Modal name="Plabita Borthakur" about ='Actress' description={Data.Plabita} image = {Platiba} func= {closeModal} />}
-        {showModal && <Modal name="Seema Lokhandwala" about ='Elephant biologist' description={Data.Seema} image = {Seema} func= {closeModal} />}
-        {showModal && <Modal name="Neil D Silva" about ='Author' description={Data.Neil} image = {Neil} func= {closeModal} />} */}
-        {/* <div className={styles.popUp} id="Plabita">
-          <div className={styles.popUpHeader}>
-            <div className={styles.popUptitle}>Plabita Borthakur</div>
-            <button data-close-button className={styles.closeBtn}>
-              ×<div className={styles.circle}>×</div>
-            </button>
-          </div>
-          <hr />
-          <div className={styles.popUpBody}>
-            <div className={styles.speakerImg}>
-              <img src= {Platiba} alt="" />
-              <h2>Actress</h2>
-            </div>
-
-            <div className={styles.description}>
-              <p>
-                Plabita Borthakur made her debut in PK as Anushka Sharma's
-                sister. She has received rave reviews for her portrayal of
-                Rehana Abidi in Alankrita Shrivastava's critically acclaimed
-                Lipstick Under My Burkha. In 2020, she starred in the Amazon
-                Prime web-series Breathe: Into the Shadows. The show was
-                well-received by both audiences and critics. In 2021, she
-                starred as Ayesha in the web series Bombay Begums, directed by
-                Alankrita Shrivastava. She has recently played the lead role in
-                the Zee5 series Sutliyan.
-              </p>
-            </div>
-          </div>
-        </div> */}
         {selectedSpeaker && <div onClick={closeModal} id={styles.overlay}></div>}
-        {/* {showModal && <div onClick={closeModal} id={styles.overlay}></div>} */}
-
-
-
-
 
       </div>
       <Footer />

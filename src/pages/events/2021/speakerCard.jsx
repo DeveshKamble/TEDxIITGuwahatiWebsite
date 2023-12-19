@@ -1,4 +1,4 @@
-import styles from './Event_23.module.css';
+import styles from './Event_21.module.css';
 import React from 'react'
 
 const speakerCard = ({name,id, image, func}) => {

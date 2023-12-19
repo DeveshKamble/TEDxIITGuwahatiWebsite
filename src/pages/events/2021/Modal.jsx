@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import styles from './Event_22.module.css';
+import styles from './Event_21.module.css';
 const Modal = ({name, about, description, image, func}) => {
   useEffect(()=>{
     document.body.style.overflowY = 'hidden';

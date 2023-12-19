@@ -1,29 +1,30 @@
 import React, {useEffect, useState} from 'react';
 import Navbar from "../../../components/navbar/Navbar";
-import theme_23 from "../../../assets/theme_23.png";
-import logo_23 from "../../../assets/2023_logo.png";
+import theme_22 from "../../../assets/theme22.jpeg";
+import logo_22 from "../../../assets/2022_logo.png";
 import Footer from "../../../components/footer/Footer"
 import styles from "./Event_22.module.css";
 import Modal from "./Modal"
 import Card from "./speakerCard";
 import Card2 from "./memberCard";
-import Data from "./speaker'23_Data"
-import Divanshu from "./speakers23/Divanshu.png"
-import Platiba from "./speakers23/Plabita.png"
-import Kamal from "./speakers23/Kamal.png"
-import Neeraj from "./speakers23/Neeraj.png"
-import Seema from "./speakers23/Seema.png"
-import Neil from "./speakers23/D_Silva.png"
-import Pramiti from "./team23/pramiti2.jpg"
-import Abhinav from "./team23/abhinav2.jpg"
-import Kavin from "./team23/kavin.jpg"
-import Parth from "./team23/parth.jpg"
-import Shashank from "./team23/shashank.jpg"
-import Abhiram from "./team23/Abhiram2.jpg"
-import Nandini from "./team23/Nandini.jpg"
-import Sree from "./team23/sreelakshmi.jpg"
-import vamsi from "./team23/vamsi.jpg"
-import pavan from "./team23/pavan.jpg"
+import Data from "./speaker'22_Data"
+import abhimanyu from "./speakers22/abhimanyu.jpg"
+import jalal from "./speakers22/jalal.jpg"
+import Magician from "./speakers22/Magician.jpg"
+import pravathy from "./speakers22/parvathy.jpg"
+import james from "./speakers22/james.jpg"
+import rishab from "./speakers22/rishab_mandeep.jpg"
+import mandeep from "./speakers22/mandeep.jpg"
+import saumya from "./speakers22/saumya.jpg"
+import rohan from "./speakers22/Rohan.jpg"
+import titiksha from "./team22/titiksha2.jpeg"
+import Miloni from "./team22/Miloni Patel.jpg"
+import Anindya from "./team22/Anindya Rajan.jpg"
+import Govind from "./team22/Govind Singh.jpg"
+import Anushka from "./team22/Anushka Anand.jpg"
+import Gourav from "./team22/Gourav Kumar.jpg"
+import Emily from "./team22/Emily Huiling.jpg"
+import Nildari from "./team22/Niladri Sarkar.jpg"
 
 const Event_22 = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
@@ -41,62 +42,52 @@ const Event_22 = () => {
       <div id={styles.body}>
         <header>
           <div>
-            <img src={logo_23} alt="theme logo" />
+            <img src={logo_22} alt="theme logo" />
             <div id={styles.theme}>
-              <h1>Theme 2023:</h1>
-              <h1>The Silent Letter</h1>
+              <h1>Theme 2022:</h1>
+              <h1>The Boiling Frog</h1>
             </div>
           </div>
-          <h2>February 12, 2023</h2>
+          <h2>February 20, 2022</h2>
         </header>
         <main>
           <div id={styles.banner}>
-            <img src={theme_23} alt="theme'23" />
+            <img src={theme_22} alt="theme'22" />
           </div>
           <div id={styles.about}>
             <h2>About</h2>
             <p>
-              The Theme of TEDxIITGuwahati is ‘The Silent Letter’, Everything
-              has value, whether good or bad, large or small. Nothing in this
-              world is useless, although we often mistake that for the case.
-              Young people are constantly encouraged to create a colossal
-              impact, which causes them to focus primarily on the big problems,
-              but small things are necessary for great things to occur. The word
-              "Rendezvous" without its silent letters is not even a word
-              anymore. Similarly, we have a lot of 'silent letters' around us,
-              which help distinguish many aspects and impart more meaning to
-              life. Small things matter. Making sacrifices can help you become
-              the person you've always wanted to be, but these sacrifices are
-              hardly ever acknowledged. Billionaires never talk about the time
-              they don't get to spend with their loved ones; they only talk
-              about becoming billionaires.
+            TEDxIITGuwahati brings to you the theme for our upcoming event, 'The Boiling Frog'. The phrase “The Boiling Frog” may appear to be hilarious at first, but it holds a much deeper meaning. As the tale goes, if you put a frog in a pan of boiling water, it will jump out at once. However, if you place it in a pot of gently lukewarm water and slowly heat it, the frog will stay in the water until it boils to death. <br />
+It is a metaphor for our lack of will or inability to react to threats that arise gradually rather than suddenly. So, are we laying the road for the ultimate catastrophe, just as the frog's ignorance led it to death?
+Another aspect of this fable is the very leap of survival that the frog must take. It is a difficult endeavour involving great risk. <br />
+True innovations have always been found on this very edge.Are these moments of sheer inspiration massive disturbances that send waves ofrapture through the world, or are they quietly absorbed into our society?
             </p>
           </div>
           <div id={styles.speakers}>
             <h2>Speakers</h2>
             <div id={styles.speakerContainer}>
-            <Card func={() => openModal({ name: 'Plabita Borthakur', about: 'Artist', description: `${Data.Plabita}`, image: `${Platiba}` })} name='Plabita Borthakur' id='#Platiba' image={Platiba} />
-            <Card func={() => openModal({name: 'Seema Lokhandwala',about: 'Elephant biologist',description: `${Data.Seema}`,image: `${Seema}`})} name='Seema Lokhandwala' id='#Seema' image={Seema} />
-            <Card func={() => openModal({name: 'Neil D Silva',about: 'Author',description: `${Data.Neil}`,image: `${Neil}`})} name='Neil D Silva' id='#Neil' image={Neil} />
-            <Card func={() => openModal({name: 'Neeraj Kumar Sharma',about: 'IITG Professor',description: `${Data.Neeraj}`,image: `${Neeraj}`})} name='Neeraj Kumar Sharma' id='#Neeraj' image={Neeraj} />
-            <Card func={() => openModal({name: 'Kamal Jeswani',about: 'Financial Coach',description: `${Data.Kamal}`,image: `${Kamal}`})} name='Kamal Jeswani' id='#Kamal' image={Kamal} />
-            <Card func={() => openModal({name: 'Divanshu Kumar',about: 'Co-founder & CEO',description: `${Data.Divanshu}`,image: `${Divanshu}`})} name='Divanshu Kumar' id='#Divanshu' image={Divanshu} />
+            <Card func={() => openModal({ name: 'Abhimanyu Singh', about: 'Co-founder of Hexprssions', description: `${Data.Abhimanyu}`, image: `${abhimanyu}` })} name='Abhimanyu Singh' id='#abhimanyu' image={abhimanyu} />
+            <Card func={() => openModal({name: 'Baland Jalal',about: 'Neuroscientist',description: `${Data.Baland}`,image: `${jalal}`})} name='Baland Jalal' id='#jalal' image={jalal} />
+            <Card func={() => openModal({name: 'Pritam Patra',about: 'Torque Magician',description: `${Data.Pritam}`,image: `${Magician}`})} name='Pritam Patra' id='#Pritam' image={Magician} />
+            <Card func={() => openModal({name: 'Parvathy Sailesh',about: 'Student UnrestricTED Winner',description: `${Data.Parvathy}`,image: `${pravathy}`})} name='Parvathy Sailesh' id='#Parvathy' image={pravathy} />
+            <Card func={() => openModal({name: 'Richard James MacCowan',about: 'BioFuturist',description: `${Data.Richard}`,image: `${james}`})} name='Richard James MacCowan' id='#james' image={james} />
+            <Card func={() => openModal({name: 'Rishabh Jain & Mandeep Gill',about: 'Co-Founder labour law advisor',description: `${Data.Mandeep}`,image: `${rishab}`})} name='Rishabh Jain & Mandeep Gill' id='#rishab' image={rishab} />
+            <Card func={() => openModal({name: 'Rohan Agrawal',about: 'Traveller',description: `${Data.Rohan}`,image: `${rohan}`})} name='Rohan Agrawal' id='#Rohan' image={rohan} />
+            <Card func={() => openModal({name: 'Sawmya Ray',about: 'Professor Humanities and Social Sciences',description: `${Data.Sawmya}`,image: `${saumya}`})} name='Sawmya Ray' id='#Sawmya' image={saumya} />
 
             </div>
           </div>
           <div id={styles.team}>
             <h2>Organizing Team</h2>
             <div id={styles.teamContainer}>
-            <Card2 name='Pramiti Gupta' about='Organizer' image={Pramiti}/>
-            <Card2 name='Kavin' about='Co-Organizer' image={Kavin}/>
-            <Card2 name='Parth Rathod' about='Marketing Head' image={Parth}/>
-            <Card2 name='Shashank Mishra' about='Design Head' image={Shashank}/>
-            <Card2 name='Abhiram Goud Bingi' about='WebOps Head' image={Abhiram}/>
-            <Card2 name='Nandini Sharma' about='Content Head' image={Nandini}/>
-            <Card2 name='Sreelakshmi Aneesh' about='Curation Head' image={Sree}/>
-            <Card2 name='Abhinav' about='Media and Branding Head' image = {Abhinav}/>
-            <Card2 name='P.N.V Sai Vamsi' about='Speakers Core' image={vamsi}/>
-            <Card2 name='Pavan Dev' about='Curation Core' image={pavan}/>
+            <Card2 name='Titiksha Sah' about='Organizer' image={titiksha}/>
+            <Card2 name='Miloni Patel' about='Co-Organizer' image={Miloni}/>
+            <Card2 name='Govind Singh' about='Speakers Head' image={Govind}/>
+            <Card2 name='Anushka Anand' about='Content Head' image={Anushka}/>
+            <Card2 name='Gourav Kumar' about='WebOps Head' image={Gourav}/>
+            <Card2 name='Emily Huiling' about='Design Head' image={Emily}/>
+            <Card2 name='Niladri Sarkar' about='Speakers Core' image={Nildari}/>
+            <Card2 name='Anindya Rajan' about='Content Core' image={Anindya}/>
               
             </div>
           </div>
@@ -112,43 +103,7 @@ const Event_22 = () => {
             func={closeModal}
           />
         )}
-        {/* {showModal && <Modal name="Plabita Borthakur" about ='Actress' description={Data.Plabita} image = {Platiba} func= {closeModal} />}
-        {showModal && <Modal name="Seema Lokhandwala" about ='Elephant biologist' description={Data.Seema} image = {Seema} func= {closeModal} />}
-        {showModal && <Modal name="Neil D Silva" about ='Author' description={Data.Neil} image = {Neil} func= {closeModal} />} */}
-        {/* <div className={styles.popUp} id="Plabita">
-          <div className={styles.popUpHeader}>
-            <div className={styles.popUptitle}>Plabita Borthakur</div>
-            <button data-close-button className={styles.closeBtn}>
-              ×<div className={styles.circle}>×</div>
-            </button>
-          </div>
-          <hr />
-          <div className={styles.popUpBody}>
-            <div className={styles.speakerImg}>
-              <img src= {Platiba} alt="" />
-              <h2>Actress</h2>
-            </div>
-
-            <div className={styles.description}>
-              <p>
-                Plabita Borthakur made her debut in PK as Anushka Sharma's
-                sister. She has received rave reviews for her portrayal of
-                Rehana Abidi in Alankrita Shrivastava's critically acclaimed
-                Lipstick Under My Burkha. In 2020, she starred in the Amazon
-                Prime web-series Breathe: Into the Shadows. The show was
-                well-received by both audiences and critics. In 2021, she
-                starred as Ayesha in the web series Bombay Begums, directed by
-                Alankrita Shrivastava. She has recently played the lead role in
-                the Zee5 series Sutliyan.
-              </p>
-            </div>
-          </div>
-        </div> */}
         {selectedSpeaker && <div onClick={closeModal} id={styles.overlay}></div>}
-        {/* {showModal && <div onClick={closeModal} id={styles.overlay}></div>} */}
-
-
-
 
 
       </div>
