@@ -5,6 +5,7 @@ import Events from './pages/events/eventsIndex'
 import Event_23 from "./pages/events/2023/Event_23.js"
 import Event_22 from "./pages/events/2022/Event_22.js"
 import Event_21 from "./pages/events/2021/Event_21.js"
+import Event_19 from "./pages/events/2019/Event_19.js"
 import AboutUs from './pages/aboutUs/AboutUs'
 import ContactUs from './pages/contactUs/ContactUs'
 import Partners from './pages/partners/Partners'
@@ -23,6 +24,7 @@ function App() {
         <Route path="/Events/2023" element={<Event_23/>} />
         <Route path="/Events/2022" element={<Event_22/>} />
         <Route path="/Events/2021" element={<Event_21/>} />
+        <Route path="/Events/2019" element={<Event_19/>} />
         <Route path="/AboutUs" element={<AboutUs/>} />
         <Route path="/Partners" element={<Partners />} />
         <Route path="/ContactUs" element={<ContactUs/>} />
