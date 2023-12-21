@@ -1,5 +1,6 @@
 import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
+import Newsletter from '../../components/Newletter/newsletter'
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <>
             <Navbar/>
             HOMEPAGE
+            <Newsletter/>
             <Footer/>
         </>
     )
