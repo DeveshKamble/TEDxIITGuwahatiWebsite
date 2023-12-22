@@ -8,6 +8,7 @@ import OurAudience from '../../components/partners/OurAudience';
 import SponsOptunity from '../../components/partners/SponsOptunity';
 import useWindowWidth from '../../components/partners/CustomHook/UseWindowWidth';
 import Footer from '../../components/footer/Footer';
+import Newsletter from '../../components/Newsletter/newsletter';
 
 const Partners = () => {
   const windowWidth =useWindowWidth();
@@ -21,6 +22,7 @@ const Partners = () => {
         <Wypar />
         <OurAudience />
         <SponsOptunity />
+        <Newsletter/>
         <Footer/>
       </div>
     </>

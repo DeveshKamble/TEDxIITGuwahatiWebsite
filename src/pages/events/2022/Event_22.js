@@ -25,6 +25,7 @@ import Anushka from "./team22/Anushka Anand.jpg"
 import Gourav from "./team22/Gourav Kumar.jpg"
 import Emily from "./team22/Emily Huiling.jpg"
 import Nildari from "./team22/Niladri Sarkar.jpg"
+import Newsletter from '../../../components/Newsletter/newsletter';
 
 const Event_22 = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
@@ -107,6 +108,7 @@ True innovations have always been found on this very edge.Are these moments of s
 
 
       </div>
+      <Newsletter/>
       <Footer />
     </div>
   );

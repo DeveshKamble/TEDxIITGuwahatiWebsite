@@ -216,8 +216,8 @@ body{
     color: white;
 }
 .homeimage img{
-    width: 90%;
-    margin:auto 80px;
+    width: 100%;
+    margin:auto ;
 }
 .head1_min{
     font-size: 13px;

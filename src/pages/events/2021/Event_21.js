@@ -30,6 +30,7 @@ import Shivangi from "./team21/ShivangiKumar.jpg"
 import Sree from "./team21/SreesiddeshBhavanasi.jpeg"
 import Sudarshan from "./team21/Sudarshan Birla.jpg"
 import Vishwa from "./team21/VishwaprasannaH.jpg"
+import Newsletter from '../../../components/Newsletter/newsletter';
 
 const Event_22 = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
@@ -111,6 +112,7 @@ const Event_22 = () => {
 
 
       </div>
+      <Newsletter/>
       <Footer />
     </div>
   );

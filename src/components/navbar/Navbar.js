@@ -3,6 +3,7 @@ import styles from './navbar.module.css'
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
+
 const NavBar = () => {
     const [navicon, setnavicon] = useState(true);
     const [shortnav, setshortnav] = useState(false);
@@ -11,7 +12,7 @@ const NavBar = () => {
         <>
         <div className={styles.nav}>
             <div className={styles.left}>
-                <Link id={styles.lg} to='#'>
+                <Link id={styles.lg} to='/'>
                     <img src="/Images/Navbar/TEDxIITG_new.png" alt="" className={styles.logo1} />
                     <div className={styles.logo2}></div>
                 </Link>
@@ -32,12 +33,11 @@ const NavBar = () => {
             
             <div className={styles.right}>
                 <Link to='/' className={styles.lin}>HOME</Link>
-                <Link to='/' className={styles.lin}>ABOUT US</Link>
-                <Link to='/' className={styles.lin}>EVENTS</Link>
-                <Link to='/' className={styles.lin}>CONTACT US</Link>
-                <Link to='/' className={styles.lin}>SPONSORS</Link>
-                <Link to='/' className={styles.lin}>CONTACT US</Link>
-                <Link to='/' className={styles.lin} id={styles["red"]}>BUY TICKET</Link>
+                <Link to='/AboutUs' className={styles.lin}>ABOUT US</Link>
+                <Link to='/Events' className={styles.lin}>EVENTS</Link>
+                <Link to='/Partners' className={styles.lin}>SPONSORS</Link>
+                <Link to='/ContactUs' className={styles.lin}>CONTACT US</Link>
+                <Link to='/Registration' className={styles.lin} id={styles["red"]}>BUY TICKETS</Link>
             </div>
         </div>
         {
@@ -45,12 +45,11 @@ const NavBar = () => {
                         <div className={styles.sidehead}>
                             <div className={styles.head}>
                                 <Link to='/' className={styles.lin1}>HOME</Link>
-                                <Link to='/' className={styles.lin1}>ABOUT US</Link>
-                                <Link to='/' className={styles.lin1}>EVENTS</Link>
-                                <Link to='/' className={styles.lin1}>CONTACT US</Link>
-                                <Link to='/' className={styles.lin1}>SPONSORS</Link>
-                                <Link to='/' className={styles.lin1}>CONTACT US</Link>
-                                <Link to='/' className={styles.lin1} id={styles["red1"]}>BUY TICKET</Link>
+                                <Link to='/AboutUs' className={styles.lin1}>ABOUT US</Link>
+                                <Link to='/Events' className={styles.lin1}>EVENTS</Link>
+                                <Link to='/Partners' className={styles.lin1}>SPONSORS</Link>
+                                <Link to='/ContactUs' className={styles.lin1}>CONTACT US</Link>
+                                <Link to='/Registration' className={styles.lin1} id={styles["red1"]}>BUY TICKET</Link>
                             </div>
                         </div>
                     : <div></div>

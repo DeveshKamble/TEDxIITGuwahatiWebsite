@@ -2,6 +2,7 @@ import styles from './contactUs.module.css'
 import NavBar from '../../components/navbar/Navbar'
 import { useState } from 'react'
 import Footer from '../../components/footer/Footer'
+import Newsletter from '../../components/Newsletter/newsletter'
 
 const ContactUs = () => {
     const [successMsg, setSuccessMsg] = useState(false)

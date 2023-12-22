@@ -24,6 +24,7 @@ import Nandini from "./team23/Nandini.jpg"
 import Sree from "./team23/sreelakshmi.jpg"
 import vamsi from "./team23/vamsi.jpg"
 import pavan from "./team23/pavan.jpg"
+import Newsletter from '../../../components/Newsletter/newsletter';
 
 const Event_23 = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
@@ -115,6 +116,7 @@ const Event_23 = () => {
         {selectedSpeaker && <div onClick={closeModal} id={styles.overlay}></div>}
 
       </div>
+      <Newsletter/>
       <Footer />
     </div>
   );

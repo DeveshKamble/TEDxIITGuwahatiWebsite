@@ -22,6 +22,7 @@ import Anupirya from "./team19/anupriya.png"
 import Daman from "./team19/daman.jpg"
 import Ishan from "./team19/ishan.jpg"
 import Harshith from "./team19/harshith.jpg"
+import Newsletter from '../../../components/Newsletter/newsletter';
 
 const Event_22 = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
@@ -105,6 +106,7 @@ TEDxIITGuwahati is thrilled to invite you all to be a part of its modest step to
 
 
       </div>
+      <Newsletter/>
       <Footer />
     </div>
   );
