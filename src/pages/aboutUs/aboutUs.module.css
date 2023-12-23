@@ -113,14 +113,12 @@
 
 .teamImg {
   margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .imgBox {
-  width: 380px;
-  height: 325px;
-  overflow: hidden;
+  padding: 20px 50px;
 }
 
 .imgBox img {
@@ -128,13 +126,38 @@
   height: 100%;
   cursor: pointer;
   transform: scale(1, 1);
-  transition: 2.5s;
-  &:hover {
-    transform: scale(1.5, 1.5);
-  }
+}
+
+.imgBox img {
+  --color: #ee3624; 
+  --border: 10px;   
+  --offset: 20px; 
+  --gap: 5px; 
+  
+  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+  --_o: calc(3*var(--offset));
+  padding: 
+    calc(var(--gap) + var(--border))
+    calc(var(--gap) + var(--border) + var(--offset))
+    calc(var(--gap) + var(--border) + var(--offset))
+    calc(var(--gap) + var(--border));
+  background: 
+    linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+    linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+  background-repeat: no-repeat;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.imgBox img:hover{
+  background-position: 0px 0px;
+  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+  filter: grayscale(0);
 }
 
 .imgTitle {
+  /* margin-top: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,10 +169,21 @@
 }
 
 .imgTitlePost {
+  padding-top: 3px;
   font-weight: 300;
 }
 
-@media screen and (width < 1285px) {
+@media screen and (width < 1450px) {
+  .contentbox3 {
+    /* margin: 0 6rem; */
+    width: 95%;
+  }
+  .contentbox3 iframe {
+    width: 100%;
+  }
+}
+
+/* @media screen and (width < 1285px) {
   .imgBox {
     width: 80%;
     height: 95%;
@@ -158,7 +192,7 @@
     width: 80%;
     height: 95%;
   }
-}
+} */
 
 @media screen and (width < 1000px) {
   .main {
@@ -167,6 +201,18 @@
 
   .contentbox3 {
     margin-top: 5rem;
+  }
+}
+
+@media (890px < width <1285px){
+  .imgBox{
+    padding: 40px 20px;
+  }
+}
+
+@media (890px < width <1285px){
+  .imgBox{
+    padding: 40px 20px;
   }
 }
 
@@ -180,17 +226,17 @@
     flex-direction: column;
   }
   .imgBox {
-    width: 98%;
+    /* width: 98%; */
   }
   .imgTitle {
-    width: 98%;
-    margin-bottom: 1.5rem;
+    /* width: 98%;
+    margin-bottom: 1.5rem; */
   }
   .imgTitleName {
-    font-size: 150%;
+    /* font-size: 150%; */
   }
   .imgTitlePost {
-    font-size: 130%;
+    /* font-size: 130%; */
   }
   .contentbox3 {
     margin: 0 5rem;

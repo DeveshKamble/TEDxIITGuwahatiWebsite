@@ -103,11 +103,20 @@ const AboutUs = () => {
               <div className={styles.teamImg}>
                 <div>
                   <div className={styles.imgBox}>
-                    <img src="/Image.jpeg" alt="Img" />
+                    <img src="/Images/Team/Sravya_square.jpg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>XYZ</div>
-                    <div className={styles.imgTitlePost}>Secretary</div>
+                    <div className={styles.imgTitleName}>Sravya Vardhani</div>
+                    <div className={styles.imgTitlePost}>Organizer</div>
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.imgBox}>
+                    <img src="/Images/Team/Pranjal_square.jpg" alt="Img" />
+                  </div>
+                  <div className={styles.imgTitle}>
+                    <div className={styles.imgTitleName}>Pranjal Saxena</div>
+                    <div className={styles.imgTitlePost}>Co-Organizer & Content Head</div>
                   </div>
                 </div>
                 <div>
@@ -115,8 +124,8 @@ const AboutUs = () => {
                     <img src="/Image.jpeg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>XYZ</div>
-                    <div className={styles.imgTitlePost}>Secretary</div>
+                    <div className={styles.imgTitleName}>Ravi Garlay</div>
+                    <div className={styles.imgTitlePost}>Content Core</div>
                   </div>
                 </div>
                 <div>
@@ -124,28 +133,26 @@ const AboutUs = () => {
                     <img src="/Image.jpeg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>XYZ</div>
-                    <div className={styles.imgTitlePost}>Secretary</div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.teamImg}>
-                <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Image.jpeg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>XYZ</div>
-                    <div className={styles.imgTitlePost}>Secretary</div>
+                    <div className={styles.imgTitleName}>Kanv Choudary</div>
+                    <div className={styles.imgTitlePost}>Content Core</div>
                   </div>
                 </div>
                 <div>
                   <div className={styles.imgBox}>
-                    <img src="/Image.jpeg" alt="Img" />
+                    <img src="/Images/Team/Rajeev.jpg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>XYZ</div>
-                    <div className={styles.imgTitlePost}>Secretary</div>
+                    <div className={styles.imgTitleName}>Rajeev Verma</div>
+                    <div className={styles.imgTitlePost}>Design Head</div>
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.imgBox}>
+                    <img src="/Images/Team/Ashish_square.jpg" alt="Img" />
+                  </div>
+                  <div className={styles.imgTitle}>
+                    <div className={styles.imgTitleName}>Kodudula Ashish Reddy</div>
+                    <div className={styles.imgTitlePost}>WebOps Head</div>
                   </div>
                 </div>
                 <div>
@@ -153,19 +160,8 @@ const AboutUs = () => {
                     <img src="/Image.jpeg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>XYZ</div>
-                    <div className={styles.imgTitlePost}>Secretary</div>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.teamImg}>
-                <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Image.jpeg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>XYZ</div>
-                    <div className={styles.imgTitlePost}>Secretary</div>
+                    <div className={styles.imgTitleName}>Harsh Gupta</div>
+                    <div className={styles.imgTitlePost}>Marketing Head</div>
                   </div>
                 </div>
                 <div>
@@ -173,8 +169,8 @@ const AboutUs = () => {
                     <img src="/Image.jpeg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>XYZ</div>
-                    <div className={styles.imgTitlePost}>Secretary</div>
+                    <div className={styles.imgTitleName}>Divyansh Dadheech</div>
+                    <div className={styles.imgTitlePost}>Events Head</div>
                   </div>
                 </div>
                 <div>
@@ -182,8 +178,44 @@ const AboutUs = () => {
                     <img src="/Image.jpeg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>XYZ</div>
-                    <div className={styles.imgTitlePost}>Secretary</div>
+                    <div className={styles.imgTitleName}>Manish Kumar</div>
+                    <div className={styles.imgTitlePost}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.imgBox}>
+                    <img src="/Image.jpeg" alt="Img" />
+                  </div>
+                  <div className={styles.imgTitle}>
+                    <div className={styles.imgTitleName}>Sankalp Setia</div>
+                    <div className={styles.imgTitlePost}>Speakers Head</div>
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.imgBox}>
+                    <img src="Images/Team/Pankaj1_square.jpg" alt="Img" />
+                  </div>
+                  <div className={styles.imgTitle}>
+                    <div className={styles.imgTitleName}>Pankaj Kumar Jha</div>
+                    <div className={styles.imgTitlePost}>Speakers Core</div>
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.imgBox}>
+                    <img src="Images/Team/Triparna Di_square.jpg" alt="Img" />
+                  </div>
+                  <div className={styles.imgTitle}>
+                    <div className={styles.imgTitleName}>Triparna Kalita</div>
+                    <div className={styles.imgTitlePost}>Speakers Core</div>
+                  </div>
+                </div>
+                <div>
+                  <div className={styles.imgBox}>
+                    <img src="/Images/Team/Punakshit.jpg" alt="Img" />
+                  </div>
+                  <div className={styles.imgTitle}>
+                    <div className={styles.imgTitleName}>Punakshit Singh</div>
+                    <div className={styles.imgTitlePost}>PR & Media Head</div>
                   </div>
                 </div>
               </div>
