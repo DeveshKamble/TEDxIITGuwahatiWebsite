@@ -36,6 +36,7 @@
 }
 
 .content {
+  font-size: 1rem;
   padding: 2rem 4rem;
   color: #000;
 }
@@ -68,6 +69,7 @@
 .content2 {
   padding: 0rem 2rem;
   color: #000;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -92,7 +94,9 @@
 }
 
 .mainContent {
-  margin: 8rem;
+  margin: 5rem 5.5rem;
+  width: 90%;
+  /* border: 2px solid black; */
 }
 
 .teamHeading {
@@ -155,27 +159,121 @@
   font-weight: 300;
 }
 
+@media screen and (width < 1450px) {
+  .contentbox3 {
+    /* margin: 0 6rem; */
+    width: 95%;
+  }
+  .contentbox3 iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (width < 1285px) {
+  .imgBox {
+    width: 80%;
+    height: 95%;
+  }
+  .imgTitle {
+    width: 80%;
+    height: 95%;
+  }
+}
+
 @media screen and (width < 1000px) {
   .main {
     flex-direction: column;
   }
-  .imgBox {
-    width: 80%;
-    height: 80%;
+
+  .outerbox {
+    display: flex;
+    flex-direction: column;
   }
-  .imgTitle {
-    width: 80%;
+
+  .innerbox1 {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .innerbox2 {
+    width: 100%;
+    margin: 80px 0;
+  }
+  .outerBox2 {
+    margin: 65rem 0;
+  }
+  .contentbox3 {
+    /* margin: 0 5rem; */
+    margin-top: 5rem;
+    width: 100%;
+  }
+  .contentbox3 iframe {
+    width: 100%;
   }
 }
-@media (width < 1300px) and (width > 1000px) {
-  .main {
+
+@media screen and (width < 890px) {
+  .mainContent {
+    margin: 3rem;
+    margin-left: 2.5rem;
+  }
+  .teamImg {
+    display: flex;
     flex-direction: column;
   }
   .imgBox {
-    width: 80%;
-    height: 80%;
+    width: 98%;
   }
   .imgTitle {
-    width: 80%;
+    width: 98%;
+    margin-bottom: 1.5rem;
+  }
+  .imgTitleName {
+    font-size: 150%;
+  }
+  .imgTitlePost {
+    font-size: 130%;
+  }
+}
+
+@media screen and (width < 420px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .outerbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content p {
+    text-align: center;
+  }
+  .content2 p {
+    text-align: center;
+  }
+
+  .innerbox1 {
+    width: 100%;
+    margin: 15rem 1.7rem;
+  }
+  .innerbox2 {
+    width: 100%;
+    margin: 50px 2rem;
+  }
+  .outerBox2 {
+    margin: 105rem 0;
+  }
+  .contentbox3 {
+    /* margin: 0 5rem; */
+    margin-top: 7rem;
+    width: 100%;
+  }
+  .contentbox3 iframe {
+    width: 100%;
   }
 }
