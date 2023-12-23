@@ -131,28 +131,27 @@
 }
 
 .imgBox img {
-  --color: #ee3624; 
-  --border: 10px;   
-  --offset: 20px; 
-  --gap: 5px; 
-  
-  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
-  --_o: calc(3*var(--offset));
-  padding: 
-    calc(var(--gap) + var(--border))
+  --color: #ee3624;
+  --border: 10px;
+  --offset: 20px;
+  --gap: 5px;
+
+  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),
+    var(--color) 0;
+  --_o: calc(3 * var(--offset));
+  padding: calc(var(--gap) + var(--border))
     calc(var(--gap) + var(--border) + var(--offset))
     calc(var(--gap) + var(--border) + var(--offset))
     calc(var(--gap) + var(--border));
-  background: 
-    linear-gradient(      var(--_c)) var(--_o) var(--_o), 
-    linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+  background: linear-gradient(var(--_c)) var(--_o) var(--_o),
+    linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
   background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
   background-repeat: no-repeat;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
-.imgBox img:hover{
+.imgBox img:hover {
   background-position: 0px 0px;
   background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
   filter: grayscale(0);
@@ -206,14 +205,14 @@
   }
 }
 
-@media (890px < width <1285px){
-  .imgBox{
+@media (890px < width <1285px) {
+  .imgBox {
     padding: 40px 20px;
   }
 }
 
-@media (890px < width <1285px){
-  .imgBox{
+@media (890px < width <1285px) {
+  .imgBox {
     padding: 40px 20px;
   }
 }
@@ -277,7 +276,7 @@
     display: flex;
     flex-direction: column;
   }
-  .content {
+  .contentbox {
     display: flex;
     flex-direction: column;
     align-items: center;
