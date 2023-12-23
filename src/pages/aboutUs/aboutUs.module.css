@@ -80,6 +80,8 @@
 }
 
 .vdoframe {
+  width: 100rem;
+  height: 26rem;
   width: 100%;
   border-radius: 3rem;
 }
@@ -239,11 +241,14 @@
     /* font-size: 130%; */
   }
   .contentbox3 {
-    margin: 0 5rem;
+    margin: 0 2rem;
+  }
+  .mainContent {
+    margin-left: 3.2rem;
   }
 }
 
-@media screen and (width < 650px) {
+@media screen and (width < 682px) and (width > 421px) {
   .innerbox {
     display: flex;
     flex-direction: column;
@@ -253,6 +258,12 @@
   }
   .contentbox2 {
     margin: 2rem 0;
+    width: 100%;
+  }
+  .mainContent {
+    margin-left: 2.5rem;
+  }
+  .contentbox3 {
     width: 100%;
   }
 }
@@ -273,21 +284,17 @@
   }
 
   .content p {
-    text-align: center;
+    text-align: justify;
   }
   .content2 p {
-    text-align: center;
+    text-align: justify;
   }
 
-  .innerbox1 {
-    width: 100%;
-    margin: 15rem 1.7rem;
+  .mainContent {
+    margin-left: 1.5rem;
   }
-  .innerbox2 {
+  .contentbox3 {
     width: 100%;
-    margin: 50px 2rem;
-  }
-  .outerBox2 {
-    margin: 105rem 0;
+    margin: 1rem;
   }
 }

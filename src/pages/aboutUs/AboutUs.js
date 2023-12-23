@@ -65,8 +65,8 @@ const AboutUs = () => {
           <div className={styles.contentbox3}>
             <iframe
               className={styles.vdoframe}
-              width="710"
-              height="415"
+              // width="710"
+              // height="415"
               src="https://www.youtube.com/embed/d0NHOpeczUU?si=u2AxAGd0nERdJ1E4"
               title="YouTube video player"
               frameborder="0"
