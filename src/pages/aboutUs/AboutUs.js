@@ -7,7 +7,7 @@ const AboutUs = () => {
       <NavBar></NavBar>
       <div className="main">
         <div className={styles.outerbox}>
-          <div className={styles.innerbox1}>
+          <div className={styles.innerbox}>
             <div className={styles.contentbox}>
               <div className={styles.heading}>TED</div>
               <div className={styles.content}>
@@ -33,12 +33,11 @@ const AboutUs = () => {
                   a screening of TED Talks videos— ora combination of live
                   presenters and TED Talks videos— sparks deep conversation and
                   connections at the local level.TEDx events are planned and
-                  coordinated independently, under a free license granted by TED
+                  coordinated independently, under a free license granted by
+                  TED.
                 </p>
               </div>
             </div>
-          </div>
-          <div className={styles.innerbox2}>
             <div className={styles.contentbox2}>
               <div className={styles.heading2}>
                 TED
@@ -60,21 +59,23 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className={styles.contentbox3}>
-              <iframe
-                className={styles.vdoframe}
-                width="710"
-                height="415"
-                src="https://www.youtube.com/embed/d0NHOpeczUU?si=u2AxAGd0nERdJ1E4"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
           </div>
         </div>
-        <div className={styles.outerBox2}>
+        <div className={styles.outerbox2}>
+          <div className={styles.contentbox3}>
+            <iframe
+              className={styles.vdoframe}
+              width="710"
+              height="415"
+              src="https://www.youtube.com/embed/d0NHOpeczUU?si=u2AxAGd0nERdJ1E4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div className={styles.outerBox3}>
           <div className={styles.mainContent}>
             <div className={styles.teamHeader}>
               <div className={styles.teamHeading}>
