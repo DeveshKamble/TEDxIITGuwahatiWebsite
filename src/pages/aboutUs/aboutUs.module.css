@@ -234,19 +234,6 @@
     display: flex;
     flex-direction: column;
   }
-  .imgBox {
-    /* width: 98%; */
-  }
-  .imgTitle {
-    /* width: 98%;
-    margin-bottom: 1.5rem; */
-  }
-  .imgTitleName {
-    /* font-size: 150%; */
-  }
-  .imgTitlePost {
-    /* font-size: 130%; */
-  }
   .contentbox3 {
     margin: 0 2rem;
   }
