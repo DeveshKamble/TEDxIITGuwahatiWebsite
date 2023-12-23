@@ -41,26 +41,32 @@
     margin-top: 2%;
 }
 
-.formField {
-    width: 100%;
-    padding: 40px 0px 8px 0px;
+.form
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formField{
     margin-bottom: 20px;
     display: block;
     outline: none;
     border: none;
-    border-bottom: 1.5px solid #333;
-    font-size: 20px;
-    color: #333;
+    background-color: #dadada;
+    width: 100%;
+    border-radius: 0;
+    border-width: 0;
+    font-size: 14px;
+    padding: 16px;
 }
 
 .formField::placeholder {
-    color: #3333338b;
     font-family: 'Inter';
 }
 
 .formField:focus {
     border: none;
-    border-bottom: 1.5px solid red;
 }
 
 .comments {

@@ -35,12 +35,12 @@ const ContactUs = () => {
                     <img className={styles.image} src="/Images/contactUs/contactUsImage_cropped.jpg" alt="image" />
                 </div>
                 <div className={styles.formContainer}>
-                    <form name='submit-to-google-sheet' className='form' onSubmit={(e) => Submit(e)}>
+                    <form name='submit-to-google-sheet' className={styles.form} onSubmit={(e) => Submit(e)}>
                         <input className={styles.formField} type="text" name='FirstName' placeholder='First Name*' required title='Please' />
                         <input className={styles.formField} type="text" name='LastName' placeholder='Last Name' />
                         <input className={styles.formField} type="email" name='Email' placeholder='Email*' required />
                         <input className={styles.formField} type="tel" name="ContactNumber" placeholder='Contact Number*' required />
-                        <textarea className={`${styles.comments} ${styles.formField}`} name='Comments' placeholder="Comments" cols="30" rows="1"></textarea>
+                        <textarea className={`${styles.comments} ${styles.formField}`} name='Comments' placeholder="Comments" cols="30" rows="5"></textarea>
                         <p className={styles.checkboxContainer} ><input className={styles.checkbox} name="Checkbox" type="checkbox" />Sign me up for the TEDxIITGuwahati newsletter</p>
                         <button className={styles.button} type="submit">Submit <p className={styles.arrow}> &#8594; </p></button>
                         {successMsg ? (<p className={styles.successMsg}>Thank you for your response</p>) : <></>}

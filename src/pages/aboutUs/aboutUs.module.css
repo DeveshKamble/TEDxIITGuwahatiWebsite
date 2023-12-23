@@ -25,7 +25,7 @@
 
 .heading {
   color: #ee3624;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
 }
 
@@ -50,7 +50,7 @@
 
 .heading2 {
   color: #ee3624;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   display: flex;
 }
@@ -73,17 +73,17 @@
   justify-content: center;
   align-items: center;
   background: #ee3624;
-  border-radius: 4rem;
+  border-radius: 5px;
   box-shadow: 0 5px 15px -8px rgb(0 0 0);
   margin-bottom: 1rem;
-  padding: 0.8rem;
+  padding: 5px;
 }
 
 .vdoframe {
   width: 100rem;
   height: 26rem;
   width: 100%;
-  border-radius: 3rem;
+  /* border-radius: 3rem; */
 }
 
 .mainContent {
@@ -181,6 +181,14 @@
   }
   .contentbox3 iframe {
     width: 100%;
+  }
+
+  .content{
+    padding: 2rem 2rem;
+  }
+
+  .content2{
+    padding: 1rem 2rem;
   }
 }
 

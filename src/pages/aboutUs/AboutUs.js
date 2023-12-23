@@ -12,24 +12,18 @@ const AboutUs = () => {
               <div className={styles.heading}>TED</div>
               <div className={styles.content}>
                 <p>
-                  Technology,Entertainmentand Design,the setof global
+                  Technology, Entertainment and Design,the set of global
                   conferences have been going with the spirit of ideas worth
-                  spreading since1984. TED isa global community, welcoming
+                  spreading since 1984. TED is a global community, welcoming
                   people from every discipline and culture who seek a deeper
                   understanding of the world. TED believes passionately in the
                   power of ideas to change attitudes, lives and, ultimately, the
                   world. TED is owned by a nonprofit, nonpartisan foundation.
                   The agenda is to make great ideas accessible and spark
-                  conversation TheTEDx Program is designed to help communities,
-                  organizations and individuals to spark conversation TheTEDx
-                  Program is designed to help communities, organizations and
-                  individuals to spark conversation and connection through local
-                  TED-like experiences.
+                  conversation. 
                 </p>
                 <p>
-                  The TEDx Program is designed to help communities,
-                  organizations and individuals to spark conversation and
-                  connection through local TED-like experiences. At TEDx events,
+                  At TEDx events,
                   a screening of TED Talks videos— ora combination of live
                   presenters and TED Talks videos— sparks deep conversation and
                   connections at the local level.TEDx events are planned and
@@ -49,13 +43,18 @@ const AboutUs = () => {
                 <p>
                   In the spirit of ideas worth spreading, TEDx is a program of
                   local, self-organized events that bring people to get her to
-                  share aTED-like experience. Ata TEDx event, TED Talks video
+                  share a TED-like experience. Ata TEDx event, TED Talks video
                   and live speakers combine to spark deep discussion and
                   connection in a small group. These local, self-organized
                   events are branded TEDx, where x = independently organized TED
                   event. The TED Conference provides general guidance for the
                   TEDx program, but individual TEDx events are
                   self-organized.(Subject to certain rules and regulations.)
+                </p>
+                <p>
+                  The TEDx Program is designed to help communities,
+                  organizations and individuals to spark conversation and
+                  connection through local TED-like experiences.
                 </p>
               </div>
             </div>
@@ -83,7 +82,7 @@ const AboutUs = () => {
               </div>
               <div className={styles.teamHeader2}>
                 <p>
-                  The leadership team here at TEDxLondon is made up of a diverse
+                  The leadership team here at TEDxIITGuwahati is made up of a diverse
                   bunch of awesome humans!
                 </p>
               </div>
@@ -91,11 +90,11 @@ const AboutUs = () => {
                 <p>
                   We are driven by passion and curiosity. We are inspired by
                   ideas. And we want to leave the world better than we found it.
-                  In our day jobs you can find us working in design,
+                  In our day lives you can find us working in design,
                   conservation, innovation, marketing, finance, NGOs, arts,
                   business, public policy, health and everything in between. We
-                  work year round to bring TEDxLondon and all of our activities
-                  to life:
+                  work year round to bring TEDxIITGuwahati and all of our activities
+                  to life
                 </p>
               </div>
             </div>
@@ -121,7 +120,7 @@ const AboutUs = () => {
                 </div>
                 <div>
                   <div className={styles.imgBox}>
-                    <img src="/Image.jpeg" alt="Img" />
+                    <img src="/Images/Team/Ravi_square.jpg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
                     <div className={styles.imgTitleName}>Ravi Garlay</div>
@@ -130,7 +129,7 @@ const AboutUs = () => {
                 </div>
                 <div>
                   <div className={styles.imgBox}>
-                    <img src="/Image.jpeg" alt="Img" />
+                    <img src="/Images/Team/Kanv_square.png" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
                     <div className={styles.imgTitleName}>Kanv Choudary</div>
@@ -157,7 +156,7 @@ const AboutUs = () => {
                 </div>
                 <div>
                   <div className={styles.imgBox}>
-                    <img src="/Image.jpeg" alt="Img" />
+                    <img src="/Images/Team/Harsh_square.jpg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
                     <div className={styles.imgTitleName}>Harsh Gupta</div>
@@ -166,7 +165,7 @@ const AboutUs = () => {
                 </div>
                 <div>
                   <div className={styles.imgBox}>
-                    <img src="/Image.jpeg" alt="Img" />
+                    <img src="/Images/Team/Divyansh_square.jpg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
                     <div className={styles.imgTitleName}>Divyansh Dadheech</div>
@@ -175,11 +174,11 @@ const AboutUs = () => {
                 </div>
                 <div>
                   <div className={styles.imgBox}>
-                    <img src="/Image.jpeg" alt="Img" />
+                    <img src="/Images/Team/Manish_square.jpg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
                     <div className={styles.imgTitleName}>Manish Kumar</div>
-                    <div className={styles.imgTitlePost}></div>
+                    <div className={styles.imgTitlePost}>Events Core</div>
                   </div>
                 </div>
                 <div>
