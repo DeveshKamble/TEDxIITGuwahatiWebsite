@@ -12,16 +12,16 @@ const AboutUs = () => {
               <div className={styles.heading}>TED</div>
               <div className={styles.content}>
                 <p>
-                  Technology,Entertainmentand Design,the setof global
+                  Technology,Entertainment and Design,the set of global
                   conferences have been going with the spirit of ideas worth
-                  spreading since1984. TED isa global community, welcoming
+                  spreading since 1984. TED is a global community, welcoming
                   people from every discipline and culture who seek a deeper
                   understanding of the world. TED believes passionately in the
                   power of ideas to change attitudes, lives and, ultimately, the
                   world. TED is owned by a nonprofit, nonpartisan foundation.
                   The agenda is to make great ideas accessible and spark
-                  conversation TheTEDx Program is designed to help communities,
-                  organizations and individuals to spark conversation TheTEDx
+                  conversation The TEDx Program is designed to help communities,
+                  organizations and individuals to spark conversation The TEDx
                   Program is designed to help communities, organizations and
                   individuals to spark conversation and connection through local
                   TED-like experiences.
@@ -32,7 +32,7 @@ const AboutUs = () => {
                   connection through local TED-like experiences. At TEDx events,
                   a screening of TED Talks videos— ora combination of live
                   presenters and TED Talks videos— sparks deep conversation and
-                  connections at the local level.TEDx events are planned and
+                  connections at the local level. TEDx events are planned and
                   coordinated independently, under a free license granted by
                   TED.
                 </p>
@@ -116,7 +116,9 @@ const AboutUs = () => {
                   </div>
                   <div className={styles.imgTitle}>
                     <div className={styles.imgTitleName}>Pranjal Saxena</div>
-                    <div className={styles.imgTitlePost}>Co-Organizer & Content Head</div>
+                    <div className={styles.imgTitlePost}>
+                      Co-Organizer & Content Head
+                    </div>
                   </div>
                 </div>
                 <div>
@@ -151,7 +153,9 @@ const AboutUs = () => {
                     <img src="/Images/Team/Ashish_square.jpg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Kodudula Ashish Reddy</div>
+                    <div className={styles.imgTitleName}>
+                      Kodudula Ashish Reddy
+                    </div>
                     <div className={styles.imgTitlePost}>WebOps Head</div>
                   </div>
                 </div>
