@@ -217,6 +217,7 @@ body{
 }
 .homeimage img{
     width: 100%;
+    margin:auto ;
 }
 .head1_min{
     font-size: 13px;

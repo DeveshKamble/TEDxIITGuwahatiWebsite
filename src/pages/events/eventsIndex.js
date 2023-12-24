@@ -5,6 +5,8 @@ import NavBar from '../../components/navbar/Navbar'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons';
+import Footer from '../../components/footer/Footer';
+import Newsletter from '../../components/Newsletter/newsletter';
 
 const Events = () => {
     useEffect(()=>{
@@ -25,7 +27,7 @@ const Events = () => {
                 <div className={styles.head1_min}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nihil, illo vel laboriosam earum omnis eos doloremque! Quae, odio asperiores?</div> */}
             </div>
             <div className={styles.homeimage}>
-                <img src="/Images/eventsHome/main_home_cropped.jpeg" alt="" />
+                <img src="/Images/eventsHome/WhatsApp Image 2023-12-22 at 12.05.50_b85cd94d.jpg" alt="Team Image" />
             </div>
             </div>
             <div className={styles.strap}>
@@ -41,7 +43,7 @@ const Events = () => {
                     <FontAwesomeIcon icon={faCalendarCheck} className={styles.iconv}/>
                         </div>
                         <div ref={myref} className={`${styles.box} ${boxisvisible ? styles.inView : styles.ishidden}`}>
-                            <Link to="#" className={styles.link_box}>
+                            <Link to="/Events/2023" className={styles.link_box}>
                                 <img src='/Images/eventsHome/theme_23.png' alt="" className={styles.image} id={styles["im1"]} />
                                 <div className={styles.part2}>
                                     <h3 className={styles.heading}>TEDxIITGuwahati2023</h3>
@@ -62,7 +64,7 @@ const Events = () => {
                     <FontAwesomeIcon icon={faCalendarCheck} className={styles.iconv}/>
                         </div>
                     <div ref={myref2} className={`${styles.box} ${boxisvisible2 ? styles.inView : ''}`}>
-                            <Link to="#" className={styles.link_box}>
+                            <Link to="/Events/2022" className={styles.link_box}>
                                 <img src="/Images/eventsHome/theme22.jpeg" alt="" className={styles.image} id={styles["im1"]} />
                                 <div className={styles.part2}>
                                     <h3 className={styles.heading}>TEDxIITGuwahati2022</h3>
@@ -82,7 +84,7 @@ const Events = () => {
                     <FontAwesomeIcon icon={faCalendarCheck} className={styles.iconv}/>
                         </div>
                     <div ref={myref3} className={`${styles.box} ${boxisvisible3 ? styles.inView : ''}`}>
-                            <Link to="#" className={styles.link_box}>
+                            <Link to="/Events/2021" className={styles.link_box}>
                                 <img src="/Images/eventsHome/theme21.png" alt="" className={styles.image} id={styles["im1"]} />
                                 <div className={styles.part2}>
                                     <h3 className={styles.heading}>TEDxIITGuwahati2021</h3>
@@ -102,7 +104,7 @@ const Events = () => {
                     <FontAwesomeIcon icon={faCalendarCheck} className={styles.iconv}/>
                         </div>
                     <div ref={myref4} className={`${styles.box} ${boxisvisible4 ? styles.inView : ''}`}>
-                            <Link to="#" className={styles.link_box}>
+                            <Link to="/Events/2019" className={styles.link_box}>
                                 <img src="/Images/eventsHome/theme19.png" alt="" className={styles.image} id={styles["im1"]} />
                                 <div className={styles.part2}>
                                     <h3 className={styles.heading}>TEDxIITGuwahati2019</h3>
@@ -122,7 +124,7 @@ const Events = () => {
                     <FontAwesomeIcon icon={faCalendarCheck} className={styles.iconv}/>
                         </div>
                     <div ref={myref5} className={`${styles.box} ${boxisvisible5 ? styles.inView : ''}`}>
-                            <Link to="#" className={styles.link_box}>
+                            <Link to="/Events/2016" className={styles.link_box}>
                                 <img src="/Images/eventsHome/theme16.png" alt="" className={styles.image} id={styles["im1"]} />
                                 <div className={styles.part2}>
                                     <h3 className={styles.heading}>TEDxIITGuwahati2016</h3>
@@ -139,6 +141,8 @@ const Events = () => {
                     </section>
                 </section>
             </div>
+            <Newsletter/>
+            <Footer/>
         </div>
     )
 }

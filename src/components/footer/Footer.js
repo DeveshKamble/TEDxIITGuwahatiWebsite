@@ -3,17 +3,17 @@ import footerCSS from  './footerStyles.module.css';
 import {
     FaInstagram,
     FaLinkedinIn,
-    FaTwitter,
     FaFacebookF,
-    FaYoutube
+    FaMedium,
 } from 'react-icons/fa';
+import {FaXTwitter, FaThreads} from "react-icons/fa6"
 
 const Footer = () => {
     return (
         <footer class={footerCSS.footer}>
             <div class={footerCSS.footer_main}>
             <div className={footerCSS.footer_col_1}>
-                <a href="#" className={footerCSS.logoTED} title="TEDxIITGuwahati">
+                <a href="/" className={footerCSS.logoTED} title="TEDxIITGuwahati">
                     <img src="/Images/footer/WhiteTextLogo.png" alt="TEDxIITGuwahati" />
                 </a>
                 <div className={footerCSS.footer_social}>
@@ -25,24 +25,26 @@ const Footer = () => {
                         <FaLinkedinIn />
                     </a>
                     <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
-                        <FaTwitter />
+                        <FaXTwitter />
                     </a>
                     <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
                         <FaFacebookF />
                     </a>
                     <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
-                        <FaYoutube />
+                        <FaMedium />
                     </a>
-                    
+                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                        <FaThreads />
+                    </a>
                 </div>
             </div>
             <div className={footerCSS.footer_col_2}>
                 <h4 className={footerCSS.quick_links}>Quick Links</h4>
-                <a href="#" title="Events" className={footerCSS.links_col_2}>Events</a>
-                <a href="#" title="About Us" className={footerCSS.links_col_2}>About Us</a>
-                <a href="#" title="Contact Us" className={footerCSS.links_col_2}>Contact Us</a>
-                <a href="#" title="Privacy Policies" className={footerCSS.links_col_2}>Privacy Policies</a>
-                <a href="#" title="Terms and Conditions" className={footerCSS.links_col_2}>Terms and Conditions</a>
+                <a href="/Events" title="Events" className={footerCSS.links_col_2}>Events</a>
+                <a href="/AboutUs" title="About Us" className={footerCSS.links_col_2}>About Us</a>
+                <a href="/ContactUs" title="Contact Us" className={footerCSS.links_col_2}>Contact Us</a>
+                <a href="/Privacy" title="Privacy Policies" className={footerCSS.links_col_2}>Privacy Policies</a>
+                <a href="/Terms" title="Terms and Conditions" className={footerCSS.links_col_2}>Terms and Conditions</a>
                 <a href="#" title="Refund Policies" className={footerCSS.links_col_2}>Refund Policies</a>
             </div>
                 
