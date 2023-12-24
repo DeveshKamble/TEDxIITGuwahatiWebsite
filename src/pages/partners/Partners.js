@@ -12,16 +12,14 @@ const Partners = () => {
   const windowWidth =useWindowWidth();
 
   return (
-    <>
       <div className={styles.main}>
-        {/* <NavBar /> */}
+        <NavBar />
         {windowWidth >= 800 && <Partnering />}
         <Upper2 />
         <Wypar />
         <OurAudience />
         <SponsOptunity />
       </div>
-    </>
   );
 }
 
