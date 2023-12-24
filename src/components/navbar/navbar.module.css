@@ -6,12 +6,6 @@
 .nav{
     z-index: 100000;
     display: flex;
-<<<<<<< HEAD
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100vw;
-}
-=======
     justify-content: space-between;
     padding: 0px 20px;
     background: white;
@@ -231,4 +225,3 @@
     opacity: 0;
     width: 0;
   }
->>>>>>> 789fd7050d4420ccf995756e77c523d3d9d75395
