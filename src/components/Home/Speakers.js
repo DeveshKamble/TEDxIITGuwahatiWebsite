@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 
 const Speakers = () => {
   const [isZoomed, setIsZoomed] = useState(false);
@@ -8,9 +8,9 @@ const Speakers = () => {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(toggleZoom, 400); 
+    const intervalId = setInterval(toggleZoom, 400);
     return () => clearInterval(intervalId);
-  }, []); 
+  }, []);
   const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -22,6 +22,7 @@ const Speakers = () => {
 
   const headingStyle = {
     color: 'white',
+    textAlign: 'center'
   };
 
   const imageContainerStyle = {
@@ -40,10 +41,10 @@ const Speakers = () => {
   return (
     <div style={containerStyle}>
       <div>
-        <h5 style={{ color: 'red' }}>know about our speakers</h5>
-        <h2 style={headingStyle}>
+        <h5 style={{ color: 'red', textAlign: 'center' }}>know about our speakers</h5>
+        <h1 style={headingStyle}>
           Seakers coming soon
-        </h2>
+        </h1>
         <div style={imageContainerStyle} onClick={toggleZoom}>
           <img style={zoomableImageStyle} src='/Images/partners/coming-soon.avif' alt='cumsoon' />
         </div>

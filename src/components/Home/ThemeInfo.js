@@ -9,7 +9,7 @@ const ThemeInfo = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <span className={styles.span}>
-          <div className={styles.divA}>a</div>
+          <img src='/svgs/handshake.svg' alt='handshake' height={28} className={styles.divA}/>
           <div>become a partner</div>
         </span>
       </div>

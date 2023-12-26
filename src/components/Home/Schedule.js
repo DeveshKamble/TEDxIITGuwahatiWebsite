@@ -8,9 +8,9 @@ const Schedule = () => {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(toggleZoom, 400); 
+    const intervalId = setInterval(toggleZoom, 400);
     return () => clearInterval(intervalId);
-  }, []); 
+  }, []);
   const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -22,6 +22,7 @@ const Schedule = () => {
 
   const headingStyle = {
     color: 'white',
+    textAlign: 'center'
   };
 
   const imageContainerStyle = {
@@ -40,7 +41,7 @@ const Schedule = () => {
   return (
     <div style={containerStyle}>
       <div>
-        <h5 style={{ color: 'red' }}>know about our schedule</h5>
+        <h5 style={{ color: 'red', textAlign: 'center' }}>know about our schedule</h5>
         <h2 style={headingStyle}>
           UPCOMING EVENT SCHEDULE
         </h2>

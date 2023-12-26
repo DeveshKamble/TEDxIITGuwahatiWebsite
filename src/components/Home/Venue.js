@@ -39,8 +39,8 @@ const ConferenceVenue = () => {
               </div>
             </div>
             <div style={{ flex: '0 0 50%', paddingLeft: '20px' }}>
-              <div style={{ marginBottom: '10px', fontSize: '1.2em', fontWeight: 'bold' }}>Conference Venue</div>
-              <h2 style={{ fontSize: '2em', marginBottom: '20px' }}>Hosted in MIT's Award-Winning Stata Center</h2>
+              <div style={{ marginBottom: '10px', fontSize: '1.2em', fontWeight: 'bold',color:'red' }}>Conference Venue</div>
+              <h2 style={{ fontSize: '3em', marginBottom: '20px',fontWeight:'400' }}>Hosted in MIT's Award-Winning Stata Center</h2>
               <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>
                 The Ray and Maria Stata Center or Building 32 is a 720,000-square-foot academic complex designed by
                 Pritzker Prize-winning architect Frank Gehry for the Massachusetts Institute of Technology.
@@ -50,7 +50,7 @@ const ConferenceVenue = () => {
                 style={{
                   display: 'inline-block',
                   padding: '10px 20px',
-                  backgroundColor: '#007BFF',
+                  backgroundColor: 'red',
                   color: '#fff',
                   textDecoration: 'none',
                   borderRadius: '5px',
