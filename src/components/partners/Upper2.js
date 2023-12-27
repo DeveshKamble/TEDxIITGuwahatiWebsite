@@ -17,7 +17,7 @@ const Upper2 = () => {
     <section style={{ background: '#F7F7F7' }}>
     <div style={{ display: 'grid', gridTemplateColumns: '1fr', justifyContent: 'center', alignItems: 'center' }}>
       <div style={{ display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center',   }} className={titlewidth}>
-        <div>
+        <div style={{textAlign:'center'}}>
           <span >Partner with TEDxIITGuwahati</span>
         </div>
         <div>

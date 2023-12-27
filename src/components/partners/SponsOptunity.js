@@ -70,9 +70,9 @@ const SponsOptunity = () => {
   return (
     <section>
       <div>
-        <div style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
+        <div style={{ padding: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px',textAlign:'center' }}>
           <h1 className={titlewidth}>
-            <span>
+            <span >
               Sponsorship Opportunities
             </span>
           </h1>

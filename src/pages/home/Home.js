@@ -5,7 +5,6 @@ import Speakers from '../../components/Home/Speakers'
 import ThemeInfo from '../../components/Home/ThemeInfo'
 import Venue from '../../components/Home/Venue'
 import Newsletter from '../../components/Newsletter/newsletter'
-import ThemeInfo2 from '../../components/Home/ThemeInfo2'
 
 
 const Home = () => {
@@ -13,7 +12,6 @@ const Home = () => {
         <div>
             <Navbar/>
             <ThemeInfo/>
-            {/* <ThemeInfo2/> */}
             <Speakers/>
             <Venue/>
             <Schedule/>
