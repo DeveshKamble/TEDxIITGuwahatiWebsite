@@ -1,5 +1,3 @@
-// BuyTickets.jsx
-
 import React from 'react';
 
 const BuyTickets = () => {
