@@ -41,9 +41,9 @@ const Speakers = () => {
   return (
     <div style={containerStyle}>
       <div>
-        <h5 style={{ color: 'red', textAlign: 'center' }}>know about our speakers</h5>
+        <h5 style={{ color: 'red', textAlign: 'center' }}>Know about our speakers</h5>
         <h1 style={headingStyle}>
-          Seakers coming soon
+          Speakers coming soon
         </h1>
         <div style={imageContainerStyle} onClick={toggleZoom}>
           <img style={zoomableImageStyle} src='/Images/partners/coming-soon.avif' alt='cumsoon' />

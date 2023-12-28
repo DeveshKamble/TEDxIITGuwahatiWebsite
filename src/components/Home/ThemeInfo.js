@@ -16,52 +16,34 @@ const ThemeInfo = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <span className={styles.span}>
+        <a className={styles.span} href='/ContactUs'>
           <img src='/svgs/handshake.svg' alt='handshake' height={28} className={styles.divA} />
-          <div onClick={bcmpart} >become a partner</div>
-        </span>
+          <div>Become a partner</div>
+        </a>
       </div>
       <article className={styles.article}>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div className={styles.content}>
             <h2 className={styles.heading}>
-              <small className={styles.small}>THIS YEAR'S THEME IS</small>
-              Ripple Effect
+              Resurgence
             </h2>
             <h3 className={styles.subheading}>Ideas which can reach the world</h3>
             <p className={styles.parastyle}>
-              Imagine a place where ideas aren’t just celebrated, they’re amplified. Welcome to TEDxHobart, a dynamic
-              platform that shines a spotlight on Tasmania’s incredible innovation, inspiration, and big ideas.
+              The theme for TEDxIITGuwahati 2024 is Resurgence. What’s that, you ask? It’s about fathoming the importance of taking break in process of reaching our goals.
             </p>
             <p className={styles.parastyle}>
-              TEDxHobart isn’t just another event – it’s a stage where Tasmania’s brightest minds come together to share
-              their thoughts with a local audience that holds considerable influence. But it doesn’t stop there; their
-              ideas also resonate worldwide through online sharing, reaching people across the globe.
+            In today's fast-paced world, it is important to take breaks. These breaks aren't just about relaxing; they're like a timeout to help us grow. Taking a step back lets us think about our journey, what really matters, and it re-energizes us. Like the cicada rests to come back stronger, our breaks become the fertile ground for personal changes.
+            During these breaks, we recharge our energy and also learn more about ourselves. It's a time of self-discovery, where we find hidden strengths and better understand what we want.The lessons learned during these breaks are like a guide for the next steps in our journey
             </p>
             <p className={styles.parastyle}>
-              Think of it as a space where conversations run deep and connections are made. Imagine trailblazers from all
-              corners of our state, those who are changing the world with their extraordinary projects. TEDxHobart
-              doesn’t just showcase these visionaries; it propels them onto a larger stage, multiplying the impact of
-              their groundbreaking work.
+            The outcome of our breaks might not always be obvious success, but the experience is priceless. It's like a caterpillar in a cocoon — change takes time and patience. When we take a break, we get to let go of old habits, improve our skills, and come out stronger.
             </p>
             <p className={styles.parastyle}>
-              The theme for TEDxHobart 2024 is Ripple Effect. What’s that, you ask? It’s just like dropping a pebble into
-              a pond and watching the ripples spread far and wide.
-            </p>
-            <p className={styles.parastyle}>
-              Picture this: a single disturbance causing a chain reaction that reverberates through different parts of
-              a complex system. It’s not just a concept; the ripple effect can be seen in fields like finance, technology,
-              law, agriculture, history, community development, conservation, the arts, and tourism. Imagine how a small
-              shift in one area can have a mighty impact across many others.
-            </p>
-            <p className={styles.parastyle}>
-              So, if you’re excited about the power of ideas, if you’re intrigued by the potential of small actions
-              creating big waves, then TEDxHobart is the place to be. Join us in exploring the incredible stories of how
-              tiny ripples created right here in Tasmania are shaping our world in astonishing ways.
+            So, taking a break is like celebrating our ability to grow. Whether it's spent relaxing or learning something new, these pauses help us discover more about ourselves and become better people. By honoring rest, we set the stage for a more meaningful and purposeful journey, recognizing that the process is just as important as the destination.
             </p>
             <span className={styles.linkSpan}>
               <a href='/aboutUs' style={{ fontSize: '0.8em' }} className={styles.link}>
-                READ ABOUT TEDX
+                READ ABOUT TED AND TED<sup>x</sup>
               </a>
             </span>
           </div>

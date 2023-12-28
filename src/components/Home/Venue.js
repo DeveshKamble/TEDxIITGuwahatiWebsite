@@ -12,7 +12,7 @@ const ConferenceVenue = () => {
             <div style={{ flex: '0 0 50%', paddingRight: '20px' }}>
               <div style={{ position: 'relative' }}>
                 <img
-                  src="https://assets-global.website-files.com/62165efbce6bcc862200724a/621d74b62b14f3f7bf065c4d_46588d.jpg"
+                  src="/Images/home/location.jpg"
                   alt=""
                   style={{ width: '100%', borderRadius: '8px' }}
                 />
@@ -26,8 +26,8 @@ const ConferenceVenue = () => {
                   borderRadius: '8px',
                   boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
                 }}>
-                  <h3 style={{ fontSize: '1.5em', marginBottom: '10px' }}>MIT Stata Center</h3>
-                  <p>32 Vassar St<br />Cambridge MA, 02139</p>
+                  <h3 style={{ fontSize: '1.5em', marginBottom: '10px' }}></h3>
+                  <p>Senate Hall<br />Administration Building, IITGuwahati</p>
                   <a
                     href="https://goo.gl/maps/UzqLHD1pNnMVMkL47"
 
@@ -58,7 +58,7 @@ const ConferenceVenue = () => {
                   fontSize: '1.2em',
                 }}
               >
-                Free Registration
+                Registration
               </a>
             </div>
           </div>
@@ -67,7 +67,7 @@ const ConferenceVenue = () => {
             <div style={{ flex: '0 0 50%', paddingRight: '20px' }}>
               <div style={{ position: 'relative' }}>
                 <img
-                  src="https://assets-global.website-files.com/62165efbce6bcc862200724a/621d74b62b14f3f7bf065c4d_46588d.jpg"
+                  src="/Images/home/location.jpg"
                   alt=""
                   style={{ width: '100%', borderRadius: '8px' }}
                 />
