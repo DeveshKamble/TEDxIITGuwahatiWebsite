@@ -1,53 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import styles from './homeStyles.module.css';
 
 const Schedule = () => {
-  const [isZoomed, setIsZoomed] = useState(false);
-
-  const toggleZoom = () => {
-    setIsZoomed((prevZoom) => !prevZoom);
-  };
-
-  useEffect(() => {
-    const intervalId = setInterval(toggleZoom, 400);
-    return () => clearInterval(intervalId);
-  }, []);
-  const containerStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    background: '#000',
-    padding: '5px',
-  };
-
-  const headingStyle = {
-    color: 'white',
-    textAlign: 'center'
-  };
-
-  const imageContainerStyle = {
-    position: 'relative',
-    overflow: 'hidden',
-    cursor: 'pointer',
-  };
-
-  const zoomableImageStyle = {
-    width: '100%',
-    height: 'auto',
-    transition: 'transform 1s ease-in-out',
-    transform: isZoomed ? 'scale(0.8)' : 'none',
-  };
+  const scheduleData = [
+    { topic: 'Registration', timing: '10:30 am - 11:45 am', details: 'Attendee Registration' },
+    { topic: 'Session 1', timing: '12:00 pm - 1:00 pm', details: 'Introduction to React' },
+    { topic: 'Lunch', timing: '1:00 pm - 2:00 pm', details: 'Lunch Break' },
+  ];
 
   return (
-    <div style={containerStyle}>
-      <div>
-        <h5 style={{ color: 'red', textAlign: 'center' }}>know about our schedule</h5>
-        <h2 style={headingStyle}>
-          UPCOMING EVENT SCHEDULE
-        </h2>
-        <div style={imageContainerStyle} onClick={toggleZoom}>
-          <img style={zoomableImageStyle} src='/Images/partners/coming-soon.avif' alt='cumsoon' />
-        </div>
+    <div>
+      <div className={styles.tableContainer}>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th style={{ width: '25vw' }}>Topic</th>
+              <th style={{ width: '15vw' }}>Timing</th>
+              <th style={{ width: '40vw' }}>Details Event</th>
+            </tr>
+          </thead>
+          <tbody>
+            {scheduleData.map((item, index) => (
+              <tr key={index}>
+                <td>{item.topic}</td>
+                <td>{item.timing}</td>
+                <td>{item.details}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

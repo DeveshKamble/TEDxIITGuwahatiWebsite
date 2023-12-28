@@ -26,7 +26,7 @@ const ConferenceVenue = () => {
                   borderRadius: '8px',
                   boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
                 }}>
-                  <h3 style={{ fontSize: '1.5em', marginBottom: '10px' }}></h3>
+                  {/* <h3 style={{ fontSize: '1.5em', marginBottom: '10px' }}></h3> */}
                   <p>Senate Hall<br />Administration Building, IITGuwahati</p>
                   <a
                     href="https://goo.gl/maps/UzqLHD1pNnMVMkL47"

@@ -1,13 +1,7 @@
-// ThemeInfo.jsx
-
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import BuyTickets from './BuyTickets';
 import styles from './homeStyles.module.css';
 import useWindowWidth from '../partners/CustomHook/UseWindowWidth'
-
-const bcmpart = () => {
-
-}
 
 const ThemeInfo = () => {
 
@@ -47,7 +41,7 @@ const ThemeInfo = () => {
               </a>
             </span>
           </div>
-          {windowWidth > 1000 ?
+          {windowWidth > 800 ?
             <div style={{ width: '40vw' }} className='buyTickets'>
               <BuyTickets />
             </div> :

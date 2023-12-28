@@ -30,7 +30,7 @@
   .button:hover {
     background-color: white;
     color: #E62B1E;
-    border:2px #E62B1E;
+    border:2px solid #E62B1E;
   }
 
   .title{

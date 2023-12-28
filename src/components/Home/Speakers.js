@@ -46,7 +46,7 @@ const Speakers = () => {
           Speakers coming soon
         </h1>
         <div style={imageContainerStyle} onClick={toggleZoom}>
-          <img style={zoomableImageStyle} src='/Images/partners/coming-soon.avif' alt='cumsoon' />
+          <img style={zoomableImageStyle} src='/Images/home/coming-soon.avif' alt='cumsoon' />
         </div>
       </div>
     </div>
