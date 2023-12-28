@@ -129,6 +129,7 @@
   .booking_tickets{
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
   }
   
 

@@ -20,7 +20,7 @@ const BuyTickets = () => {
             <h5 style={{ textAlign: 'center', color: 'black' }}>1-2 PM</h5>
           </div>
           <hr />
-          <div className='booking_tickets'>
+          <div className={styles.booking_tickets}>
             <p style={{ textAlign: 'center', color: 'white' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer </p>
             <a href='_blank' style={{ textAlign: 'center', color: 'white',textDecoration:'none',margin:'10px' }}>
               <span style={{ textAlign: 'center',border:'2px solid white',borderRadius:'10px',padding:'10px',marginTop:'5px' }}>
