@@ -3,15 +3,22 @@
 import React, { useEffect, useRef } from 'react';
 import BuyTickets from './BuyTickets';
 import styles from './homeStyles.module.css';
+import useWindowWidth from '../partners/CustomHook/UseWindowWidth'
+
+const bcmpart = () => {
+
+}
 
 const ThemeInfo = () => {
+
+  const windowWidth = useWindowWidth();
 
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <span className={styles.span}>
           <img src='/svgs/handshake.svg' alt='handshake' height={28} className={styles.divA} />
-          <div>become a partner</div>
+          <div onClick={bcmpart} >become a partner</div>
         </span>
       </div>
       <article className={styles.article}>
@@ -58,9 +65,12 @@ const ThemeInfo = () => {
               </a>
             </span>
           </div>
-          <div style={{ width: '40vw' }} className='buyTickets'>
-            <BuyTickets />
-          </div>
+          {windowWidth > 1000 ?
+            <div style={{ width: '40vw' }} className='buyTickets'>
+              <BuyTickets />
+            </div> :
+            ""
+          }
         </div>
       </article>
     </div>
