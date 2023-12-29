@@ -10,6 +10,12 @@ const Schedule = () => {
 
   return (
     <div>
+      <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',padding:'10px'}}>
+      <h5 style={{ color: 'red', textAlign: 'center' }}>Know about our schedule</h5>
+        <h1 style={styles.headingStyle}>
+          Event Schedule
+        </h1>
+      </div>
       <div className={styles.tableContainer}>
         <table className={styles.table}>
           <thead>
