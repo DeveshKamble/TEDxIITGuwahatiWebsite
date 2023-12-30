@@ -3,7 +3,7 @@ import NavBar from '../../components/navbar/Navbar'
 import { useState } from 'react'
 import Footer from '../../components/footer/Footer'
 import Newsletter from '../../components/Newsletter/newsletter'
-
+import ScrollButton from '../../components/scrollButton/scrollButton'
 const ContactUs = () => {
     const [successMsg, setSuccessMsg] = useState(false)
 
@@ -50,6 +50,7 @@ const ContactUs = () => {
                 </div>
             </div>
             <Footer/>
+            <ScrollButton/>
         </>
     )
 }
