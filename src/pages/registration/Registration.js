@@ -72,7 +72,7 @@ const Registration = () => {
                 </div>
                 <div className={styles.ticket}>
                     <div className={styles.passContainer}>
-                        <h3 className={styles.passname}>IITG Pass</h3>
+                        <h3 className={styles.passname}>Student Pass</h3>
                         <img className={styles.image} loading='lazy' src={'/images/Registration/img2.svg'} style={{left:'0'}} alt="upperImg" />
                     </div>
                     <div className={styles.ticketDetails}>
@@ -80,9 +80,34 @@ const Registration = () => {
                             <p className={styles.priceHeading}> price</p>
                             <h3 className={styles.priceValue}>₹ 500 /-</h3>
                         </div>
-                        <div className={styles.line}></div>
+                        <div className={styles.details}>
+                            <h3 className={styles.detailsHeading}>Who can purchase a student ticket —</h3>
+                            <ul className={styles.listStudent}>
+                                <li className={styles.listItemStudent}>Students who have printed Valid School or College ID Card</li>
+                                <li className={styles.listItemStudent}>Students from the age of 13 years to 21 years (Valid School or College ID Card is must)</li>
+                                <li className={styles.listItemStudent}>Students from the age of 8 to 12 years should be accompanied by an adult attendee. This conference is not open for children below 8 years.</li>
+                            </ul>
+                            <p className={styles.footer}>& benefits of general pass</p>
+                        </div>
+                        <div className={styles.buttonContainer}><button className={styles.bookButton}>Book Now</button></div>
+                        
                     </div>
+                    <div className={styles.nudges2}>
+                        <img className={styles.triangle1} src="/images/Registration/triangle.svg" alt="triangle" />
+                        <div className={styles.line}></div>
+                        <img className={styles.triangle2} src="/images/Registration/triangle.svg" alt="triangle" />
+                    </div>
+                    <div className={styles.circleContainer}>
+                        <div className={styles.circle}></div>
+                        <div className={styles.circle}></div>
+                        <div className={styles.circle}></div>
+                        <div className={styles.circle}></div>
+                        <div className={styles.circle}></div>
+                        <div className={styles.circle}></div>
+                    </div>
+                    
                 </div>
+                
             </div>
         </div>
         <Newsletter/>

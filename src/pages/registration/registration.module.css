@@ -136,12 +136,16 @@
         repeating-linear-gradient(90deg,#ffffff 0 10px,#cdcdcd 0 25px);
 }
 
-.nudges{
+.nudges, .nudges2{
     position: absolute;
     background-color: transparent;
-    top: 30%;
+    top: 32.5%;
     width: 100%;
     display: flex;
+}
+
+.nudges2{
+    top: 40.5%;
 }
 
 .triangle1, .triangle2{
@@ -162,19 +166,28 @@
 }
 
 .detailsHeading{
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 10px;
     font-weight: bolder;
 }
 
-.list{
+.list, .listStudent {
     margin-left: 10px;
     margin-bottom: 10px; 
     list-style-image: url('/public/Images/Registration/tick.svg');
 }
 
-.listItem{
+.listStudent{
+    list-style: '-' ;
+}
+
+.listItem, .listItemStudent{
     margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.listItemStudent{
+    padding-left: 5px;
 }
 
 
