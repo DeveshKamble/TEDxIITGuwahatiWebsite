@@ -10,8 +10,8 @@ import {FaXTwitter, FaThreads} from "react-icons/fa6"
 
 const Footer = () => {
     return (
-        <footer class={footerCSS.footer}>
-            <div class={footerCSS.footer_main}>
+        <footer className={footerCSS.footer}>
+            <div className={footerCSS.footer_main}>
             <div className={footerCSS.footer_col_1}>
                 <a href="/" className={footerCSS.logoTED} title="TEDxIITGuwahati">
                     <img src="/Images/footer/WhiteTextLogo.png" alt="TEDxIITGuwahati" />

@@ -39,8 +39,8 @@ const Strip = ({ image, title, content }) => {
 };
 
 const SponsOptunity = () => {
-  const email = process.env.EMAIL_ADDRESS;
-  const subject = process.env.EMAIL_SUBJECT;
+  const email = process.env.MARKETING_EMAIL_ADDRESS;
+  const subject = process.env.MARKETING_EMAIL_SUBJECT;
 
   const sponsorshipItems = [
     { title: 'ALL YEAR ROUND', content: 'Executive Committee<br/> Host Committee<br/> Special Events<br/>Sustainability Partner', image: '/svgs/year-round.svg' },

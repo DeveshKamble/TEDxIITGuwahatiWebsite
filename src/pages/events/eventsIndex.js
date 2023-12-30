@@ -27,7 +27,7 @@ const Events = () => {
                 <div className={styles.head1_min}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nihil, illo vel laboriosam earum omnis eos doloremque! Quae, odio asperiores?</div> */}
             </div>
             <div className={styles.homeimage}>
-                <img src="/Images/eventsHome/WhatsApp Image 2023-12-22 at 12.05.50_b85cd94d.jpg" alt="Team Image" />
+                <img src="/Images/eventsHome/coverImage.jpg" alt="Team Image" />
             </div>
             </div>
             <div className={styles.strap}>
