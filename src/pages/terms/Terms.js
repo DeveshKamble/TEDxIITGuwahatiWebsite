@@ -2,6 +2,7 @@ import styles from './terms.module.css'
 import NavBar from '../../components/navbar/Navbar'
 import Newsletter from '../../components/Newsletter/newsletter';
 import Footer from '../../components/footer/Footer';
+import ScrollButton from '../../components/scrollButton/scrollButton'
 
 const Terms = () => {
     return(
@@ -12,6 +13,7 @@ const Terms = () => {
         </h1>
         <Newsletter/>
         <Footer/>
+        <ScrollButton/>
         </>
     )
 }

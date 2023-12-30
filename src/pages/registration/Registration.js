@@ -2,6 +2,7 @@ import styles from './registration.module.css'
 import NavBar from '../../components/navbar/Navbar'
 import Newsletter from '../../components/Newsletter/newsletter'
 import Footer from '../../components/footer/Footer'
+import ScrollButton from '../../components/scrollButton/scrollButton'
 
 const Registration = () => {
     
@@ -112,6 +113,7 @@ const Registration = () => {
         </div>
         <Newsletter/>
         <Footer/>
+        <ScrollButton/>
         </>
     )
 }
