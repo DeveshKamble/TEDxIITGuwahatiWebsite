@@ -1,1 +1,1 @@
-# Official Website of TEDxIITGuwahati
+# Official Website of TEDxIITGuwahati's Resurgence

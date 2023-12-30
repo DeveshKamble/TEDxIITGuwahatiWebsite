@@ -21,7 +21,7 @@ const ThemeInfo = () => {
             <h2 className={styles.heading}>
               Resurgence
             </h2>
-            <h3 className={styles.subheading}>Ideas which can reach the world</h3>
+            <h3 className={styles.subheading}>Embracing the pause</h3>
             <p className={styles.parastyle}>
               The theme for TEDxIITGuwahati 2024 is Resurgence. What’s that, you ask? It’s about fathoming the importance of taking break in process of reaching our goals.
             </p>

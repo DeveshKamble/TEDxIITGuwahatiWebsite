@@ -3,11 +3,11 @@ import styles from './partners.module.css';
 import useWindowWidth from './CustomHook/UseWindowWidth'
 
 const Upper2 = () => {
-  const email = process.env.REACT_APP_EMAIL_ADDRESS;
-  const subject = process.env.REACT_APP_EMAIL_SUBJECT;
+  const email = process.env.MARKETING_EMAIL_ADDRESS;
+  const subject = process.env.MARKETING_EMAIL_SUBJECT;
   const windowWidth = useWindowWidth();
   const titlewidth = windowWidth < 435 ? styles.title_under435: styles.title;
-
+  console.log(process.env.MARKETING_EMAIL_ADDRESS)
   console.log('Email:', email);
   console.log('Subject:', subject);
 
