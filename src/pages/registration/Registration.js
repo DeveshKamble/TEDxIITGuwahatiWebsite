@@ -92,7 +92,7 @@ const Registration = () => {
                         <div className={styles.buttonContainer}><button className={styles.bookButton}>Book Now</button></div>
                         
                     </div>
-                    <div className={styles.nudges2}>
+                    <div className={styles.nudges}>
                         <img className={styles.triangle1} src="/images/Registration/triangle.svg" alt="triangle" />
                         <div className={styles.line}></div>
                         <img className={styles.triangle2} src="/images/Registration/triangle.svg" alt="triangle" />
