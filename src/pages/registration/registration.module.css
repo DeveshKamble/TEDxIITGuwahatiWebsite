@@ -1,25 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@900&display=swap');
 
-@keyframes fadeInTicketContainer {
+@keyframes fadeIn {
     0%{
-        opacity: 0;
-    }
-    50%{
         opacity: 0;
     }
     100%{
         opacity: 1;
     }
 }
-@keyframes fadeInUpper {
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
+
+.fadeInAnimation{
+    animation: fadeIn 2s;
 }
+
 .main
 {
     margin: auto;
@@ -34,10 +28,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: fadeInUpper ease 1s;
+    /* animation: fadeInUpper ease 1s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
+
 
 .message{
     max-width: 400px;
@@ -63,13 +58,10 @@
 }
 
 .ticketContainer{
-    margin: 100px ;
+    margin: 100px auto ;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    animation: fadeInTicketContainer ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 
@@ -78,6 +70,10 @@
     height: fit-content;
     background-color: #e8e8e8;
     position: relative;
+}
+
+.ticket:nth-child(even){
+    margin-left: 50px;
 }
 
 .passContainer{
@@ -160,10 +156,10 @@
 }
 
 .details{
-    margin: 80px auto;
+    margin: 90px auto;
     margin-bottom: 20px ;
     width: 80%;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .detailsHeading{
@@ -234,5 +230,61 @@
     background-color: white;
     color: white;
     border-radius: 50%;
+}
+
+@media (width < 1000px) {
+    .upper{
+        flex-direction: column;
+        align-items: start;
+    }
+    .message{
+        margin-top: 30px;
+        max-width: 500px;
+    }
+}
+
+@media (width < 760px) {
+    .ticketContainer{
+        flex-direction: column;
+    }
+    .ticket:nth-child(even){
+        margin: auto;
+    }
+    .ticket{
+        margin: 100px auto;
+    }
+    .details{
+        max-height: none;
+    }
+}
+
+@media (width<500px) {
+    .ticket{
+        width: 98%;
+    }
+    .circle:nth-last-child(1){
+        display: none;
+    }
+    .ticketContainer{
+        margin-top: 0px;
+    }
+}
+
+@media (width < 350px){
+    .passname{
+        font-size: 38px;
+    }
+    .image{
+        width: 200px;
+    }
+    .nudges{
+        top:30%;
+    }
+    .heading{
+        font-size: 50px;
+    }
+    .circle:nth-last-child(2){
+        display: none;
+    }
 }
 

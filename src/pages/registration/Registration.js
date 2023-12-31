@@ -3,14 +3,18 @@ import NavBar from '../../components/navbar/Navbar'
 import Newsletter from '../../components/Newsletter/newsletter'
 import Footer from '../../components/footer/Footer'
 import ScrollButton from '../../components/scrollButton/scrollButton'
+import { useInView } from 'react-intersection-observer'
 
 const Registration = () => {
-    
+    const {ref: upperRef,inView:upperVisibility} = useInView()
+    const {ref: ticket1Ref,inView:ticket1Visibility} = useInView()
+    const {ref: ticket2Ref,inView:ticket2Visibility} = useInView()
+
     return(
         <>
         <NavBar/>
         <div className={styles.contentContainer}>
-            <div className={styles.upper}>
+            <div ref={upperRef} className={`${styles.upper} ${upperVisibility? styles.fadeInAnimation:''}`}>
                 <div className={styles.headingContainer}>
                     <p className={styles.overheading}>Secure your seat —</p>
                     <h1 className={styles.heading}>Get Your Passes Today</h1>
@@ -28,7 +32,7 @@ const Registration = () => {
             <div>
             </div>
             <div className={styles.ticketContainer} >
-                <div className={styles.ticket}>
+                <div ref={ticket1Ref} className={`${styles.ticket} ${ticket1Visibility? styles.fadeInAnimation:''}`}>
                     <div className={styles.passContainer}>
                         <h3 className={styles.passname}>General Pass</h3>
                         <img className={styles.image} loading='lazy' src={'/images/Registration/img1.svg'} style={{right:'0'}} alt="upperImg" />
@@ -71,9 +75,9 @@ const Registration = () => {
                     </div>
                     
                 </div>
-                <div className={styles.ticket}>
+                <div ref={ticket2Ref} className={`${styles.ticket} ${ticket2Visibility? styles.fadeInAnimation:''}`}>
                     <div className={styles.passContainer}>
-                        <h3 className={styles.passname}>Student Pass</h3>
+                        <h3 className={styles.passname}>IITG Pass</h3>
                         <img className={styles.image} loading='lazy' src={'/images/Registration/img2.svg'} style={{left:'0'}} alt="upperImg" />
                     </div>
                     <div className={styles.ticketDetails}>
