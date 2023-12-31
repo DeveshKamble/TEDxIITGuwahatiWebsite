@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarCheck } from '@fortawesome/free-regular-svg-icons';
 import Footer from '../../components/footer/Footer';
 import Newsletter from '../../components/Newsletter/newsletter';
+import ScrollButton from '../../components/scrollButton/scrollButton';
 
 const Events = () => {
     useEffect(()=>{
@@ -143,6 +144,7 @@ const Events = () => {
             </div>
             <Newsletter/>
             <Footer/>
+            <ScrollButton/>
         </div>
     )
 }

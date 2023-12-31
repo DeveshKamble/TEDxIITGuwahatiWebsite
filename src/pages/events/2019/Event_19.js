@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Navbar from "../../../components/navbar/Navbar";
 import theme_19 from "../../../assets/theme19.png";
+import ScrollButton from '../../../components/scrollButton/scrollButton';
 import logo_19 from "../../../assets/2019_logo.png";
 import Footer from "../../../components/footer/Footer"
 import styles from "./Event_19.module.css";
@@ -108,6 +109,7 @@ TEDxIITGuwahati is thrilled to invite you all to be a part of its modest step to
       </div>
       <Newsletter/>
       <Footer />
+      <ScrollButton/>
     </div>
   );
 };

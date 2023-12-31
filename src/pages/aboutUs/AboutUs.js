@@ -1,6 +1,7 @@
 import styles from "./aboutUs.module.css";
 import NavBar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+import ScrollButton from '../../components/scrollButton/scrollButton';
 
 const AboutUs = () => {
   return (
@@ -232,6 +233,7 @@ const AboutUs = () => {
         </div>
       </div>
       <Footer/>
+      <ScrollButton/>
     </>
   );
 };

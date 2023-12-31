@@ -9,6 +9,7 @@ import SponsOptunity from '../../components/partners/SponsOptunity';
 import useWindowWidth from '../../components/partners/CustomHook/UseWindowWidth';
 import Footer from '../../components/footer/Footer';
 import Newsletter from '../../components/Newsletter/newsletter';
+import ScrollButton from '../../components/scrollButton/scrollButton';
 
 const Partners = () => {
   const windowWidth =useWindowWidth();
@@ -23,6 +24,7 @@ const Partners = () => {
         <SponsOptunity />
         <Newsletter/>
         <Footer/>
+        <ScrollButton/>
       </div>
   );
 }
