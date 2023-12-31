@@ -1,5 +1,5 @@
 import React from 'react';
-import useWindowWidth from '../partners/CustomHook/UseWindowWidth'
+import useWindowWidth from '../../Hooks/UseWindowWidth.js'
 
 const ConferenceVenue = () => {
   const windowWidth = useWindowWidth();

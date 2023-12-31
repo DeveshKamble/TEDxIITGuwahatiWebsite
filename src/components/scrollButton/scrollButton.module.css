@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-svg{
+#progressValue svg{
     animation: gototop 1.2s linear infinite alternate-reverse;
 }
 
