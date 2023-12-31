@@ -5,7 +5,7 @@ import Upper2 from '../../components/partners/Upper2';
 import Wypar from '../../components/partners/Wypar';
 import OurAudience from '../../components/partners/OurAudience';
 import SponsOptunity from '../../components/partners/SponsOptunity';
-import useWindowWidth from '../../Hooks/UseWindowWidth.js'
+import useWindowWidth from '../../utilities/Hooks/UseWindowWidth.js'
 import Footer from '../../components/footer/Footer';
 import Newsletter from '../../components/Newsletter/newsletter';
 import ScrollButton from '../../components/scrollButton/scrollButton';
