@@ -1,7 +1,7 @@
 import React from 'react';
 import BuyTickets from './BuyTickets';
 import styles from './homeStyles.module.css';
-import useWindowWidth from '../partners/CustomHook/UseWindowWidth'
+import useWindowWidth from '../../utilities/Hooks/UseWindowWidth.js'
 
 const ThemeInfo = () => {
 

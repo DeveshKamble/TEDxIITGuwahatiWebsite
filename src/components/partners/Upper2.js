@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './partners.module.css';
-import useWindowWidth from './CustomHook/UseWindowWidth'
+import useWindowWidth from '../../utilities/Hooks/UseWindowWidth.js'
 
 const Upper2 = () => {
   const email = process.env.MARKETING_EMAIL_ADDRESS;
