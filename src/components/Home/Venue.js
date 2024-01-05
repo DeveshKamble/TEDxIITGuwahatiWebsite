@@ -38,7 +38,7 @@ const ConferenceVenue = () => {
                 </div>
               </div>
             </div>
-            <div style={{ flex: '0 0 50%', paddingLeft: '20px' }}>
+            <div  style={{ flex: '0 0 50%', paddingLeft: '20px' }}>
               <div style={{ marginBottom: '10px', fontSize: '1.2em', fontWeight: 'bold', color: 'red' }}>Conference Venue</div>
               <h2 style={{ fontSize: '3em', marginBottom: '20px', fontWeight: '400' }}>Hosted in IITGuwahati</h2>
               <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>
@@ -91,7 +91,7 @@ const ConferenceVenue = () => {
                 </div>
               </div>
             </div>
-            <div style={{ flex: '0 0 50%', paddingLeft: '20px' }}>
+            <div style={{ flex: '0 0 50%', paddingLeft: '20px'}}>
               <div style={{ marginBottom: '10px', fontSize: '1.2em', fontWeight: 'bold' }}>Conference Venue</div>
               <h2 style={{ fontSize: '2em', marginBottom: '20px' }}>Hosted in IITGuwahati</h2>
               <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>
