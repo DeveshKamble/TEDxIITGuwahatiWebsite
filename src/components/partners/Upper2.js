@@ -15,8 +15,8 @@ const Upper2 = () => {
 
     windowWidth < 800 ?
     <section style={{ background: '#F7F7F7' }}>
-    <div style={{ display: 'grid', gridTemplateColumns: '1fr', justifyContent: 'center', alignItems: 'center' }}>
-      <div style={{ display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center',   }} className={titlewidth}>
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr', justifyContent: 'center', alignItems: 'center', paddingTop:'40px' }}>
+      <div style={{ display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center', paddingBottom:'40px'  }} className={titlewidth}>
         <div style={{textAlign:'center'}}>
           <span >Partner with TEDxIITGuwahati</span>
         </div>
@@ -25,12 +25,12 @@ const Upper2 = () => {
             className={styles.content}
             style={{
               width: '100%',
-              letterSpacing: '-0.5px',
+              // letterSpacing: '-0.5px',
               margin: '0',
               padding: '20px 30px 20px 30px',
             }}
           >
-            In a world with short attention spans, TEDxIITGuwahati makes reaching your target audience easy and cost-effective. Our audience interacts with our messaging year-round. With email engagement rates of 20%, we’ll share your sponsorship message alongside our trusted content, giving your brand the lift you’re looking for. Want to get in front ofour largest audiences? Our video views have topped 1+ million in just the last three years. Become a sponsor and get in front of an engaged and large audience.
+            In a world with short attention spans, TEDxIITGuwahati makes reaching your target audience easy and cost-effective. Our audience interacts with our messaging year-round. With email engagement rates of 20%, we’ll share your sponsorship message alongside our trusted content, giving your brand the lift you’re looking for. Want to get in front of our largest audiences? Become a sponsor and get in front of an engaged and large audience.
           </div>
         </div>
         <div>
@@ -39,7 +39,7 @@ const Upper2 = () => {
             className={styles.button}
             style={{margin:'10px'}}
           >
-            <span>Get Started</span>
+            <span>Sponsor</span>
           </a>
         </div>
       </div>

@@ -18,7 +18,7 @@ const Passes = () => {
                     talks, inspiring performances, and engaging
                     discussions. Our lineup of esteemed speakers will
                     share their powerful ideas and innovative insights at
-                    TEDxGateway 2023. Secure your tickets now and
+                    TEDxIITGuwahati 2024. Secure your tickets now and
                     reserve your spot at our upcoming event. With
                     limited seating available, early booking is highly
                     recommended.
@@ -35,19 +35,19 @@ const Passes = () => {
                     <div className={styles.ticketDetails}>
                         <div className={styles.priceContainer}>
                             <p className={styles.priceHeading}> price</p>
-                            <h3 className={styles.priceValue}>₹ 10,000 /-</h3>
+                            <h3 className={styles.priceValue}>₹ 250 /-</h3>
                         </div>
                         <div className={styles.details}>
                             <h3 className={styles.detailsHeading}>Exclusive benefits</h3>
                             <ul className={styles.list}>
-                                <li className={styles.listItem}>Access to Simulcast Zone</li>
+                                {/* <li className={styles.listItem}>Access to Simulcast Zone</li> */}
                                 <li className={styles.listItem}>Access to all sessions in-person event in Main Hall</li>
-                                <li className={styles.listItem}>Reserved Seating with assured seat numbers</li>
+                                {/* <li className={styles.listItem}>Reserved Seating with assured seat numbers</li> */}
                                 <li className={styles.listItem}>Early access: get admitted early to the theatre to access the best seats for all sessions</li>
                                 <li className={styles.listItem}>Exclusive Access to meet & network with speakers</li>
                                 <li className={styles.listItem}>Faster Registration process</li>
                                 <li className={styles.listItem}>Networking with other attendees</li>
-                                <li className={styles.listItem}>Access to Special Programming and Additional events, spaces and opportunities to meet speakers</li>
+                                <li className={styles.listItem}>Access to Special Programming and Additional events, spaces and opportunities to participate in Q & A with speakers</li>
                                 <li className={styles.listItem}>Quick access to main stage seats from priority gates</li>
                             </ul>
                             <p className={styles.footer}>& more benefits</p>
@@ -78,13 +78,13 @@ const Passes = () => {
                     <div className={styles.ticketDetails}>
                         <div className={styles.priceContainer}>
                             <p className={styles.priceHeading}> price</p>
-                            <h3 className={styles.priceValue}>₹ 500 /-</h3>
+                            <h3 className={styles.priceValue}>₹ 200 /-</h3>
                         </div>
                         <div className={styles.details}>
                             <h3 className={styles.detailsHeading}>Who can purchase a student ticket —</h3>
                             <ul className={styles.listStudent}>
-                                <li className={styles.listItemStudent}>Students who have printed Valid School or College ID Card</li>
-                                <li className={styles.listItemStudent}>Students from the age of 13 years to 21 years (Valid School or College ID Card is must)</li>
+                                <li className={styles.listItemStudent}>Students who have valid College ID Card of IITG</li>
+                                {/* <li className={styles.listItemStudent}>Students from the age of 13 years to 21 years (Valid School or College ID Card is must)</li> */}
                                 <li className={styles.listItemStudent}>Students from the age of 8 to 12 years should be accompanied by an adult attendee. This conference is not open for children below 8 years.</li>
                             </ul>
                             <p className={styles.footer}>& benefits of general pass</p>
