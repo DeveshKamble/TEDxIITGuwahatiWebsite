@@ -9,10 +9,6 @@ const VerficationModal = () => {
 
     }
 
-    const options = {
-
-    }
-
     return(
         <></>
     )

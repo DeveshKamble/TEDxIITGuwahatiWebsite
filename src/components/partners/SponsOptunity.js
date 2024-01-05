@@ -56,6 +56,7 @@ const SponsOptunity = () => {
     display: 'flex',
     justifyContent: 'space-evenly',
     flexWrap: 'wrap',
+    marginBottom:'40px'
   };
 
   const itemStyle = {
@@ -84,11 +85,11 @@ const SponsOptunity = () => {
           {sponsorshipItems.map((item, index) => (
             <div key={index} style={itemStyle}>
               <Strip title={item.title} content={item.content} image={item.image} />
-              <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} className={styles.button}>
+              {/* <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} className={styles.button}>
                 <span>
                   Get started today
                 </span>
-              </a>
+              </a> */}
             </div>
           ))}
         </div>
