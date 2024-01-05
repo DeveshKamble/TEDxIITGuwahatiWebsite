@@ -12,7 +12,7 @@ import Partners from './pages/partners/Partners'
 import Registration from './pages/registration/Registration'
 import Privacy from './pages/privacy/Privacy'
 import Terms from './pages/terms/Terms'
-import PaymentRedirect from "./pages/paymentRedirect/index.jsx";
+import PaymentRedirect from "./pages/paymentRedirect/Redirect.js";
 
 function App() {
   return (

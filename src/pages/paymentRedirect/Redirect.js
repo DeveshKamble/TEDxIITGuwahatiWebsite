@@ -2,9 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import styles from './styles.module.css'
-
 import { useSearchParams, useNavigate } from "react-router-dom"
-import CircleAnimation from '../Loading/circle';
+import CircleAnimation from '../../components/loading/Circle.js';
 
 
 function PaymentRedirect(props) {
@@ -22,7 +21,7 @@ function PaymentRedirect(props) {
             name,
             reference: referenceNum
         }
-        emailjs.send('service_2yo3tjq', 'template_djnuyga', params, 'SB5lhmthv8jXAiShd')
+        emailjs.send('', '', params, '')
             .then((obj) => {
                 navigate(`/success?reference=${referenceNum}&email=${email}&name=${name}`)
             })
