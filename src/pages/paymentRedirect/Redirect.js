@@ -5,19 +5,17 @@ import styles from './styles.module.css'
 import { useSearchParams, useNavigate } from "react-router-dom"
 import CircleAnimation from '../../components/loading/Circle.js';
 
-
 function PaymentRedirect(props) {
-    const seachQuery = useSearchParams()[0]
+    const searchQuery = useSearchParams()[0]
     const navigate = useNavigate()
 
-
     useEffect(() => {
-        const referenceNum = seachQuery.get("reference")
-        const email = seachQuery.get("email")
-        const name = seachQuery.get("name")
+        const referenceNum = searchQuery.get("reference")
+        const email = searchQuery.get("email")
+        const name = searchQuery.get("name")
         const params = {
             to: email,
-            url: `http://localhost:3000/success?reference=${referenceNum}&email=${email}&name=${name}`,
+            url: `${process.env.PUBLIC_URL}/success?reference=${referenceNum}&email=${email}&name=${name}`,
             name,
             reference: referenceNum
         }

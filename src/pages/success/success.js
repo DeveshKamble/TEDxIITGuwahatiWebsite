@@ -25,9 +25,9 @@ const Success = () => {
         docRef.current.html(reportTemplateRef.current, {
             async callback(doc) {
                 docRef.current.setTextColor("#FFFFFF");
-                docRef.current.setFontSize(35);
+                docRef.current.setFontSize(30);
                 docRef.current.text(referenceNum, 190, 350, -90);
-                await doc.save("ticket");
+                await doc.save("Event Pass");
             }
         });
 
@@ -62,14 +62,12 @@ const Success = () => {
                         </p>
 
                         <div className={styles.btn_dwn}>
-                            <button className={styles.btne1} >Explore</button>
                             <button className={styles.btne2} onClick={handleGeneratePdf}>Download ticket</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div className={styles.hidden_container}>
-
                 <div ref={reportTemplateRef} className={styles.ticket_container} id="ticketid">
                     <Ticket dimension={dimensions} data={{ email: Email, name: Name }} />
                 </div>

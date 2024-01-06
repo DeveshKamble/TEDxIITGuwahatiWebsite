@@ -41,7 +41,7 @@ const ThemeInfo = () => {
               </a>
             </span>
           </div>
-          {windowWidth > 950 ?
+          {windowWidth > 1050 ?
             <div className={styles.buyTickets}>
               <BuyTickets />
             </div> :
@@ -50,7 +50,7 @@ const ThemeInfo = () => {
         </div>
 
       </article>
-      {windowWidth < 950 ?
+      {windowWidth < 1050 ?
         <div style={{ width: '40vw' }} className='buyTickets'>
           <BuyTickets />
         </div> :

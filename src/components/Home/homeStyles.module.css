@@ -108,15 +108,15 @@ body{
 	}
 }
 
-@media (min-width:560px) and (max-width:950px) {
+@media (min-width:560px) and (max-width:1050px) {
 	.container {
 		align-items: center;
 		justify-content: center;
 	}
 
 	.content {
-		max-width: 70vw;
-		padding: 0 0 3rem 10rem;
+		/* max-width: 70vw; */
+		padding: 0 0 3rem 3rem;
 		font-weight: 450;
 		margin-left: 5px;
 	}
