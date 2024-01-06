@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './partners.module.css';
-import useWindowWidth from '../partners/CustomHook/UseWindowWidth';
+import useWindowWidth from '../../utilities/Hooks/UseWindowWidth.js'
 
 const Strip = ({ image, title, content, pwidth }) => {
   const stripStyle = {

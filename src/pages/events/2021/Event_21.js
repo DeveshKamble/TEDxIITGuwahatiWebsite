@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Navbar from "../../../components/navbar/Navbar";
+import ScrollButton from '../../../components/scrollButton/scrollButton';
 import theme_21 from "../../../assets/theme21.png";
 import logo_21 from "../../../assets/2021_logo.png";
 import Footer from "../../../components/footer/Footer"
@@ -114,6 +115,7 @@ const Event_22 = () => {
       </div>
       <Newsletter/>
       <Footer />
+      <ScrollButton/>
     </div>
   );
 };

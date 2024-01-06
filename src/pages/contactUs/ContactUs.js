@@ -3,7 +3,7 @@ import NavBar from '../../components/navbar/Navbar'
 import { useState } from 'react'
 import Footer from '../../components/footer/Footer'
 import Newsletter from '../../components/Newsletter/newsletter'
-
+import ScrollButton from '../../components/scrollButton/scrollButton'
 const ContactUs = () => {
     const [successMsg, setSuccessMsg] = useState(false)
 
@@ -30,8 +30,10 @@ const ContactUs = () => {
             <NavBar></NavBar>
             <div className={styles.main}>
                 <div className={styles.content}>
+                    <div>
                     <p className={styles.title}>Contact TEDxIITGuwahati</p>
                     <p className={styles.para}>If you would like to subscribe to our Newsletter, have a question about an upcoming event, would like to explore a partnership with TEDxGuwahati, or want to send us a comment or suggestion, simply fill out the form below and we’ll get back to you shortly.</p>
+                    </div>
                     <img className={styles.image} src="/Images/contactUs/contactUsImage_cropped.jpg" alt="image" />
                 </div>
                 <div className={styles.formContainer}>
@@ -50,6 +52,7 @@ const ContactUs = () => {
                 </div>
             </div>
             <Footer/>
+            <ScrollButton/>
         </>
     )
 }

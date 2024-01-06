@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Navbar from "../../../components/navbar/Navbar";
+import ScrollButton from '../../../components/scrollButton/scrollButton';
 import theme_22 from "../../../assets/theme22.jpeg";
 import logo_22 from "../../../assets/2022_logo.png";
 import Footer from "../../../components/footer/Footer"
@@ -110,6 +111,7 @@ True innovations have always been found on this very edge.Are these moments of s
       </div>
       <Newsletter/>
       <Footer />
+      <ScrollButton/>
     </div>
   );
 };

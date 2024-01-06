@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './partners.module.css';
-import useWindowWidth from '../partners/CustomHook/UseWindowWidth';
+import useWindowWidth from '../../utilities/Hooks/UseWindowWidth.js'
 
 const Strip = ({ image, title, content }) => {
   
@@ -39,8 +39,8 @@ const Strip = ({ image, title, content }) => {
 };
 
 const SponsOptunity = () => {
-  const email = process.env.EMAIL_ADDRESS;
-  const subject = process.env.EMAIL_SUBJECT;
+  const email = process.env.MARKETING_EMAIL_ADDRESS;
+  const subject = process.env.MARKETING_EMAIL_SUBJECT;
 
   const sponsorshipItems = [
     { title: 'ALL YEAR ROUND', content: 'Executive Committee<br/> Host Committee<br/> Special Events<br/>Sustainability Partner', image: '/svgs/year-round.svg' },
@@ -56,6 +56,7 @@ const SponsOptunity = () => {
     display: 'flex',
     justifyContent: 'space-evenly',
     flexWrap: 'wrap',
+    marginBottom:'40px'
   };
 
   const itemStyle = {
@@ -84,11 +85,11 @@ const SponsOptunity = () => {
           {sponsorshipItems.map((item, index) => (
             <div key={index} style={itemStyle}>
               <Strip title={item.title} content={item.content} image={item.image} />
-              <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} className={styles.button}>
+              {/* <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} className={styles.button}>
                 <span>
                   Get started today
                 </span>
-              </a>
+              </a> */}
             </div>
           ))}
         </div>

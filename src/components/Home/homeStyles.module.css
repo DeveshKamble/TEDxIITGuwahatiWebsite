@@ -1,6 +1,6 @@
 /* homeStyles.module.css */
-* {
-  box-sizing: border-box;
+body {
+  overflow: hidden;
 }
 
 .container {
@@ -80,6 +80,10 @@
   margin-bottom: 2rem;
 }
 
+.buyTickets {
+  width: 40vw;
+}
+
 @media (max-width: 560px) {
   .container {
     align-items: center;
@@ -98,17 +102,21 @@
     text-decoration: none;
     color: #fe2b07;
   }
+
+  .buyTickets {
+    width: 60vw;
+  }
 }
 
-@media (min-width: 560px) and (max-width: 950px) {
+@media (min-width: 560px) and (max-width: 1050px) {
   .container {
     align-items: center;
     justify-content: center;
   }
 
   .content {
-    max-width: 70vw;
-    padding: 0 0 3rem 10rem;
+    /* max-width: 70vw; */
+    padding: 0 0 3rem 3rem;
     font-weight: 450;
     margin-left: 5px;
   }
@@ -188,9 +196,67 @@
   padding: 10px;
 }
 
+@media (min-width: 310px) and (max-width: 560px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -110px;
+    bottom: 100px;
+    width: 90vw;
+    height: 500px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
+}
+
+@media (max-width: 310px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -89px;
+    bottom: 100px;
+    width: 90vw;
+    height: 500px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
+
+  /* .date h3 {
+		text-align: center;
+		color: white;
+		line-height: 1em;
+		margin: 5px;
+		font-size: 20px;
+	}
+
+	.time>h5 {
+		text-align: center;
+		color: white;
+		padding: 10px;
+		font-size: 20px;
+	} */
+
+  .booking_tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.3em;
+    padding: 30px;
+  }
+}
+
 /*Schedule table*/
 .tableContainer {
-  width: 100%;
   height: 80vh;
   display: flex;
   justify-content: center;

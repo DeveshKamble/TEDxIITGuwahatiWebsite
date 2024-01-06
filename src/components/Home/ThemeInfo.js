@@ -1,7 +1,7 @@
 import React from 'react';
 import BuyTickets from './BuyTickets';
 import styles from './homeStyles.module.css';
-import useWindowWidth from '../partners/CustomHook/UseWindowWidth'
+import useWindowWidth from '../../utilities/Hooks/UseWindowWidth.js'
 
 const ThemeInfo = () => {
 
@@ -21,7 +21,7 @@ const ThemeInfo = () => {
             <h2 className={styles.heading}>
               Resurgence
             </h2>
-            <h3 className={styles.subheading}>Ideas which can reach the world</h3>
+            <h3 className={styles.subheading}>Embracing the pause</h3>
             <p className={styles.parastyle}>
               The theme for TEDxIITGuwahati 2024 is Resurgence. What’s that, you ask? It’s about fathoming the importance of taking break in process of reaching our goals.
             </p>
@@ -41,8 +41,8 @@ const ThemeInfo = () => {
               </a>
             </span>
           </div>
-          {windowWidth > 950 ?
-            <div style={{ width: '40vw' }} className='buyTickets'>
+          {windowWidth > 1050 ?
+            <div className={styles.buyTickets}>
               <BuyTickets />
             </div> :
             ""
@@ -50,7 +50,7 @@ const ThemeInfo = () => {
         </div>
 
       </article>
-      {windowWidth < 950 ?
+      {windowWidth < 1050 ?
         <div style={{ width: '40vw' }} className='buyTickets'>
           <BuyTickets />
         </div> :

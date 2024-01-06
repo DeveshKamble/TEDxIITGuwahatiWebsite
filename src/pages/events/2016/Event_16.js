@@ -14,6 +14,7 @@ import Seema from "./speakers16/seema-biswas.jpeg"
 import Sanjoy from "./speakers16/sonjoy-hazarika.jpeg"
 import Amit from "./team16/amit.jpg"
 import Newsletter from '../../../components/Newsletter/newsletter';
+import ScrollButton from '../../../components/scrollButton/scrollButton';
 
 const Event_22 = () => {
   const [selectedSpeaker, setSelectedSpeaker] = useState(null);
@@ -85,6 +86,7 @@ const Event_22 = () => {
       </div>
       <Newsletter/>
       <Footer/>
+      <ScrollButton/>
     </div>
   );
 };
