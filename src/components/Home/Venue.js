@@ -16,18 +16,15 @@ const ConferenceVenue = () => {
                   alt=""
                   style={{ width: '100%', borderRadius: '8px' }}
                 />
-                <div style={{
-                  position: 'absolute',
-                  top: '80%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  backgroundColor: '#fff',
-                  padding: '20px',
-                  borderRadius: '8px',
-                  boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
-                }}>
-                  {/* <h3 style={{ fontSize: '1.5em', marginBottom: '10px' }}></h3> */}
-                  <p>Senate Hall<br />Administration Building, IITGuwahati, India <br/>781039</p>
+              </div>
+            </div>
+            <div  style={{ flex: '0 0 50%', paddingLeft: '20px' }}>
+              <div style={{ marginBottom: '10px', fontSize: '1.4em', fontWeight: 'bold', color: 'red' }}>Conference Venue</div>
+              <h2 style={{ fontSize: '3em', marginBottom: '20px', fontWeight: '400' }}>Hosted in IITGuwahati</h2>
+              <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>
+              It's time that we give the leaders around us a stage to discuss their ideas worth spreading. Join us at our IN-PERSON event to be held at Indian Institute of Technology in Guwahati.
+              </p>
+              <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>Senate Hall<br />Administration Building, IITGuwahati, India <br/>781039</p>
                   <a
                     href="https://goo.gl/maps/wg5hYVDZVbegCz888"
                     target='blank'
@@ -35,17 +32,8 @@ const ConferenceVenue = () => {
                   >
                     View Location
                   </a>
-                </div>
-              </div>
-            </div>
-            <div  style={{ flex: '0 0 50%', paddingLeft: '20px' }}>
-              <div style={{ marginBottom: '10px', fontSize: '1.2em', fontWeight: 'bold', color: 'red' }}>Conference Venue</div>
-              <h2 style={{ fontSize: '3em', marginBottom: '20px', fontWeight: '400' }}>Hosted in IITGuwahati</h2>
-              <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>
-              It's time that we give the leaders around us a stage to discuss their ideas worth spreading. Join us at our IN-PERSON event to be held at Indian Institute of Technology in Guwahati.
-              </p>
               <a
-                href="/register"
+                href="/Registration"
                 style={{
                   display: 'inline-block',
                   padding: '10px 20px',
