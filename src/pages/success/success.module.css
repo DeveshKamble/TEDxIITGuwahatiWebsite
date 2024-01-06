@@ -68,16 +68,10 @@
 
 }
 
-.btne1:hover {
-    background-color: white;
-    color: #FF2B06;
-    border: #FF2B06 solid 1px;
-}
-
 .btne2:hover {
     background-color: white;
-    color: #FF2B06;
-    border: #FF2B06 solid 1px;
+    color: #EB0028;
+    border: #EB0028 solid 2px;
 }
 
 
