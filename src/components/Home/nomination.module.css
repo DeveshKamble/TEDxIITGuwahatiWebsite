@@ -1,0 +1,55 @@
+
+
+
+.form_button{
+    margin-top: 1rem!important;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    display:block;
+    text-align:center!important;
+    font-size: 0.8 rem;
+    line-height: 1.8;
+    font-weight: 400;
+
+
+}
+
+.blinkingAnimation{
+
+    animation: blinking 1s infinite;
+
+}
+
+.cmn_button{
+    display: inline-block;
+    font-weight: 600;
+    margin:0;
+    padding: 6px 50px;
+    background-color: #fff;
+    color:red;
+    box-shadow:0px 4px 20px #f11a1a29;
+    position: relative;
+    overflow:hidden;
+    z-index:1;  
+    text-align: center!important; 
+
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+@keyframes blinking {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
