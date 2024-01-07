@@ -18,12 +18,12 @@ const GoogleMap=()=>{
 
             <div className={mapCSS.map_title}>
 
-                <h4>TED <sup>x</sup> Venue Location Info</h4>
-                <h2>Event Location</h2>
+                <h4 className={mapCSS.head4}>TED <sup>x</sup> Venue Location Info</h4>
+                <h2 className={mapCSS.head2}>Event Location</h2>
               
 
             </div>
-            <p>Senate Hall, Administration Building, IIT Guwahati, India-781039</p>
+            <p className={mapCSS.para}>Senate Hall, Administration Building, IIT Guwahati, India-781039</p>
 
            
    <div className={mapCSS.get_location}>
