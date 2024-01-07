@@ -17,7 +17,7 @@ const Home = () => {
             <ThemeInfo/>
             <Speakers/>
             <Venue/>
-            {/* <Schedule/> */}
+            <Schedule/>
             <Newsletter/>
             <Footer/>
             <ScrollButton/>
