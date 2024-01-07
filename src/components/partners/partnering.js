@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './partners.module.css';
 
 const Partnering = () => {
-  const email = process.env.EMAIL_ADDRESS;
-  const subject = process.env.EMAIL_SUBJECT;
+  const email = 'iitg.tedx@gmail.com';
 
   return (
     <section className={styles.centering}>
@@ -15,7 +14,7 @@ const Partnering = () => {
           We’re looking for a select group of strategic partners to help us grow the impact of TEDxIITGuwahati over the next five years to help us reach <strong>100,000+ Guwahatians</strong> through our live in-person events and <strong>100+ million global citizens</strong> through our virtual events and videos.
         </span>
       </p>
-      <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}`} className={styles.button}>
+      <a href={`mailto:${email}`} className={styles.button}>
         <span>Sponsor TEDxIITGuwahati</span>
       </a>
     </section>

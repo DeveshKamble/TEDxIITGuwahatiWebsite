@@ -12,19 +12,14 @@ const Nomination =() =>{
 return (
 
     <div className={nominationCSS.form_button}>
-        <h2 className={nominationCSS.blinkingAnimation}>Speaker Nomination is on</h2>
-<a href=" https://forms.gle/MRHbEvsBNuED8wJ7A" 
-target="_blank" 
-class={nominationCSS.cmn_button}>
-    
-    <i class="fa fa-ticket" aria-hidden="true"></i>
-    Nomination form</a>
-
-
-
+        <h2 className={nominationCSS.blinkingAnimation}>Speaker Nomination is Open</h2>
+        <a href="https://bit.ly/3Obw1nY" 
+            target="_blank" 
+            class={nominationCSS.button}>
+            <i class="fa fa-ticket" aria-hidden="true"></i>
+            Nomination form
+        </a>
     </div>
-
-
 );
 
 

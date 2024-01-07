@@ -59,14 +59,14 @@ const Footer = () => {
                         TEDx is an independently organized program of local events that bring together an audience in a TED-like experience. Our event is TEDxIITGuwahati, where x means TED event organized independently.
                     </p>
                     <p>
-                        At TEDxIITGuwahati, we combine videos of TED talks and live speakers to generate a deep conversation and connection between attendees. TED gives general guidelines for the TEDx program, but each individual TEDx is organized autonomously (subject to certain guidelines).<br />
+                        At TEDxIITGuwahati, we combine videos of TED talks and live speakers to generate a deep conversation and connection between attendees. TED gives general guidelines for the TEDx program, but each individual TEDx is organized autonomously (subject to certain guidelines).<br /><br/>
                         TEDxIITGuwahati is a non-profit organization made up of volunteers. Their mission is to spread transformative ideas.
                     </p>
                 </div>
             </div>
             </div>
             <div className={footerCSS.credits}>
-                Copyright ©2024 - TEDxIITGuwahati
+                © Copy right  by TEDxIITGuwahati. This independent TEDx events is operated under license from TED.
             </div>
         </footer>
     );

@@ -19,7 +19,7 @@ const ThemeInfo = () => {
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div className={styles.content}>
             <h2 className={styles.heading}>
-              Resurgence
+              Echoes of Stillness
             </h2>
             <h3 className={styles.subheading}>Embracing the pause</h3>
             <p className={styles.parastyle}>
