@@ -47,7 +47,7 @@
     text-align:left!important;
 }
 
-h4{
+.head4{
     color:#fff;
     font-size:calc(1.275rem+.3vw);
     margin-top: 0;
@@ -58,14 +58,14 @@ h4{
 
 }
 
-h2{
+.head2{
     font-size:30px;
     color:#fff;
     font-weight:700px;
 }
 
 
-p{
+.para{
     font-size:1.1rem;
     color:#fff;
    
@@ -95,3 +95,4 @@ a{
 i{
     content:"'\004f'";
 }
+
