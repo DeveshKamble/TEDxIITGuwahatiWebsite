@@ -6,6 +6,7 @@ import Speakers from '../../components/Home/Speakers'
 import ThemeInfo from '../../components/Home/ThemeInfo'
 import Venue from '../../components/Home/Venue'
 import Newsletter from '../../components/Newsletter/newsletter'
+import Nomination from '../../components/Home/nomination'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <Speakers/>
             <Venue/>
             <Schedule/>
+            <Nomination/>
             <Newsletter/>
             <Footer/>
             <ScrollButton/>
