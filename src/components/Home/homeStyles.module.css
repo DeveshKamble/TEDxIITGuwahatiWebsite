@@ -1,118 +1,119 @@
 /* homeStyles.module.css */
-body{
-	overflow: hidden;
+body {
+  overflow: hidden;
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	padding: 10vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10vw;
+  padding-top: 20px;
 }
 
 .header {
-	border-top: 5px solid #fe2b07;
-	padding: 20px;
+  border-top: 5px solid #fe2b07;
+  padding: 20px;
 }
 
 .span {
-	display: flex;
-	justify-content: flex-end;
-	text-decoration: none;
-	color: #fe2b07;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: #fe2b07;
 }
 
 .divA {
-	margin-right: 10px;
-	margin-bottom: -13px;
+  margin-right: 10px;
+  margin-bottom: -13px;
 }
 
 .article {
-	/* position: relative; */
-	/* background: #f7f7f7; */
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
+  /* position: relative; */
+  /* background: #f7f7f7; */
+  border-top: 5px solid #fe2b07;
+  /* border-bottom: 1px solid #000; */
 }
 
 .content {
-	max-width: 45vw;
-	padding: 0 0 3rem 10rem;
-	font-weight: 450;
-	font-size: 18px;
+  max-width: 45vw;
+  padding: 0 0 3rem 3rem;
+  font-weight: 450;
+  font-size: 18px;
 }
 
 .heading {
-	display: flex;
-	flex-direction: column;
-	font-size: 40px;
-	margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  margin: 30px auto;
 }
 
 .small {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 .subheading {
-	font-weight: 500;
-	font-style: normal;
-	color: #fff;
-	background: #e42301;
-	padding: 5px 1rem;
-	margin-left: -5rem;
-	margin-bottom: 3rem;
-	display: inline-block;
-	font-size: 1.4rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  background: #e42301;
+  padding: 5px 1rem;
+  /* margin-left: -5rem; */
+  margin-bottom: 3rem;
+  display: inline-block;
+  font-size: 1.4rem;
 }
 
 .linkSpan {
-	border: 3px solid red;
-	padding: 10px;
+  border: 3px solid red;
+  padding: 10px;
 }
 
 .link {
-	color: red;
-	font-weight: bold;
-	text-decoration: none;
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .parastyle {
-	line-height: 1.7em;
-	font-size: 0.9em;
-	margin-bottom: 2rem;
+  line-height: 1.7em;
+  font-size: 0.9em;
+  margin-bottom: 2rem;
 }
 
 .buyTickets {
-	width: 40vw;
+  width: 40vw;
 }
 
-@media (max-width:560px) {
-	.container {
-		align-items: center;
-		justify-content: center;
-	}
+@media (max-width: 560px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
 
-	.content {
-		max-width: 80vw;
-		padding: 0 0 3rem 2rem;
-		font-weight: 450;
-	}
+  .content {
+    max-width: 80vw;
+    padding: 0 0 3rem 2rem;
+    font-weight: 450;
+  }
 
-	.span {
-		justify-content: center;
-		align-items: center;
-		text-decoration: none;
-		color: #fe2b07;
-	}
+  .span {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fe2b07;
+  }
 
-	.buyTickets {
-		width: 60vw;
-	}
+  .buyTickets {
+    width: 60vw;
+  }
 }
 
-@media (min-width:560px) and (max-width:950px) {
-	.container {
-		align-items: center;
-		justify-content: center;
-	}
+@media (min-width: 560px) and (max-width: 1050px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
 
 	.content {
 		max-width: 85vw;
@@ -121,120 +122,119 @@ body{
 		margin-left: 5px;
 	}
 
-	.span {
-		justify-content: center;
-		align-items: center;
-		text-decoration: none;
-		color: #fe2b07;
-	}
+  .span {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fe2b07;
+  }
 }
 
 /*Buy Tickets*/
 
 .conference_box {
-	height: 500px;
+  height: 500px;
 }
 
 .innerbox {
-	display: flex;
-	flex-direction: column;
-	content: "";
-	position: absolute;
-	top: 50px;
-	right: -74px;
-	bottom: 100px;
-	width: 380px;
-	height: 500px;
-	background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
-	border-radius: 40px;
-	color: white;
+  display: flex;
+  flex-direction: column;
+  content: "";
+  position: absolute;
+  top: 50px;
+  right: -74px;
+  bottom: 100px;
+  width: 380px;
+  height: 500px;
+  background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+  border-radius: 20px;
+  color: white;
+  padding-top: 20px;
+  box-shadow: 0px 0px 10px black;
 }
 
 .line {
-	width: 70%;
-	justify-self: center;
-	align-self: center;
+  width: 70%;
+  justify-self: center;
+  align-self: center;
 }
 
 .booking_tickets {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	line-height: 2em;
-	padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2em;
+  padding: 30px;
 }
 
 .booking_tickets button {
-	background-color: inherit;
-	color: white;
-	width: 60%;
+  background-color: inherit;
+  color: white;
+  width: 60%;
 }
 
 .booking_tickets button:hover {
-	cursor: pointer;
-	scale: 1.1;
-	transition-duration: 0.25s;
+  cursor: pointer;
+  scale: 1.1;
+  transition-duration: 0.25s;
 }
 
 .date {
-	padding: 10px;
-	color: white;
+  padding: 10px;
+  color: white;
 }
 
 .date h3 {
-	text-align: center;
-	color: white;
-	font-size: 30px;
-	line-height: 1em;
-	margin: 5px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  line-height: 1em;
+  margin: 5px;
 }
 
-
-.time>h5 {
-	text-align: center;
-	color: white;
-	font-size: 25px;
-	padding: 10px;
+.time > h5 {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
 }
 
-@media (min-width:310px) and (max-width:560px) {
-	.innerbox {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		content: "";
-		position: absolute;
-		top: 3%;
-		right: -110px;
-		bottom: 100px;
-		width: 90vw;
-		height: 500px;
-		background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
-		border-radius: 40px;
-		color: white;
-	}
-
-
+@media (min-width: 310px) and (max-width: 560px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -110px;
+    bottom: 100px;
+    width: 90vw;
+    height: 500px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
 }
 
-@media (max-width:310px) {
-	.innerbox {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		content: "";
-		position: absolute;
-		top: 3%;
-		right: -89px;
-		bottom: 100px;
-		width: 90vw;
-		height: 500px;
-		background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
-		border-radius: 40px;
-		color: white;
-	}
+@media (max-width: 310px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -89px;
+    bottom: 100px;
+    width: 90vw;
+    height: 500px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
 
-	/* .date h3 {
+  /* .date h3 {
 		text-align: center;
 		color: white;
 		line-height: 1em;
@@ -249,34 +249,325 @@ body{
 		font-size: 20px;
 	} */
 
-	.booking_tickets {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		line-height: 1.3em;
-		padding: 30px;
-	}
+  .booking_tickets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.3em;
+    padding: 30px;
+  }
 }
 
 /*Schedule table*/
 .tableContainer {
-	height: 80vh;
-	display: flex;
-	justify-content: center;
-	margin: 10px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 
 .table {
-	border: 2px solid black;
-	width: 80vw;
-	height: 80vh;
-	border-collapse: collapse;
+  border: 2px solid black;
+  width: 80vw;
+  height: 80vh;
+  border-collapse: collapse;
 }
 
 .table th,
 .table td {
-	border-color: #000;
-	border: 1px solid;
-	padding: 15px;
-	text-align: start;
+  border-color: #000;
+  border: 1px solid;
+  padding: 15px;
+  text-align: start;
+}
+
+.containerSchedule {
+  margin: auto;
+  width: 75rem;
+  height: 50rem;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.containerSchedule::before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: #efefef;
+  border-radius: 50%;
+  border: 10px solid #f64b3c;
+  transform: translatex(-50%);
+  position: absolute;
+  left: 50%;
+  top: 53px;
+  z-index: 3;
+}
+
+.scheduleBox1 {
+  position: relative;
+  top: 0px;
+}
+
+.scheduleBox1::before {
+  content: "";
+  height: 200px;
+  width: 480px;
+  border: 15px solid #dc2f2f;
+  border-right: none;
+  border-radius: 120px 0 0 120px;
+  position: absolute;
+  right: 50%;
+  top: 65px;
+  z-index: 2;
+}
+.scheduleBox1::after {
+  content: "";
+  height: 175px;
+  width: 465px;
+  border: 15px solid #f06868;
+  border-right: none;
+  border-radius: 120px 0 0 120px;
+  position: absolute;
+  right: 50%;
+  top: 78px;
+  z-index: 2;
+}
+
+.scheduleBox1Child {
+  /* background: black; */
+  height: 229px;
+  width: 480px;
+  position: absolute;
+  top: 65px;
+  right: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scheduleBox1Child div {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.spanHead {
+  font-size: 2.7rem;
+  color: #fd5959;
+}
+
+.spanDetails {
+  font-size: 1.2rem;
+}
+.scheduleBox1Child2 {
+  height: 240px;
+  width: 480px;
+  position: absolute;
+  top: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* right: 50%; */
+}
+
+.scheduleBox1Child2 div {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.spanHead1 {
+  font-size: 2.7rem;
+  color: #fe2b07;
+}
+
+.spanDetails1 {
+  font-size: 1.2rem;
+}
+
+.scheduleBox2 {
+  position: relative;
+  top: 195px;
+}
+
+.scheduleBox2::before {
+  content: "";
+  height: 175px;
+  width: 480px;
+  border: 12px solid #dc2f2f;
+  border-left: none;
+  border-radius: 0 120px 120px 0;
+  position: absolute;
+  left: 48.5%;
+  top: 87px;
+  z-index: 3;
+}
+.scheduleBox2::after {
+  content: "";
+  height: 198px;
+  width: 492px;
+  border: 15px solid #f06868;
+  border-left: none;
+  border-radius: 0 121px 120px 0;
+  position: absolute;
+  left: 48.5%;
+  top: 73px;
+  z-index: 3;
+}
+
+.scheduleBox2Child1 {
+  height: 225px;
+  width: 480px;
+  position: absolute;
+  top: 75px;
+  right: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.scheduleBox2Child1 div {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.span2Head {
+  font-size: 2.7rem;
+  color: #fe2b07;
+}
+
+.span2Details {
+  font-size: 1.2rem;
+}
+
+.scheduleBox2Child2 {
+  /* background: black; */
+  height: 225px;
+  width: 480px;
+  position: absolute;
+  top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.scheduleBox2Child2 div {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.span2Head1 {
+  font-size: 2.7rem;
+  color: #fe2b07;
+}
+
+.span2Details1 {
+  font-size: 1.2rem;
+}
+
+.scheduleBox3 {
+  position: relative;
+  background: black;
+  top: 385px;
+}
+
+.scheduleBox3::before {
+  content: "";
+  height: 200px;
+  width: 480px;
+  border: 12px solid #dc2f2f;
+  border-right: none;
+  border-radius: 120px 0 0 120px;
+  position: absolute;
+  right: 50%;
+  top: 84px;
+  z-index: 2;
+}
+.scheduleBox3::after {
+  content: "";
+  height: 175px;
+  width: 468px;
+  border: 15px solid #f06868;
+  border-right: none;
+  border-radius: 120px 0 0 120px;
+  position: absolute;
+  right: 50%;
+  top: 95.5px;
+  z-index: 2;
+}
+
+.scheduleBox3Child1 {
+  /* background: black; */
+  height: 224px;
+  width: 480px;
+  position: absolute;
+  top: 84px;
+  right: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scheduleBox3Child1 div {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.span3Head {
+  font-size: 2.7rem;
+  color: #fd5959;
+}
+
+.span3Details {
+  font-size: 1.2rem;
+}
+
+.scheduleBox3Child2 {
+  /* background: black; */
+  height: 200px;
+  width: 480px;
+  position: absolute;
+  top: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* right: 50%; */
+}
+
+.scheduleBox3Child2 div {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.span3Head1 {
+  font-size: 2.7rem;
+  color: #fe2b07;
+}
+
+.span3Details1 {
+  font-size: 1.2rem;
+}
+
+.containerSchedule::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: #efefef;
+  border-radius: 50%;
+  border: 10px solid #f64b3c;
+  transform: translatex(-50%);
+  position: absolute;
+  left: 50%;
+  top: 657px;
+  z-index: 2;
 }

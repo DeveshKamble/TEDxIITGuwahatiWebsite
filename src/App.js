@@ -12,11 +12,13 @@ import Partners from './pages/partners/Partners'
 import Registration from './pages/registration/Registration'
 import Privacy from './pages/privacy/Privacy'
 import Terms from './pages/terms/Terms'
-
+import PaymentRedirect from "./pages/paymentRedirect/Redirect.js"
+import Success from "./pages/success/success.js"
 
 function App() {
+  console.log(process.env)
+
   return (
-    
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -32,13 +34,10 @@ function App() {
         <Route path="/Terms" element={<Terms />} />
         <Route path="/Privacy" element={<Privacy />} />
         <Route path="/Registration" element={<Registration/>}></Route>
+        <Route path="/payment_redirect" element={<PaymentRedirect/>}/>
+        <Route path="/success" element={<Success/>}/>
       </Routes>
     </Router>
-
-
-  
-
-    
   );
 }
 

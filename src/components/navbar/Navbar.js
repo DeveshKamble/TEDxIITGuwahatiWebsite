@@ -36,8 +36,8 @@ const NavBar = () => {
                 <Link to='/AboutUs' className={styles.lin}>ABOUT US</Link>
                 <Link to='/Events' className={styles.lin}>EVENTS</Link>
                 <Link to='/Partners' className={styles.lin}>SPONSORS</Link>
-                <Link to='/ContactUs' className={styles.lin}>CONTACT US</Link>
                 <Link to='/Registration' className={styles.lin} id={styles["red"]}>BUY TICKETS</Link>
+                <Link to='/ContactUs' className={styles.lin}>CONTACT US</Link>
             </div>
         </div>
         {
@@ -48,8 +48,8 @@ const NavBar = () => {
                                 <Link to='/AboutUs' className={styles.lin1}>ABOUT US</Link>
                                 <Link to='/Events' className={styles.lin1}>EVENTS</Link>
                                 <Link to='/Partners' className={styles.lin1}>SPONSORS</Link>
-                                <Link to='/ContactUs' className={styles.lin1}>CONTACT US</Link>
                                 <Link to='/Registration' className={styles.lin1} id={styles["red1"]}>BUY TICKET</Link>
+                                <Link to='/ContactUs' className={styles.lin1}>CONTACT US</Link>
                             </div>
                         </div>
                     : <div></div>
