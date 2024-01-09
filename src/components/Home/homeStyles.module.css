@@ -256,7 +256,7 @@ body {
 }
 
 /*Schedule table*/
-.tableContainer {
+/* .tableContainer {
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -276,7 +276,7 @@ body {
   border: 1px solid;
   padding: 15px;
   text-align: start;
-}
+} */
 
 .containerSchedule {
   margin: auto;
@@ -361,6 +361,7 @@ body {
   font-size: 1.2rem;
 }
 .scheduleBox1Child2 {
+  /* background: black; */
   height: 240px;
   width: 480px;
   position: absolute;
@@ -463,7 +464,7 @@ body {
 
 .span2Head1 {
   font-size: 2.7rem;
-  color: #fe2b07;
+  color: #fd5959;
 }
 
 .span2Details1 {
@@ -567,4 +568,178 @@ body {
   left: 50%;
   top: 657px;
   z-index: 2;
+}
+
+@media screen and (width < 1220px) {
+  .containerSchedule {
+    width: 90%;
+  }
+  .scheduleBox1 {
+    width: 40%;
+  }
+  .scheduleBox1Child {
+    /* padding-left: 10%; */
+    width: 100%;
+  }
+  .scheduleBox3Child1 {
+    /* padding-left: 10%; */
+    width: 100%;
+  }
+  .scheduleBox1Child div span {
+    font-size: 220%;
+  }
+  .scheduleBox1Child2 div .spanHead1 {
+    font-size: 230%;
+  }
+  .scheduleBox3Child1 div span {
+    font-size: 230%;
+  }
+  .scheduleBox3Child2 div .span3Head1 {
+    font-size: 230%;
+  }
+  .scheduleBox2Child2 div span {
+    font-size: 220%;
+  }
+  .scheduleBox2Child2 {
+    width: 90%;
+    /* padding: left */
+    /* font-size: 230%; */
+    margin-left: 55%;
+  }
+  .scheduleBox2Child1 div .span2Head {
+    font-size: 230%;
+  }
+  .scheduleBox1Child2 {
+    margin-left: 50%;
+    width: 90%;
+  }
+  .scheduleBox3Child2 {
+    margin-left: 50%;
+    width: 90%;
+  }
+  .scheduleBox2 {
+    width: 40%;
+  }
+  .scheduleBox3 {
+    width: 40%;
+  }
+  .scheduleBox1::after {
+    width: 100%;
+  }
+  .scheduleBox1::before {
+    width: 104.3%;
+  }
+  .scheduleBox2::after {
+    top: 72px;
+    width: 100%;
+    height: 199px;
+  }
+  .scheduleBox2::before {
+    top: 86.5px;
+    height: 175px;
+    width: 96.5%;
+  }
+  .scheduleBox3::after {
+    width: 100%;
+  }
+  .scheduleBox3::before {
+    width: 104.3%;
+  }
+}
+
+@media screen and (width < 788px) {
+  .scheduleBox2Child2 {
+    width: 90%;
+    padding-left: 30%;
+    margin-left: 55%;
+  }
+}
+@media screen and (width < 788px) {
+  .scheduleBox2Child2 {
+    width: 90%;
+    padding-left: 0%;
+    margin-left: 55%;
+  }
+  .scheduleBox1::after {
+    border-radius: 40px 0 0 40px;
+    width: 98%;
+  }
+  .scheduleBox1::before {
+    border-radius: 47.5px 0 0 47.5px;
+    width: 102.3%;
+  }
+  .scheduleBox2::after {
+    border-radius: 0 48.5px 48.5px 0;
+    top: 72px;
+    width: 100%;
+    height: 199px;
+  }
+  .scheduleBox2::before {
+    border-radius: 0 40px 40px 0;
+    top: 86.5px;
+    height: 175px;
+    width: 96.5%;
+  }
+  .scheduleBox3::after {
+    border-radius: 40px 0 0 40px;
+    width: 98%;
+  }
+  .scheduleBox3::before {
+    border-radius: 47.5px 0 0 47.5px;
+    width: 102.3%;
+  }
+  .scheduleBox1 {
+    width: 40%;
+  }
+  .scheduleBox1Child {
+    padding-left: 10%;
+    width: 120%;
+  }
+  .scheduleBox3Child1 {
+    /* padding-left: 10%; */
+    width: 100%;
+  }
+  .scheduleBox1Child div span {
+    font-size: 180%;
+  }
+  .scheduleBox1Child2 div .spanHead1 {
+    font-size: 160%;
+  }
+  .scheduleBox3Child1 div span {
+    font-size: 180%;
+  }
+  .scheduleBox3Child2 div .span3Head1 {
+    font-size: 160%;
+  }
+  .scheduleBox2Child2 div span {
+    font-size: 180%;
+  }
+  .scheduleBox2Child2 {
+    width: 100%;
+    margin-left: 50%;
+  }
+  .scheduleBox2Child1 div .span2Head {
+    font-size: 160%;
+  }
+  .scheduleBox2Child1 {
+    width: 90%;
+  }
+  .scheduleBox2Child2 div {
+    text-align: center;
+    width: 90%;
+  }
+  .scheduleBox1Child2 {
+    margin-left: 40%;
+    width: 90%;
+  }
+  .scheduleBox3Child2 {
+    margin-left: 40%;
+    width: 90%;
+  }
+  .scheduleBox2 {
+    width: 40%;
+  }
+  .scheduleBox3 {
+    width: 40%;
+  }
 }
