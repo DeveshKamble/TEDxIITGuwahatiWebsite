@@ -6,13 +6,16 @@ const GoogleMap=()=>{
     return (
 
         <section className={mapCSS.position_relative}>
-
+<div className={mapCSS.whole_container}>
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d114616.39528371989!2d91.5604279!3d26.1392905!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5ac3dddc3601%3A0xfff84915e863cea1!2sAdministrative%20Block%2C%20IIT%20Guwahati!5e0!3m2!1sen!2sin!4v1704578677012!5m2!1sen!2sin"
  width="100%" height="450" 
  allowfullscreen="" loading="lazy" 
  referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <div className={mapCSS.container}>
+
+
+
     <div className={mapCSS.row}>
         <div className={mapCSS.map_text}>
 
@@ -39,6 +42,8 @@ const GoogleMap=()=>{
 </div>
 
 
+
+</div>
 
 
 
