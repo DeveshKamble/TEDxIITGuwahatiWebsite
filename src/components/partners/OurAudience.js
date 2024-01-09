@@ -40,10 +40,10 @@ const Strip = ({ image, title, content }) => {
 
 const OurAudience = () => {
   const sponsorshipItems = [
-    { title: 'ATTENDEES', content: '25k in 2022', image: '/svgs/attendees.svg' },
-    { title: 'SOCIAL REACH', content: '100K+ Fans & Followers', image: '/svgs/social_reach.svg' },
-    { title: 'YOUTUBE VIEWS', content: '1m+ views', image: '/svgs/youtube_views.svg' },
-    { title: 'IMPRESSIONS', content: '32M+ Impressions', image: '/svgs/impressions.svg' },
+    { title: 'ATTENDEES', content: '', image: '/svgs/attendees.svg' },
+    { title: 'SOCIAL REACH', content: '1.5K+ Fans & Followers', image: '/svgs/social_reach.svg' },
+    { title: 'YOUTUBE VIEWS', content: '1M+ views', image: '/svgs/youtube_views.svg' },
+    { title: 'IMPRESSIONS', content: '7K+ Impressions', image: '/svgs/impressions.svg' },
   ];
 
   const windowWidth = useWindowWidth();

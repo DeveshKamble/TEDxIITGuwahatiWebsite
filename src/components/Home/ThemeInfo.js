@@ -9,17 +9,11 @@ const ThemeInfo = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.header}>
-        <a className={styles.span} href='/ContactUs'>
-          <img src='/svgs/handshake.svg' alt='handshake' height={28} className={styles.divA} />
-          <div>Become a partner</div>
-        </a>
-      </div>
       <article className={styles.article} >
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div className={styles.content}>
             <h2 className={styles.heading}>
-              Resurgence
+              Echoes of Stillness
             </h2>
             <h3 className={styles.subheading}>Embracing the pause</h3>
             <p className={styles.parastyle}>

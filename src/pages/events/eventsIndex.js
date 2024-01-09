@@ -27,7 +27,7 @@ const Events = () => {
         </div>
         <div className={styles.homeimage}>
           <img
-            src="/Images/eventsHome/WhatsApp Image 2023-12-22 at 12.05.50_b85cd94d.jpg"
+            src="/Images/eventsHome/coverImage.jpg"
             alt="TeamImage"
           />
         </div>
@@ -61,7 +61,7 @@ const Events = () => {
                   id={styles["im1"]}
                 />
                 <div className={styles.part2}>
-                  <h3 className={styles.heading}>TEDxIITGuwahati2023</h3>
+                  <h3 className={styles.heading}>TEDxIITGuwahati 2023</h3>
                   <div className={styles.dis}>
                     The Theme of TEDxIITGuwahati is ‘The Silent Letter’,
                     Everything has value, whether good or bad, large or small.
@@ -96,7 +96,7 @@ const Events = () => {
                   id={styles["im1"]}
                 />
                 <div className={styles.part2}>
-                  <h3 className={styles.heading}>TEDxIITGuwahati2022</h3>
+                  <h3 className={styles.heading}>TEDxIITGuwahati 2022</h3>
                   <div className={styles.dis}>
                     As the tale goes, if you put a frog in a pan of boiling
                     water, it will jump out at once. However, if you place it in
@@ -130,7 +130,7 @@ const Events = () => {
                   id={styles["im1"]}
                 />
                 <div className={styles.part2}>
-                  <h3 className={styles.heading}>TEDxIITGuwahati2021</h3>
+                  <h3 className={styles.heading}>TEDxIITGuwahati 2021</h3>
                   <div className={styles.dis}>
                     Humans have always had an unexplainable drive to excel in
                     every aspect of life. As we leap across these barriers, do
@@ -164,7 +164,7 @@ const Events = () => {
                   id={styles["im1"]}
                 />
                 <div className={styles.part2}>
-                  <h3 className={styles.heading}>TEDxIITGuwahati2019</h3>
+                  <h3 className={styles.heading}>TEDxIITGuwahati 2019</h3>
                   <div className={styles.dis}>
                     The words ‘rigid rules of yesterday that have become obscure
                     and obsolete today’ describes precisely what the global
@@ -198,7 +198,7 @@ const Events = () => {
                   id={styles["im1"]}
                 />
                 <div className={styles.part2}>
-                  <h3 className={styles.heading}>TEDxIITGuwahati2016</h3>
+                  <h3 className={styles.heading}>TEDxIITGuwahati 2016</h3>
                   <div className={styles.dis}>
                     It is about the people who are doing the job for the
                     betterment of society with little resources in the beginning

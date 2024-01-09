@@ -21,10 +21,15 @@ const BuyTickets = () => {
           </div>
           <hr className={styles.line}/>
           <div className={styles.booking_tickets}>
-            <p style={{ textAlign: 'center', color: 'white' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer </p>
+            <p style={{ textAlign: 'center', color: 'white' }}>The room is open to all who are looking for exemplary stories and inspiring ideas – and to participate in celebrating these individuals who embody the spirit of TED.</p>
             <a href='/Registration' style={{ textAlign: 'center', color: 'white',textDecoration:'none',margin:'10px' }}>
               <button style={{ textAlign: 'center',border:'2px solid white',borderRadius:'10px',padding:'10px',marginTop:'10px' }}>
                 BUY TICKETS
+              </button>
+            </a>
+            <a href='/Partners' style={{ textAlign: 'center', color: 'white',textDecoration:'none',margin:'5px' }}>
+              <button style={{ textAlign: 'center',border:'2px solid white',borderRadius:'10px',padding:'10px' }}>
+                SPONSOR
               </button>
             </a>
           </div>
