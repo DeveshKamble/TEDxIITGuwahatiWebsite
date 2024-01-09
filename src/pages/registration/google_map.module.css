@@ -1,6 +1,33 @@
-.container{
-    background-color: #111;
+
+.whole_container{
+    position:relative;
 }
+
+
+.container{
+    position: absolute;
+    top:30%;
+    bottom:30%;
+
+    left:40%;
+   width:20%;
+    text-align:left;
+
+    
+    
+   
+    padding: 10px ;
+    
+    border-radius: 10px;
+  
+    
+    background-color: #1d1f23;
+
+    margin: auto;
+    display: inline-table;
+    
+}
+
 
 
 
@@ -25,26 +52,12 @@
 
 }
 
-.container{
-    width: 42%;
-    left: 4%;
-    padding: 15px ;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #1d1f23;
 
-    margin: auto;
-    display: inline-table;
-    
-}
 
 
 .map_title{
     margin-bottom: 2rem;
-    text-align:left!important;
+    text-align:left;
 }
 
 .head4{
