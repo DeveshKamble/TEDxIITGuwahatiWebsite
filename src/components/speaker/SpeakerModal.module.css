@@ -67,8 +67,8 @@
     color: red;
 }
 .close:hover .x{
-    transition: all 0.5s;
-    scale: 1.1;
+    transition: all 0.2s;
+    scale: 1.15;
 }
 .icon{
     font-size: 0.7rem;
