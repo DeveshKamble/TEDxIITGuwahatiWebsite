@@ -1,16 +1,7 @@
-import { rotateInUpLeft } from 'react-animations';
 import styles from './Welcome.module.css'
-import { easeInOut, motion, useAnimation } from 'framer-motion';
-import {Tilt} from 'react-tilt'
+import LogoAnimation from './LogoAnimation.js'
 
 const Welcome = () => {
-
-    const controls = useAnimation()
-
-    const rotateArrow = async() => {
-        await controls.start({rotate:-90, transition:{duration:1}})
-        console.log('Done')
-    }
 
     return(
         <>
@@ -26,10 +17,11 @@ const Welcome = () => {
                     </div>
                 </div>
                 <div className={styles.logo}>
-                    {/* <Tilt scale={10}> */}
+                    {/* <Tilt> */}
                         <img className={styles.arrow} src='/Images/animation/LogoArrow.png'></img>
                         <img className={styles.ripples} src='/Images/animation/LogoRipples.png'></img>
-                    {/* </Tilt> */}
+                    {/* </Tilt>  */}
+                    {/* {/* <LogoAnimation className={styles.animation}/> */}
                 </div>
             </div>
         </>
