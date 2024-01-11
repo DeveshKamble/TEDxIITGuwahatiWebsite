@@ -20,28 +20,19 @@ const BuyTickets = () => {
         <div className={styles.innerbox}
         >
           <div className={styles.date}
-            data-aos="fade-left"
-            data-aos-easing="linear"
-            data-aos-duration="2500"
-            data-aos-delay="700">
+          >
             <h3>11 February</h3><br />
             <h3>2024</h3>
           </div>
           <hr className={styles.line} />
           <div className={styles.time}
-            data-aos="fade-left"
-            data-aos-easing="linear"
-            data-aos-duration="2500"
-            data-aos-delay="700">
+          >
             <h5 >9 AM to 5 PM</h5>
           </div>
           <hr className={styles.line} />
           <div className={styles.booking_tickets}>
             <p style={{ textAlign: 'center', color: 'white' }}
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="2500"
-            data-aos-delay="700"
+
             >The room is open to all who are looking for exemplary stories and inspiring ideas – and to participate in celebrating these individuals who embody the spirit of TED.</p>
             <a href='/Registration' style={{ textAlign: 'center', color: 'white', textDecoration: 'none', margin: '10px' }}>
               <button style={{ textAlign: 'center', border: '2px solid white', borderRadius: '10px', padding: '10px', marginTop: '10px' }}>
