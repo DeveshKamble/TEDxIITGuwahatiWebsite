@@ -73,6 +73,7 @@ body {
   color: red;
   font-weight: bold;
   text-decoration: none;
+  font-size: 0.8em;
 }
 
 .parastyle {
@@ -102,6 +103,12 @@ body {
     align-items: center;
     text-decoration: none;
     color: #fe2b07;
+  }
+  .link {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.65em;
   }
 
   .buyTickets {
@@ -153,6 +160,12 @@ body {
   box-shadow: 0px 0px 10px black;
 }
 
+/* .innerbox :hover {
+  background: linear-gradient(180deg, #4d4b4b 0%, #ece9e9 99.99%);
+  color: rgb(241, 8, 8);
+  box-shadow: 0px 0px 10px black;
+} */
+
 .line {
   width: 70%;
   justify-self: center;
@@ -187,7 +200,7 @@ body {
 .date h3 {
   text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1em;
   margin: 5px;
 }
@@ -195,7 +208,7 @@ body {
 .time > h5 {
   text-align: center;
   color: white;
-  font-size: 25px;
+  font-size: 23px;
   padding: 10px;
 }
 
@@ -257,6 +270,39 @@ body {
     padding: 30px;
   }
 }
+
+@media (min-width: 310px) and (max-width:350px){
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -89px;
+    bottom: 100px;
+    width: 90vw;
+    height: 500px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }}
+  @media (min-width: 350px) and (max-width:400px){
+    .innerbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      content: "";
+      position: absolute;
+      top: 3%;
+      right: -98px;
+      bottom: 100px;
+      width: 90vw;
+      height: 500px;
+      background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+      border-radius: 40px;
+      color: white;
+    }}
 
 /*Schedule table*/
 /* .tableContainer {
