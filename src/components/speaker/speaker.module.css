@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container_1{
+    max-width: 74.8rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.speak{
+    margin: 0 -2rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.item:hover .nameheading {
+    transform: translateX(-100%) translateY(-1.5rem);
+    left: calc(100% + 2.5rem);
+}
+.item:hover .speak_caption{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-2.3rem);
+}
+.item:hover .image_section{
+    box-shadow: 0 5px 5px rgba(255, 0, 0, 0.8);
+}
+.item:hover #image_{
+    filter: grayscale(100%);
+}
+.image_section{
+    width: 100%;
+    height: 13.3rem;
+    font-size: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+.item{
+    width: calc(25% - 1.5rem);
+    position: relative;
+}
+#image_{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+
+.nameheading{
+    padding: 5px 0.5rem;
+margin-left: -5rem;
+margin-bottom: 2rem;
+font-weight: 600;
+font-style: normal;
+font-size: 0.8rem;
+text-transform: uppercase;
+color: #000;
+background: #fff;
+transition: all 0.3s;
+display: inline-block;
+position: relative;
+transform: translateX(4rem) translateY(-50%);
+left: 2rem;
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.speak_caption{
+    text-align: center;
+    color: red;
+    font-size: 0.9rem;
+    transform: translateY(-4.5rem);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+@media screen and (max-width: 1160px){
+    .speak {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    }
+@media screen and (max-width: 768px){
+    .container_1 {
+        width: 100%;
+        overflow: auto;
+    }
+    .speak {
+        margin: 0 2rem 0 2rem;
+        padding-right: 4rem;
+    }
+    .item {
+        width: 45%;
+        flex-shrink: 0;
+        margin-right: 2rem;
+    }
+    }
+@media screen and (max-width: 576px){
+    .item {
+        width: 100% !important;
+        flex-shrink: 0;
+        margin-right: 2rem;
+    }
+}
