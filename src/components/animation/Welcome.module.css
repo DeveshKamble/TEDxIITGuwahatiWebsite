@@ -1,0 +1,92 @@
+.main{
+    display: flex;
+    background: rgb(168,1,30);
+    background: linear-gradient(90deg, rgba(168,1,30,1) 0%, rgba(0,0,0,1) 37%);
+    height: 500px;
+}
+
+.content{
+    padding: 150px 100px 100px 200px;
+    color: white;
+    animation: show 3s ease-in-out;
+    position: absolute;
+    bottom: 40%;
+}
+
+.content p{
+    font-size: 2.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.content img{
+    width: 350px;
+    padding-top: 20px;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 40%;
+    width: 300px;
+    left: 0;
+    animation: slideAnimation 3s linear normal;
+    transform: translateX(72vw) rotate(-90deg);
+}
+
+@keyframes slideAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50%{
+        transform: translateX(72vw);
+    }
+    100% {
+      transform: translateX(72vw) rotate(-90deg);
+    }
+}
+
+.ripples{
+    position: absolute;
+    bottom: 40%;
+    left: 72vw;
+    width: 300px;
+    animation: 3s ease-in-out expand;
+    transform: scale(1);
+}
+
+@keyframes expand{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@media screen and (max-width < 600px)
+{
+    .main{
+        flex-direction: column;
+    }
+}
+

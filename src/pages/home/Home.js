@@ -7,12 +7,13 @@ import ThemeInfo from '../../components/Home/ThemeInfo'
 import Venue from '../../components/Home/Venue'
 import Newsletter from '../../components/Newsletter/newsletter'
 import Nomination from '../../components/Home/nomination'
-
+import Welcome from '../../components/animation/Welcome'
 
 const Home = () => {
     return(
         <div>
             <Navbar/>
+            <Welcome/>
             <Nomination/>
             <ThemeInfo/>
             <Speakers/>
