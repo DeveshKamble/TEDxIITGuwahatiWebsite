@@ -2,6 +2,7 @@
 
 body{
   font-family: 'Inter';
+  overflow-x: hidden!important;
 }
 
 ::selection {

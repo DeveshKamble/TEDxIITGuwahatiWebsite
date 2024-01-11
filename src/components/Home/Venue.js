@@ -1,7 +1,9 @@
 import React from 'react';
 import useWindowWidth from '../../utilities/Hooks/UseWindowWidth.js'
+import useAOS from '../../utilities/Hooks/useAOS.js';
 
 const ConferenceVenue = () => {
+  const aos = useAOS();
   const windowWidth = useWindowWidth();
 
   return (
@@ -10,7 +12,10 @@ const ConferenceVenue = () => {
         {windowWidth > 696 ?
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <div style={{ flex: '0 0 50%', paddingRight: '20px' }}>
-              <div style={{ position: 'relative' }}>
+              <div style={{ position: 'relative' }}
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <img
                   src="/Images/home/location.jpg"
                   alt=""
@@ -18,20 +23,23 @@ const ConferenceVenue = () => {
                 />
               </div>
             </div>
-            <div  style={{ flex: '0 0 50%', paddingLeft: '20px' }}>
-              <div style={{ marginBottom: '10px', fontSize: '1.4em', fontWeight: 'bold', color: 'red' }}>Conference Venue</div>
+            <div style={{ flex: '0 0 50%', paddingLeft: '20px' }}data-aos="fade-down"
+              data-aos-offset="300"
+              data-aos-easing="linear">
+              <div style={{ marginBottom: '10px', fontSize: '1.4em', fontWeight: 'bold', color: 'red' }}
+              >Conference Venue</div>
               <h2 style={{ fontSize: '3em', marginBottom: '20px', fontWeight: '400' }}>Hosted in IIT Guwahati</h2>
               <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>
-              It's time that we give the leaders around us a stage to discuss their ideas worth spreading. Join us at our IN-PERSON event to be held at Indian Institute of Technology in Guwahati.
+                It's time that we give the leaders around us a stage to discuss their ideas worth spreading. Join us at our IN-PERSON event to be held at Indian Institute of Technology in Guwahati.
               </p>
-              <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>Senate Hall<br />Administration Building, IIT Guwahati, India <br/>781039</p>
-                  <a
-                    href="https://goo.gl/maps/wg5hYVDZVbegCz888"
-                    target='blank'
-                    style={{ display: 'block', marginTop: '10px', textDecoration: 'none', color:'#EB0028' }}
-                  >
-                    View Location
-                  </a>
+              <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>Senate Hall<br />Administration Building, IIT Guwahati, India <br />781039</p>
+              <a
+                href="https://goo.gl/maps/wg5hYVDZVbegCz888"
+                target='blank'
+                style={{ display: 'block', marginTop: '10px', textDecoration: 'none', color: '#EB0028' }}
+              >
+                View Location
+              </a>
               <a
                 href="/Registration"
                 style={{
@@ -52,7 +60,10 @@ const ConferenceVenue = () => {
           :
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <div style={{ flex: '0 0 50%', paddingRight: '20px' }}>
-              <div style={{ position: 'relative' }}>
+              <div style={{ position: 'relative' }}
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                 <img
                   src="/Images/home/location.jpg"
                   alt=""
@@ -60,16 +71,16 @@ const ConferenceVenue = () => {
                 />
               </div>
             </div>
-            <div style={{ flex: '0 0 50%', paddingLeft: '20px'}}>
+            <div style={{ flex: '0 0 50%', paddingLeft: '20px' }}>
               <div style={{ marginBottom: '10px', fontSize: '1.2em', fontWeight: 'bold' }}>Conference Venue</div>
               <h2 style={{ fontSize: '2em', marginBottom: '20px' }}>Hosted in IITGuwahati</h2>
               <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>
-              It's time that we give the leaders around us a stage to discuss their ideas worth spreading. Join us at our IN-PERSON event to be held at Indian Institute of Technology in Guwahati.
+                It's time that we give the leaders around us a stage to discuss their ideas worth spreading. Join us at our IN-PERSON event to be held at Indian Institute of Technology in Guwahati.
               </p>
-              <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>Senate Hall<br/>Administration Building, IIT Guwahati, Assam, India<br/>781039.</p>
+              <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>Senate Hall<br />Administration Building, IIT Guwahati, Assam, India<br />781039.</p>
               <a
                 href="https://goo.gl/maps/wg5hYVDZVbegCz888"
-                style={{ display: 'block', marginTop: '10px', textDecoration: 'none', color:'#EB0028' }}
+                style={{ display: 'block', marginTop: '10px', textDecoration: 'none', color: '#EB0028' }}
               >
                 View Location
               </a>
