@@ -2,6 +2,9 @@ import styles from "./aboutUs.module.css";
 import NavBar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import ScrollButton from '../../components/scrollButton/scrollButton';
+import AboutCarousel from "../../components/AboutUs/AboutCarousel";
+import { Carousel } from "react-responsive-carousel";
+
 
 const AboutUs = () => {
   return (
@@ -9,9 +12,45 @@ const AboutUs = () => {
       <NavBar></NavBar>
       <div className="main">
         <div className={styles.outerbox}>
+            <AboutCarousel/>
           <div className={styles.innerbox}>
-            <div className={styles.contentbox}>
-              <div className={styles.heading}>TED</div>
+
+
+            {/* <Carousel className={styles.carousel} 
+              autoPlay={true}
+              infiniteLoop={true}
+              interval={2000}
+              
+            >
+              
+                 <div>
+                  <svg className={styles.carouselImage} viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.419 0v6.151h-6.763V24h-7.44V6.151H.453V0H21.42zm21.484 0v6.141l-12.918.01v2.946h12.918v5.73l-12.918-.009v3.03h12.918V24H22.546V0h20.357zm13.446 0c8.048 0 10.889 5.916 10.889 11.966C67.237 19.328 63.314 24 54.894 24H44.142V0h12.207zm-2.4 6.151H51.58V17.85h2.908c4.633 0 5.31-3.731 5.31-5.983 0-1.513-.474-5.715-5.85-5.715z" fill="#EC1015"></path></svg>
+                  <img className={styles.carouselImage} src="\Images\AboutUs\Ted.webp" alt="" />
+                  <p>Technology, Entertainment and Design,the set of global
+                  conferences have been going with the spirit of ideas worth
+                  spreading since 1984. TED is a global community, welcoming
+                  people from every discipline and culture who seek a deeper
+                  understanding of the world. TED believes passionately in the
+                  power of ideas to change attitudes, lives and, ultimately, the
+                  world. TED is owned by a nonprofit, nonpartisan foundation.
+                  The agenda is to make great ideas accessible and spark
+                  conversation TheTEDx Program is designed to help communities,
+                  organizations and individuals to spark conversation TheTEDx
+                  Program is designed to help communities, organizations and
+                  individuals to spark conversation and connection through local
+                  TED-like experiences.</p>
+                </div> 
+                <div>
+                  <img style={{width:'50%'}} className={styles.carouselImage} src="\Images\Navbar\TEDxIITG_new.png" alt="" />
+                  <p>carouselImage</p>
+                </div>
+                <div>
+                  <img className={styles.carouselImage} src="\Images\Navbar\TEDxIITG_new.png" alt="" />
+                  <p>carouselImage</p>
+                </div>
+              </Carousel> */}
+            {/* <div className={styles.contentbox}>
+              {/* <div className={styles.heading}>TED</div>
               <div className={styles.content}>
                 <p>
                   Technology, Entertainment and Design,the set of global
@@ -36,9 +75,9 @@ const AboutUs = () => {
                   coordinated independently, under a free license granted by
                   TED.
                 </p>
-              </div>
-            </div>
-            <div className={styles.contentbox2}>
+              </div> 
+            </div> */}
+            {/* <div className={styles.contentbox2}>
               <div className={styles.heading2}>
                 TED
                 <div>
@@ -63,10 +102,10 @@ const AboutUs = () => {
                   connection through local TED-like experiences.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className={styles.outerbox2}>
+        {/* <div className={styles.outerbox2}>
           <div className={styles.contentbox3}>
             <iframe
               className={styles.vdoframe}
@@ -79,7 +118,7 @@ const AboutUs = () => {
               allowfullscreen
             ></iframe>
           </div>
-        </div>
+        </div> */}
         <div className={styles.outerBox3}>
           <div className={styles.mainContent}>
             <div className={styles.teamHeader}>

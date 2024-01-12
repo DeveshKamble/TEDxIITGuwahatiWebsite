@@ -1,0 +1,61 @@
+.carouselImage{
+    width: 30% !important;
+    margin: 30px 0;
+}
+
+
+.TEDxIITGuwahatiLogo{
+    width: 80% !important;
+}
+
+.carouselContent{
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.button{
+    margin: 30px 0;
+    width: 250px;
+    height: 50px;
+    color: red;
+    background-color: transparent;
+    border: red 3px solid;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover{
+    scale: 105%;
+}
+
+@media (width < 640px){
+    .carouselImage{
+        width: 50% !important;
+    }
+    .TEDxIITGuwahatiLogo{
+        width: 100% !important;
+    }
+}
+
+@media (width < 500px){
+    .carouselContent{
+        font-size: 18px;
+    }
+}
+@media (width < 350px){
+    .carouselImage{
+        width: 80% !important;
+    }
+    .TEDxIITGuwahatiLogo{
+        width: 100% !important;
+    }
+    .carouselContent{
+        font-size: 18px;
+        text-overflow: ellipsis;
+    }
+    .button{
+        width: 180px;
+    }
+}
+
