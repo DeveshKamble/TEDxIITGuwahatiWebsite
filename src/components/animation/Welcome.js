@@ -1,5 +1,4 @@
 import styles from './Welcome.module.css'
-import LogoAnimation from './LogoAnimation.js'
 
 const Welcome = () => {
 

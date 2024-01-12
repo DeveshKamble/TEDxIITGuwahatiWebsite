@@ -1,6 +1,7 @@
 import React from 'react';
 import useWindowWidth from '../../utilities/Hooks/UseWindowWidth.js'
 import useAOS from '../../utilities/Hooks/useAOS.js';
+import GoogleMap from '../../pages/registration/google_map.js';
 
 const ConferenceVenue = () => {
   const aos = useAOS();
@@ -16,11 +17,12 @@ const ConferenceVenue = () => {
                 data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <img
+                {/* <img
                   src="/Images/home/location.jpg"
                   alt=""
                   style={{ width: '100%', borderRadius: '8px' }}
-                />
+                /> */}
+                <GoogleMap isVisible = {false}/>
               </div>
             </div>
             <div style={{ flex: '0 0 50%', paddingLeft: '20px' }}data-aos="fade-down"
@@ -64,11 +66,7 @@ const ConferenceVenue = () => {
                 data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                <img
-                  src="/Images/home/location.jpg"
-                  alt=""
-                  style={{ width: '100%', borderRadius: '8px' }}
-                />
+                <GoogleMap isVisible = {false}/>
               </div>
             </div>
             <div style={{ flex: '0 0 50%', paddingLeft: '20px' }}>
