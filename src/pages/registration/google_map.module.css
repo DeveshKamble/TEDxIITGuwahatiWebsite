@@ -1,14 +1,42 @@
-.container{
-    background-color: #111;
+
+.whole_container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.container{
+    position: absolute;
+    /* top:30%;
+    bottom:30%;
+
+    left:40%; */
+    width:fit-content;
+    text-align:left;
+    align-self: center;
+    
+    
+   
+    padding: 10px ;
+    
+    border-radius: 10px;
+  
+    
+    background-color: #1d1f23;
+
+    margin: auto;
+    display: inline-table;
+    
+}
+
 
 
 
 @media screen and (min-width: 320px) and (max-width: 767px){
 .container {
-    width: 42%;
-    left: 4%;
-    padding: 15px;
+    display: none;
 }
 }
 
@@ -25,26 +53,12 @@
 
 }
 
-.container{
-    width: 42%;
-    left: 4%;
-    padding: 15px ;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #1d1f23;
 
-    margin: auto;
-    display: inline-table;
-    
-}
 
 
 .map_title{
     margin-bottom: 2rem;
-    text-align:left!important;
+    text-align:left;
 }
 
 .head4{
@@ -80,8 +94,7 @@
     color: #000;
     background-color: #fff;
     box-shadow: 0px 4px 20px #ff000029;
-
-    -webkit-border-radius: 10px;
+    border-radius: 10px;
     position: relative;
     overflow: hidden;
     z-index: 1;

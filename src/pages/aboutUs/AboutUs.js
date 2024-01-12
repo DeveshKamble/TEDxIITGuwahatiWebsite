@@ -232,7 +232,7 @@ const AboutUs = () => {
                 </div>
                 <div>
                   <div className={styles.imgBox}>
-                    <img src="/Image.jpeg" alt="Img" />
+                    <img src="/Images/Team/Sankalp_square.jpg" alt="Img" />
                   </div>
                   <div className={styles.imgTitle}>
                     <div className={styles.imgTitleName}>Sankalp Setia</div>

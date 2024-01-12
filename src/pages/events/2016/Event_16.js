@@ -53,7 +53,7 @@ const Event_22 = () => {
           <div id={styles.speakers}>
             <h2>Speakers</h2>
             <div id={styles.speakerContainer}>
-            <Card func={() => openModal({ name: 'Ravindranath Ravi', about: 'Social Activist', description: `${Data.ravindranath}`, image: `${Ravindra}` })} name='ravindranath ravi' id='#ravindranath ravi' image={Ravindra} />
+            <Card func={() => openModal({ name: 'Ravindranath Ravi', about: 'Social Activist', description: `${Data.ravindranath}`, image: `${Ravindra}` })} name='Ravindranath Ravi' id='#ravindranath ravi' image={Ravindra} />
             <Card func={() => openModal({name: 'Sanjoy Hazarika',about: 'Author',description: `${Data.Sanjoy}`,image: `${Sanjoy}`})} name='Sanjoy Hazarika' id='#Sanjoy' image={Sanjoy} />
             <Card func={() => openModal({name: 'Sankara Subramanian C',about: 'Traveler and blogger',description: `${Data.Sankara}`,image: `${Sankara}`})} name='Sankara Subramanian C' id='#Sankara' image={Sankara} />
             <Card func={() => openModal({name: 'Seema Biswas',about: 'Actress',description: `${Data.Seema}`,image: `${Seema}`})} name='Seema Biswas' id='#Seema' image={Seema} />
