@@ -17,6 +17,7 @@ const SpeakerModal=({set})=>{
             <div className={styles.overlay}></div>
         <div className={styles.container}>
             <div className={styles.box}>
+                
                 <button className={styles.close} onClick={set}>
                     <div className={styles.icon}>
                     <FaTimes className={styles.x} />

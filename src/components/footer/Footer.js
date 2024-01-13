@@ -17,23 +17,23 @@ const Footer = () => {
                     <img src="/Images/footer/WhiteTextLogo.png" alt="TEDxIITGuwahati" />
                 </a>
                 <div className={footerCSS.footer_social}>
-                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                    <a href="https://www.instagram.com/tedxiitguwahati?igsh=MWcwdmFsY3JnZXV2dw==" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
                         <FaInstagram />
                     </a>
                     
-                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                    <a href="https://www.linkedin.com/company/tedx-iit-guwahati/" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
                         <FaLinkedinIn />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                    <a href="https://x.com/tedxiitg?t=pHLpmiyIYiubcmoUCuQrPA&s=08" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
                         <FaXTwitter />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                    <a href="https://www.facebook.com/TEDxIITGuwahati?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
                         <FaFacebookF />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                    <a href="https://tedxiitguwahati.medium.com/" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
                         <FaMedium />
                     </a>
-                    <a href="" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
+                    <a href="https://www.threads.net/@tedxiitguwahati" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
                         <FaThreads />
                     </a>
                 </div>
