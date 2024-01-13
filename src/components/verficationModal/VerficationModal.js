@@ -254,15 +254,6 @@ const VerficationModal = ({userType, func}) => {
                         className={`tedx_input`}
                         required
                     ></input>}
-                    {step == 2 &&
-                        <input placeholder='OTP'
-                            type="text"
-                            data-id="otp"
-                            value={details.otp}
-                            onChange={modifyDetails}
-                            className="tedx_input otp_input"
-                        ></input>
-                    }
                 </div>
                 {step == 2 &&
                 <div className={styles.otpContainer}>
