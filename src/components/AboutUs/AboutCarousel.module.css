@@ -1,11 +1,11 @@
 .carouselImage{
-    width: 13% !important;
+    width: 7% !important;
     margin: 30px 0;
 }
 
 
 .TEDxIITGuwahatiLogo{
-    width: 40% !important;
+    width: 30% !important;
     margin-bottom: 16px;
 }
 .icon{
@@ -16,7 +16,7 @@
 
 .carouselContent{
     font-size: 20px;
-    width: 90%;
+    width: 75%;
     margin: auto;
     line-height: 32px;
 }
