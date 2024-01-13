@@ -1,17 +1,22 @@
 import styles from "./Passes.module.css";
-import React, {useState } from 'react';
+import React, {useState, useTransition } from 'react';
 import { useInView } from "react-intersection-observer";
 import useAOS from "../../utilities/Hooks/useAOS";
 import Modal from "../verficationModal/VerficationModal"
 
 const Passes = () => {
   const [selectedPass, setselectedPass] = useState(null)
+  const [isPending, startTransition] = useTransition();
 
   const openModal = (userType)=>{
-    setselectedPass(userType)
+    startTransition(() => {
+      setselectedPass(userType);
+    });
   };
   const closeModal = ()=>{
-    setselectedPass(null)
+    startTransition(() => {
+      setselectedPass(null);
+    });
   };
 
   const aos = useAOS();
@@ -194,8 +199,8 @@ const Passes = () => {
           </a>
         </span>
       </div>
-      {selectedPass && <Modal userType = {selectedPass} func = {closeModal} />}
-      {selectedPass && <div id={styles.overlay} onClick = {closeModal}></div>}
+      {selectedPass && <Modal userType = {selectedPass} func = {closeModal} isPending={isPending} />}
+      {selectedPass && <div id={styles.overlay}></div>}
     </div>
   );
 };

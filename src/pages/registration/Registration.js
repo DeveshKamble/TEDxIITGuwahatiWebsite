@@ -5,8 +5,7 @@ import ScrollButton from '../../components/scrollButton/scrollButton'
 import Passes from '../../components/registration/Passes'
 import Venue from '../../components/Home/Venue'
 import Attend from '../../components/registration/Attend'
-import Modal from '../../components/verficationModal/VerficationModal'
-import ConferenceVenue from '../../components/Home/Venue'
+import GoogleMap from './google_map.js'
 
 
 const Registration = () => {
@@ -16,7 +15,7 @@ const Registration = () => {
         <NavBar/>
         <Passes/>
         <Attend/>
-        <Venue/>
+        <GoogleMap isVisible = {true}/>
         <Newsletter/>
         <Footer/>
         <ScrollButton/>
