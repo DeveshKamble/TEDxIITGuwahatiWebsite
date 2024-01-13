@@ -19,6 +19,7 @@
     align-items: center;
 }
 .lin{
+    position: relative;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     color: rgb(50, 50, 50);
@@ -26,6 +27,29 @@
     font-weight: bold;
     padding: 20px 15px;
 }
+
+/* .lin:hover{
+    animation: underlineEffect 1000ms;
+    text-decoration: underline red 2px;
+    text-underline-offset: 10px;
+} */
+.lin:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 10%;
+    right: 90%;
+    bottom: 8px;
+    background: red;
+    height: 4px;
+    transition-property: left right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .lin:hover:after
+  {
+    right: 10%;
+  }
 .logo1{
     width: 220px;
 }
