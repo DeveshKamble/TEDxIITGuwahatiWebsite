@@ -2,6 +2,8 @@ import useScript from '../../utilities/Hooks/useScript'
 import React, { useEffect, useState, useRef } from 'react';
 import styles from './modal.module.css'
 import emailjs from '@emailjs/browser';
+import axios from 'axios'
+import Razorpay from 'react-razorpay';
 import { customOtpGen } from 'otp-gen-agent'
 
 const STATUS_CODE = {
@@ -58,36 +60,13 @@ const VerficationModal = ({userType, func}) => {
         return false
     }
 
-    function createForm() {
-        const my_form = document.createElement('FORM');
-        my_form.name = 'myForm';
+    function getParams() {
 
-        const my_tb = document.createElement('INPUT');
-        my_tb.type = 'TEXT';
-        my_tb.name = 'otp';
-        my_tb.value = otpDetails.current.otp;
-        my_form.appendChild(my_tb);
-
-        const my_tb2 = document.createElement('INPUT');
-        my_tb2.type = 'TEXT';
-        my_tb2.name = 'to';
-        my_tb2.value = details.email;
-        my_form.appendChild(my_tb2);
-
-        const my_tb3 = document.createElement('INPUT');
-        my_tb3.type = 'TEXT';
-        my_tb3.name = 'user_name';
-        my_tb3.value = details.name;
-        my_form.appendChild(my_tb3);
-
-        return my_form
-    }
-
-    function isSubmitDisabled() {
-        if(!isFormValid()){
-            console.log("disabled")
-        }
-        return !isFormValid()
+        return ({
+            to_name:details.name,
+            to_email:details.email,
+            message:otpDetails.current.otp
+        })
     }
 
     async function sendOTP() {
@@ -102,7 +81,7 @@ const VerficationModal = ({userType, func}) => {
             code: STATUS_CODE.PENDING
         })
 
-        emailjs.sendForm('service_21to2df', 'template_hf503cz', createForm(), '0iJ0axPwmTZaxIH53')
+        emailjs.send('service_v6d5nl8', 'template_2m2clg7', getParams(), 'on8bzsw6VYdMSOEiy')
             .then((result) => {
                 setStatus({
                     ...status,
@@ -149,13 +128,36 @@ const VerficationModal = ({userType, func}) => {
                     code: STATUS_CODE.ERROR
                 })
             }
+        
         }
     }
     useScript('https://checkout.razorpay.com/v1/checkout.js')
-    const BaseURL = process.env.BACKEND_URL
+    const BaseURL = 'https://localhost:5000'
 
     function checkoutHandler(Name, email, amount){
+        const { data: { key } } = axios.get(`${BaseURL}/api/getkey`)
+        const { data: { order } } = axios.post(`${BaseURL}/api/checkout`, {Name, email, amount})
 
+        const options = {
+            key,
+            amount: order.amount,
+            currency: "INR",
+            name: "TEDxIITGuwahati",
+            description: "Event Ticketing",
+            image: "/Images/Navbar/TEDxIITG_new.png",
+            order_id: order.id,
+            callback_url: `${BaseURL}/api/paymentverification`,
+            prefill: {
+                "name": Name,
+                "email": email,
+            },
+            theme: {
+                "color": "#121212"
+            }
+        };
+
+        const razorInstance = new Razorpay(options)
+        razorInstance.open();
     }
 
     return(
@@ -210,7 +212,6 @@ const VerficationModal = ({userType, func}) => {
                             value={details.otp}
                             onChange={modifyDetails}
                             className="tedx_input otp_input"
-
                         ></input>
                     }
                 </div>
