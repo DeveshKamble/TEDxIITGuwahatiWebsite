@@ -82,12 +82,6 @@
     /* overflow: auto; */
 }
 
-.active{
-    color: red;
-    text-decoration: underline;
-}
-
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
