@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './partners.module.css';
 import useWindowWidth from '../../utilities/Hooks/UseWindowWidth.js'
+import useAos from '../../utilities/Hooks/useAOS';
 
 const Strip = ({ image, title, content, pwidth }) => {
+  const aos = useAos();
   const stripStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -30,9 +32,24 @@ const Strip = ({ image, title, content, pwidth }) => {
   return (
     <div>
       <div style={stripStyle}>
-        <img src={image} alt={title} style={imageStyle} />
-        <div style={titleStyle}>{title}</div>
-        <p className={styles.content} style={contentStyle} dangerouslySetInnerHTML={{ __html: content }} />
+        <img src={image} alt={title} style={imageStyle} 
+        data-aos="zoom-out-up"
+        data-aos-easing="ease-in-back"
+        data-aos-duration="1500"
+        data-aos-delay="700"
+        />
+        <div style={titleStyle}
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+        data-aos-delay="700"
+        >{title}</div>
+        <p className={styles.content} style={contentStyle} dangerouslySetInnerHTML={{ __html: content }} 
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2500"
+        data-aos-delay="700"
+        />
       </div>
     </div>
   );
