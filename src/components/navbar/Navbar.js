@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink,Link } from "react-router-dom"
 import styles from './navbar.module.css'
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
@@ -8,6 +8,7 @@ const NavBar = () => {
     const [navicon, setnavicon] = useState(true);
     const [shortnav, setshortnav] = useState(false);
     shortnav ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'scroll';
+    const showActivePage = (isActive,color)=>{return {color: isActive?color:''}}
     return (
         <>
         <div className={styles.nav}>
@@ -32,24 +33,24 @@ const NavBar = () => {
                     </div>
             
             <div className={styles.right}>
-                <Link to='/' className={styles.lin}>HOME</Link>
-                <Link to='/AboutUs' className={styles.lin}>ABOUT US</Link>
-                <Link to='/Events' className={styles.lin}>EVENTS</Link>
-                <Link to='/Partners' className={styles.lin}>SPONSORS</Link>
-                <Link to='/Registration' className={styles.lin} id={styles["red"]}>BUY TICKETS</Link>
-                <Link to='/ContactUs' className={styles.lin}>CONTACT US</Link>
+                <NavLink to='/' className={styles.lin} style={({isActive})=>showActivePage(isActive,'red')}>HOME</NavLink>
+                <NavLink to='/AboutUs' className={styles.lin} style={({isActive})=>showActivePage(isActive,'red')}>ABOUT US</NavLink>
+                <NavLink to='/Events' className={styles.lin} style={({isActive})=>showActivePage(isActive,'red')}>EVENTS</NavLink>
+                <NavLink to='/Partners' className={styles.lin} style={({isActive})=>showActivePage(isActive,'red')} >SPONSORS</NavLink>
+                <NavLink to='/Registration' className={styles.lin} id={styles["red"]}>BUY TICKETS</NavLink>
+                <NavLink to='/ContactUs' className={styles.lin} style={({isActive})=>showActivePage(isActive,'red')} >CONTACT US</NavLink>
             </div>
         </div>
         {
                 shortnav ?
                         <div className={styles.sidehead}>
                             <div className={styles.head}>
-                                <Link to='/' className={styles.lin1}>HOME</Link>
-                                <Link to='/AboutUs' className={styles.lin1}>ABOUT US</Link>
-                                <Link to='/Events' className={styles.lin1}>EVENTS</Link>
-                                <Link to='/Partners' className={styles.lin1}>SPONSORS</Link>
-                                <Link to='/Registration' className={styles.lin1} id={styles["red1"]}>BUY TICKET</Link>
-                                <Link to='/ContactUs' className={styles.lin1}>CONTACT US</Link>
+                                <NavLink to='/' className={styles.lin1} style={({isActive})=>showActivePage(isActive,'red')} >HOME</NavLink>
+                                <NavLink to='/AboutUs' className={styles.lin1} style={({isActive})=>showActivePage(isActive,'red')} >ABOUT US</NavLink>
+                                <NavLink to='/Events' className={styles.lin1} style={({isActive})=>showActivePage(isActive,'red')} >EVENTS</NavLink>
+                                <NavLink to='/Partners' className={styles.lin1} style={({isActive})=>showActivePage(isActive,'red')} >SPONSORS</NavLink>
+                                <NavLink to='/Registration' className={styles.lin1} id={styles["red1"]}>BUY TICKET</NavLink>
+                                <NavLink to='/ContactUs' className={styles.lin1} style={({isActive})=>showActivePage(isActive,'red')} >CONTACT US</NavLink>
                             </div>
                         </div>
                     : <div></div>
