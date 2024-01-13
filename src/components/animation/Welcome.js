@@ -12,15 +12,11 @@ const Welcome = () => {
                         </p>
                     </div>
                     <div>
-                        <img src='/Images/footer/WhiteTextLogo.png'></img>
+                        <img src='/Images/Navbar/TEDxIITG_new.png'></img>
                     </div>
                 </div>
                 <div className={styles.logo}>
-                    {/* <Tilt> */}
-                        <img className={styles.arrow} src='/Images/animation/LogoArrow.png'></img>
-                        <img className={styles.ripples} src='/Images/animation/LogoRipples.png'></img>
-                    {/* </Tilt>  */}
-                    {/* {/* <LogoAnimation className={styles.animation}/> */}
+                        <img src='/Images/animation/LogoAnimTrans.gif'></img>
                 </div>
             </div>
         </>
