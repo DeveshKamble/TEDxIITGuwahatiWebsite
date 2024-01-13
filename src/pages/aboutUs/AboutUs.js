@@ -93,7 +93,7 @@ const AboutUs = () => {
                   coordinated independently, under a free license granted by
                   TED.
                 </p>
-              </div> 
+              </div>
             </div> */}
             {/* <div className={styles.contentbox2}>
               <div className={styles.heading2}>
@@ -121,8 +121,8 @@ const AboutUs = () => {
                 </p>
               </div>
             </div> */}
+            </div>
           </div>
-        </div>
         {/* <div className={styles.outerbox2}>
           <div className={styles.contentbox3}>
             <iframe
