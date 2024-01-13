@@ -52,7 +52,8 @@ const AboutCarousel = ()=> {
                     individuals to spark conversation and connection through local
                     TED-like experiences.
               </p>
-              <a href={"https://www.youtube.com/watch?v=d0NHOpeczUU"} target='_blank' ><button className={styles.button} >Know More</button></a>
+              <a href={"https://www.youtube.com/watch?v=d0NHOpeczUU"} target='_blank' ><button className={styles.button} >Know More
+              <FaArrowUpRightFromSquare  className={styles.icon} /></button></a>
           </div>
         <div className={styles.container}>
               <img className={styles.carouselImage} style={{width:'200px'}} src={'/Images/AboutUs/TEDx.jpeg'} alt="Logo" />
@@ -71,7 +72,8 @@ const AboutCarousel = ()=> {
                     individuals to spark conversation and connection through local
                     TED-like experiences.
               </p>
-              <a href={"https://www.youtube.com/watch?v=d0NHOpeczUU"} target='_blank' ><button className={styles.button} >Know More</button></a>
+              <a href={"https://www.youtube.com/watch?v=d0NHOpeczUU"} target='_blank' ><button className={styles.button} >Know More
+              <FaArrowUpRightFromSquare  className={styles.icon} /></button></a>
           </div>
           
         
