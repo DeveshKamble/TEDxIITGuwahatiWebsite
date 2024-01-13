@@ -4,6 +4,7 @@ import Footer from '../../components/footer/Footer'
 import ScrollButton from '../../components/scrollButton/scrollButton'
 import Passes from '../../components/registration/Passes'
 import Attend from '../../components/registration/Attend'
+import Modal from '../../components/verficationModal/VerficationModal'
 import GoogleMap from './google_map.js'
 
 
@@ -14,6 +15,7 @@ const Registration = () => {
         <NavBar/>
         <Passes/>
         <Attend/>
+        <Modal/>
         <GoogleMap isVisible = {true}/>
         <Newsletter/>
         <Footer/>
