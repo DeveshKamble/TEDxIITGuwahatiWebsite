@@ -3,15 +3,12 @@ import NavBar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import ScrollButton from '../../components/scrollButton/scrollButton';
 import AboutCarousel from "../../components/AboutUs/AboutCarousel";
-import { Carousel } from "react-responsive-carousel";
-import { useState } from "react";
-import { SocialIcon } from 'react-social-icons';
-import 'react-social-icons/instagram'
-import 'react-social-icons/linkedin'
-
-
+import TeamMember from "../../components/AboutUs/TeamMember";
+import TeamMemberMob from "../../components/AboutUs/TeamMemberMob";
+import useWindowWidth from '../../utilities/Hooks/UseWindowWidth'
 
 const AboutUs = () => {
+  const windowWidth = useWindowWidth();
 
   return (
     <>
@@ -20,36 +17,8 @@ const AboutUs = () => {
         <div className={styles.outerbox}>
           <AboutCarousel />
           <div className={styles.innerbox}>
-
-
-            {/* <Carousel className={styles.carousel} 
-              autoPlay={true}
-              infiniteLoop={true}
-              interval={2000}
-              
-            >
-              
-                 <div>
-                  <svg className={styles.carouselImage} viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.419 0v6.151h-6.763V24h-7.44V6.151H.453V0H21.42zm21.484 0v6.141l-12.918.01v2.946h12.918v5.73l-12.918-.009v3.03h12.918V24H22.546V0h20.357zm13.446 0c8.048 0 10.889 5.916 10.889 11.966C67.237 19.328 63.314 24 54.894 24H44.142V0h12.207zm-2.4 6.151H51.58V17.85h2.908c4.633 0 5.31-3.731 5.31-5.983 0-1.513-.474-5.715-5.85-5.715z" fill="#EC1015"></path></svg>
-                  <img className={styles.carouselImage} src="\Images\AboutUs\Ted.webp" alt="" />
-                  <p>Technology, Entertainment and Design,the set of global
-                  conferences have been going with the spirit of ideas worth
-                  spreading since 1984. TED is a global community, welcoming
-                  people from every discipline and culture who seek a deeper
-                  understanding of the world. TED believes passionately in the
-                  power of ideas to change attitudes, lives and, ultimately, the
-                  world. TED is owned by a nonprofit, nonpartisan foundation.
-                  The agenda is to make great ideas accessible and spark
-                  conversation TheTEDx Program is designed to help communities,
-                  organizations and individuals to spark conversation TheTEDx
-                  Program is designed to help communities, organizations and
-                  individuals to spark conversation and connection through local
-                  TED-like experiences.</p>
-                </div> 
-                <div>
-                  <img style={{width:'50%'}} className={styles.carouselImage} src="\Images\Navbar\TEDxIITG_new.png" alt="" />
-                  <p>carouselImage</p>
-                </div>
+          </div>
+        </div>
         <div className={styles.outerBox3}>
           <div className={styles.mainContent}>
             <div className={styles.teamHeader}>
@@ -77,132 +46,73 @@ const AboutUs = () => {
             <div>
               <div className={styles.teamImg}>
                 <div>
-                  <div className={styles.imgBox} style={{
-                    position: "relative",
-                  }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    <img src="/Images/Team/Sravya_square.jpg" alt="Img" />
-                    <div className={styles.hovereff} style={{ position: 'absolute', top: '41.2px', right: '93px', display: 'flex', flexDirection: 'column', 
-                    opacity: `${isHovered ? 1 : 0}`, }}>
-                      <SocialIcon className={styles.socials}url="https://www.instagram.com" target="_blank" href="www.goole.com" />
-                      <SocialIcon url="https://www.linkedin.com" target="_blank" href="www.goole.com" />
-                    </div>
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Sravya Vardhani</div>
-                    <div className={styles.imgTitlePost}>Organizer</div>
-                  </div>
+                  {windowWidth > 890 ? 
+                  <TeamMember title="Sravya Vardhani" designation="Organizer" image="Sravya_square.jpg" handle="https://www.linkedin.com/in/johndoe" /> :
+                  <TeamMemberMob title="Sravya Vardhani" designation="Organizer" image="Sravya_square.jpg" handle="https://www.linkedin.com/in/johndoe" />
+                  }
                 </div>
                 <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Images/Team/Pranjal_square.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Pranjal Saxena</div>
-                    <div className={styles.imgTitlePost}>
-                      Co-Organizer & Content Head
-                    </div>
-                  </div>
+                  {windowWidth > 890 ?
+                    <TeamMember title="Pranjal Saxena" designation="Co-Organizer & Content Head" image="Pranjal_square.jpg" handle="https://www.linkedin.com/in/johndoe" /> :
+                    <TeamMemberMob title="Pranjal Saxena" designation="Co-Organizer & Content Head" image="Pranjal_square.jpg" handle="https://www.linkedin.com/in/johndoe" />
+                  }
+                </div>
+
+                <div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Ravi Garlay" designation="Content Core" image="Ravi_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Ravi Garlay" designation="Content Core" image="Ravi_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
+                </div>
+                
+                <div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Kanv Choudary" designation="Content Core" image="Kanv_square.png" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Kanv Choudary" designation="Content Core" image="Kanv_square.png" handle="https://www.linkedin.com/in/johndoe" />}
                 </div>
                 <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Images/Team/Ravi_square.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Ravi Garlay</div>
-                    <div className={styles.imgTitlePost}>Content Core</div>
-                  </div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Rajeev Verma" designation="Design Head" image="Rajeev.jpg" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Rajeev Verma" designation="Design Head" image="Rajeev.jpg" handle="https://www.linkedin.com/in/johndoe" />}
                 </div>
                 <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Images/Team/Kanv_square.png" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Kanv Choudary</div>
-                    <div className={styles.imgTitlePost}>Content Core</div>
-                  </div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Kodudula Ashish Reddy" designation="WebOps Head" image="Ashish_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Kodudula Ashish Reddy" designation="WebOps Head" image="Ashish_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
                 </div>
                 <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Images/Team/Rajeev.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Rajeev Verma</div>
-                    <div className={styles.imgTitlePost}>Design Head</div>
-                  </div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Harsh Gupta" designation="Marketing Head" image="Harsh_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Harsh Gupta" designation="Marketing Head" image="Harsh_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
                 </div>
                 <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Images/Team/Ashish_square.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>
-                      Kodudula Ashish Reddy
-                    </div>
-                    <div className={styles.imgTitlePost}>WebOps Head</div>
-                  </div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Divyansh Dadheech" designation="Events Head" image="Divyansh_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Divyansh Dadheech" designation="Events Head" image="Divyansh_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
                 </div>
                 <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Images/Team/Harsh_square.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Harsh Gupta</div>
-                    <div className={styles.imgTitlePost}>Marketing Head</div>
-                  </div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Manish Kumar" designation="Events Core" image="Manish_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Manish Kumar" designation="Events Core" image="Manish_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
                 </div>
                 <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Images/Team/Divyansh_square.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Divyansh Dadheech</div>
-                    <div className={styles.imgTitlePost}>Events Head</div>
-                  </div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Sankalp Setia" designation="Speakers Head" image="Sankalp_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Sankalp Setia" designation="Speakers Head" image="Sankalp_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
                 </div>
                 <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Images/Team/Manish_square.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Manish Kumar</div>
-                    <div className={styles.imgTitlePost}>Events Core</div>
-                  </div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Pankaj Kumar Jha" designation="Speakers Core" image="Pankaj1_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Pankaj Kumar Jha" designation="Speakers Core" image="Pankaj1_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
                 </div>
                 <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Images/Team/Sankalp_square.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Sankalp Setia</div>
-                    <div className={styles.imgTitlePost}>Speakers Head</div>
-                  </div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Triparna Kalita" designation="Speakers Core" image="Triparna Di_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Triparna Kalita" designation="Speakers Core" image="Triparna Di_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
                 </div>
                 <div>
-                  <div className={styles.imgBox}>
-                    <img src="Images/Team/Pankaj1_square.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Pankaj Kumar Jha</div>
-                    <div className={styles.imgTitlePost}>Speakers Core</div>
-                  </div>
-                </div>
-                <div>
-                  <div className={styles.imgBox}>
-                    <img src="Images/Team/Triparna Di_square.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Triparna Kalita</div>
-                    <div className={styles.imgTitlePost}>Speakers Core</div>
-                  </div>
-                </div>
-                <div>
-                  <div className={styles.imgBox}>
-                    <img src="/Images/Team/Punakshit.jpg" alt="Img" />
-                  </div>
-                  <div className={styles.imgTitle}>
-                    <div className={styles.imgTitleName}>Punakshit Singh</div>
-                    <div className={styles.imgTitlePost}>PR & Media Head</div>
-                  </div>
+                {windowWidth > 890 ?
+                  <TeamMember title="Punakshit Singh" designation="PR & Media Head" image="Punakshit.jpg" handle="https://www.linkedin.com/in/johndoe" />:
+                  <TeamMemberMob title="Punakshit Singh" designation="PR & Media Head" image="Punakshit.jpg" handle="https://www.linkedin.com/in/johndoe" />}
                 </div>
               </div>
             </div>

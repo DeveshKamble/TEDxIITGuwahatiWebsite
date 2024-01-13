@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import styles from './TeamMember.module.css'
+import { SocialIcon } from 'react-social-icons';
 
-const TeamMember = (title, designation, image, handle) => {
+const TeamMember = ({title, designation, image, handle}) => {
 
     const [isHovered, setIsHovered] = useState(false);
 
@@ -17,7 +19,7 @@ const TeamMember = (title, designation, image, handle) => {
             <div className={styles.imgBox} style={{
                 position: "relative",
             }}>
-                <img src={`/Images/Team/${image}`} alt="Img" onMouseIn={handleMouseEnter} onMouseOut={handleMouseLeave}/>
+                <img src={`/Images/Team/${image}`} alt="Img" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
                 {isHovered && <div className={styles.hovereff} style={{
                     position: 'absolute', top: '41.2px', right: '93px', display: 'flex', flexDirection: 'column',
                 }}>
