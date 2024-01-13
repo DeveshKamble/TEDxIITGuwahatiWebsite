@@ -15,7 +15,7 @@ const Registration = () => {
         <NavBar/>
         <Passes/>
         <Attend/>
-        <GoogleMap isVisible = {true}/>
+        <ConferenceVenue/>
         <Newsletter/>
         <Footer/>
         <ScrollButton/>
