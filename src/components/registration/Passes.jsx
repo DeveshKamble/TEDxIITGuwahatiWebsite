@@ -178,10 +178,6 @@ const Passes = () => {
           <a
             href="/Terms"
             className={styles.link}
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-            data-aos-delay="200"
           >
             TERMS & CONDITIONS<p className={styles.arrow}> &#8594; </p>
           </a>

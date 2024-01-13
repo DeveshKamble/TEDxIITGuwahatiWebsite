@@ -230,7 +230,12 @@
 
 .linkSpan {
   border: 3px solid red;
-  padding: 5px;
+  padding: 5px 10px;
+}
+
+.linkSpan:hover{
+  transform: scale(1.1);
+  transition: all 0.25s ease-in-out;
 }
 
 .link {

@@ -23,8 +23,6 @@ const AboutUs = () => {
     setIsHovered(false);
   };
 
-  console.log(isHovered);
-
   return (
     <>
       <NavBar></NavBar>
