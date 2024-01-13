@@ -9,9 +9,10 @@ const AboutCarousel = ()=> {
   return (
     <>
       <Carousel
-        autoPlay={false}
+        autoPlay={true}
         infiniteLoop={true}
         interval={2000}
+        showThumbs={false}
       >
         <div className={styles.container}>
               <img className={styles.carouselImage}  src={'/Images/AboutUs/TED.jpeg'} alt="Logo" />
