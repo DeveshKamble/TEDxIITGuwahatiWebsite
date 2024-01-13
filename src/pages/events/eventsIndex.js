@@ -9,13 +9,15 @@ import Footer from "../../components/footer/Footer";
 import Newsletter from "../../components/Newsletter/newsletter";
 
 const Events = () => {
-  useEffect(() => {}, []);
   const { ref: myref, inView: boxisvisible, entry } = useInView();
   const { ref: myref2, inView: boxisvisible2, entry2 } = useInView();
   const { ref: myref3, inView: boxisvisible3, entry3 } = useInView();
   const { ref: myref4, inView: boxisvisible4, entry4 } = useInView();
   const { ref: myref5, inView: boxisvisible5, entry5 } = useInView();
   const [redl, setredl] = useState(0);
+  useEffect(() => {
+    
+  }, []);
 
   return (
     <div>
