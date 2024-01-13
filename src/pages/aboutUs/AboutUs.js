@@ -13,18 +13,6 @@ import 'react-social-icons/linkedin'
 
 const AboutUs = () => {
 
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  console.log(isHovered);
-
   return (
     <>
       <NavBar></NavBar>
@@ -62,82 +50,6 @@ const AboutUs = () => {
                   <img style={{width:'50%'}} className={styles.carouselImage} src="\Images\Navbar\TEDxIITG_new.png" alt="" />
                   <p>carouselImage</p>
                 </div>
-                <div>
-                  <img className={styles.carouselImage} src="\Images\Navbar\TEDxIITG_new.png" alt="" />
-                  <p>carouselImage</p>
-                </div>
-              </Carousel> */}
-            {/* <div className={styles.contentbox}>
-              {/* <div className={styles.heading}>TED</div>
-              <div className={styles.content}>
-                <p>
-                  Technology, Entertainment and Design,the set of global
-                  conferences have been going with the spirit of ideas worth
-                  spreading since 1984. TED is a global community, welcoming
-                  people from every discipline and culture who seek a deeper
-                  understanding of the world. TED believes passionately in the
-                  power of ideas to change attitudes, lives and, ultimately, the
-                  world. TED is owned by a nonprofit, nonpartisan foundation.
-                  The agenda is to make great ideas accessible and spark
-                  conversation TheTEDx Program is designed to help communities,
-                  organizations and individuals to spark conversation TheTEDx
-                  Program is designed to help communities, organizations and
-                  individuals to spark conversation and connection through local
-                  TED-like experiences.
-                </p>
-                <p>
-                  At TEDx events,
-                  a screening of TED Talks videos— ora combination of live
-                  presenters and TED Talks videos— sparks deep conversation and
-                  connections at the local level. TEDx events are planned and
-                  coordinated independently, under a free license granted by
-                  TED.
-                </p>
-              </div> 
-            </div> */}
-            {/* <div className={styles.contentbox2}>
-              <div className={styles.heading2}>
-                TED
-                <div>
-                  <sup>x</sup>
-                </div>
-              </div>
-              <div className={styles.content2}>
-                <p>
-                  In the spirit of ideas worth spreading, TEDx is a program of
-                  local, self-organized events that bring people to get her to
-                  share a TED-like experience. Ata TEDx event, TED Talks video
-                  and live speakers combine to spark deep discussion and
-                  connection in a small group. These local, self-organized
-                  events are branded TEDx, where x = independently organized TED
-                  event. The TED Conference provides general guidance for the
-                  TEDx program, but individual TEDx events are
-                  self-organized.(Subject to certain rules and regulations.)
-                </p>
-                <p>
-                  The TEDx Program is designed to help communities,
-                  organizations and individuals to spark conversation and
-                  connection through local TED-like experiences.
-                </p>
-              </div>
-            </div> */}
-          </div>
-        </div>
-        {/* <div className={styles.outerbox2}>
-          <div className={styles.contentbox3}>
-            <iframe
-              className={styles.vdoframe}
-              // width="710"
-              // height="415"
-              src="https://www.youtube.com/embed/d0NHOpeczUU?si=u2AxAGd0nERdJ1E4"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div> */}
-
         <div className={styles.outerBox3}>
           <div className={styles.mainContent}>
             <div className={styles.teamHeader}>
