@@ -12,7 +12,9 @@ const AboutCarousel = ()=> {
         autoPlay={true}
         infiniteLoop={true}
         interval={2000}
+        showArrows={true}
         showThumbs={false}
+        showIndicators={false}
       >
         <div className={styles.container}>
               <img className={styles.carouselImage}  src={'/Images/AboutUs/TED.jpeg'} alt="Logo" />

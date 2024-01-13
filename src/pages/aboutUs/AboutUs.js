@@ -93,7 +93,7 @@ const AboutUs = () => {
                   coordinated independently, under a free license granted by
                   TED.
                 </p>
-              </div>
+              </div> 
             </div> */}
             {/* <div className={styles.contentbox2}>
               <div className={styles.heading2}>
@@ -121,8 +121,8 @@ const AboutUs = () => {
                 </p>
               </div>
             </div> */}
-            </div>
           </div>
+        </div>
         {/* <div className={styles.outerbox2}>
           <div className={styles.contentbox3}>
             <iframe
@@ -149,10 +149,6 @@ const AboutUs = () => {
                   The leadership team here at TEDxIITGuwahati is made up of a diverse
                   bunch of awesome humans!
                 </p>
-                {/* <p className={styles.reflect}>
-                  The leadership team here at TEDxIITGuwahati is made up of a diverse
-                  bunch of awesome humans!
-                </p> */}
               </div>
               <div className={styles.teamHeaderContent}>
                 <p>
