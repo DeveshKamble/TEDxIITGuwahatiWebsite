@@ -4,15 +4,33 @@ import Footer from "../../components/footer/Footer";
 import ScrollButton from '../../components/scrollButton/scrollButton';
 import AboutCarousel from "../../components/AboutUs/AboutCarousel";
 import { Carousel } from "react-responsive-carousel";
+import { useState } from "react";
+import { SocialIcon } from 'react-social-icons';
+import 'react-social-icons/instagram'
+import 'react-social-icons/linkedin'
+
 
 
 const AboutUs = () => {
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  console.log(isHovered);
+
   return (
     <>
       <NavBar></NavBar>
       <div className="main">
         <div className={styles.outerbox}>
-            <AboutCarousel/>
+          <AboutCarousel />
           <div className={styles.innerbox}>
 
 
@@ -119,6 +137,7 @@ const AboutUs = () => {
             ></iframe>
           </div>
         </div> */}
+
         <div className={styles.outerBox3}>
           <div className={styles.mainContent}>
             <div className={styles.teamHeader}>
@@ -146,8 +165,15 @@ const AboutUs = () => {
             <div>
               <div className={styles.teamImg}>
                 <div>
-                  <div className={styles.imgBox}>
+                  <div className={styles.imgBox} style={{
+                    position: "relative",
+                  }} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <img src="/Images/Team/Sravya_square.jpg" alt="Img" />
+                    <div className={styles.hovereff} style={{ position: 'absolute', top: '41.2px', right: '93px', display: 'flex', flexDirection: 'column', 
+                    opacity: `${isHovered ? 1 : 0}`, }}>
+                      <SocialIcon className={styles.socials}url="https://www.instagram.com" target="_blank" href="www.goole.com" />
+                      <SocialIcon url="https://www.linkedin.com" target="_blank" href="www.goole.com" />
+                    </div>
                   </div>
                   <div className={styles.imgTitle}>
                     <div className={styles.imgTitleName}>Sravya Vardhani</div>
@@ -271,8 +297,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footer/>
-      <ScrollButton/>
+      <Footer />
+      <ScrollButton />
     </>
   );
 };
