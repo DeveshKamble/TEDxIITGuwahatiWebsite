@@ -4,11 +4,10 @@ import ScrollButton from '../../components/scrollButton/scrollButton'
 import Schedule from '../../components/Home/Schedule'
 import Speaker from '../../components/speaker/Speaker'
 import ThemeInfo from '../../components/Home/ThemeInfo'
-import Venue from '../../components/Home/Venue'
 import Newsletter from '../../components/Newsletter/newsletter'
 import Nomination from '../../components/Home/nomination'
 import Welcome from '../../components/animation/Welcome'
-
+import Swiperr from "../../components/speaker/swiper.js"
 const Home = () => {
     return(
         <div>
@@ -16,8 +15,7 @@ const Home = () => {
             {/* <Welcome/> */}
             <Nomination/>
             <ThemeInfo/>
-            <Speaker/>
-            <Venue/>
+            <Swiperr/>
             <Schedule/>
             <Newsletter/>
             <Footer/>
