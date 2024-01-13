@@ -4,7 +4,7 @@ const Newsletter = () => {
     return(
         <>
             <div className={styles.container}>
-                <img src="Images/Newsletter/newsletter.svg" alt="" className={styles.newimg} />
+                <img src="./Images/Newsletter/newsletter.svg" className={styles.newimg} />
                 <div className={styles.right}>
                     <div className={styles.heading}>Newsletter</div>
                     <div className={styles.subheading}>I received the news from TEDxIITGuwahati</div>
