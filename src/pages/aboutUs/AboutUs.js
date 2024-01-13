@@ -149,6 +149,10 @@ const AboutUs = () => {
                   The leadership team here at TEDxIITGuwahati is made up of a diverse
                   bunch of awesome humans!
                 </p>
+                {/* <p className={styles.reflect}>
+                  The leadership team here at TEDxIITGuwahati is made up of a diverse
+                  bunch of awesome humans!
+                </p> */}
               </div>
               <div className={styles.teamHeaderContent}>
                 <p>
