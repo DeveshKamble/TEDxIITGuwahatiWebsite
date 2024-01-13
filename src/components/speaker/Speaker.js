@@ -13,11 +13,11 @@ const Speaker = () => {
         <>
             <div className={styles.container}>
                 {
-                    speakermodal && <SpeakerModal set={closeModal}/> 
+                    speakermodal && <SpeakerModal set={closeModal} />
                 }
                 <div className={styles.container_1}>
                     <div className={styles.speak}>
-                        <Link className={styles.item} onClick={()=>{setmodal(true)}}
+                        <Link className={styles.item} onClick={() => { setmodal(true) }}
                             data-aos="fade-right"
                             data-aos-easing="linear"
                             data-aos-duration="1000"
@@ -29,7 +29,7 @@ const Speaker = () => {
                             <h3 className={styles.nameheading}>Theo Kapodistrias</h3>
                             <div className={styles.speak_caption}> Executive Director & Licensee </div>
                         </Link>
-                        <Link className={styles.item} onClick={()=>{setmodal(true)}}
+                        <Link className={styles.item} onClick={() => { setmodal(true) }}
                             data-aos="fade-right"
                             data-aos-easing="linear"
                             data-aos-duration="1500"
@@ -40,7 +40,7 @@ const Speaker = () => {
                             <h3 className={styles.nameheading}>Theo Kapodistrias</h3>
                             <div className={styles.speak_caption}> Executive Director & Licensee </div>
                         </Link>
-                        <Link className={styles.item} onClick={()=>{setmodal(true)}}
+                        <Link className={styles.item} onClick={() => { setmodal(true) }}
                             data-aos="fade-right"
                             data-aos-easing="linear"
                             data-aos-duration="2000"
@@ -51,7 +51,7 @@ const Speaker = () => {
                             <h3 className={styles.nameheading}>Theo Kapodistrias</h3>
                             <div className={styles.speak_caption}> Executive Director & Licensee </div>
                         </Link>
-                        <Link className={styles.item} onClick={()=>{setmodal(true)}}
+                        <Link className={styles.item} onClick={() => { setmodal(true) }}
                             data-aos="fade-right"
                             data-aos-easing="linear"
                             data-aos-duration="2500"
@@ -62,7 +62,55 @@ const Speaker = () => {
                             <h3 className={styles.nameheading}>Theo Kapodistrias</h3>
                             <div className={styles.speak_caption}> Executive Director & Licensee </div>
                         </Link>
-                    </div>
+                        </div>
+                        <div className={styles.speak}>
+
+                            <Link className={styles.item} onClick={() => { setmodal(true) }}
+                                data-aos="fade-right"
+                                data-aos-easing="linear"
+                                data-aos-duration="2500"
+                                data-aos-delay="600">
+                                <div className={styles.image_section}>
+                                    <img src="./Images/partners/sample_image.webp" alt="" id={styles['image_']} />
+                                </div>
+                                <h3 className={styles.nameheading}>Theo Kapodistrias</h3>
+                                <div className={styles.speak_caption}> Executive Director & Licensee </div>
+                            </Link>
+                            <Link className={styles.item} onClick={() => { setmodal(true) }}
+                                data-aos="fade-right"
+                                data-aos-easing="linear"
+                                data-aos-duration="2500"
+                                data-aos-delay="600">
+                                <div className={styles.image_section}>
+                                    <img src="./Images/partners/sample_image.webp" alt="" id={styles['image_']} />
+                                </div>
+                                <h3 className={styles.nameheading}>Theo Kapodistrias</h3>
+                                <div className={styles.speak_caption}> Executive Director & Licensee </div>
+                            </Link>
+                            <Link className={styles.item} onClick={() => { setmodal(true) }}
+                                data-aos="fade-right"
+                                data-aos-easing="linear"
+                                data-aos-duration="2500"
+                                data-aos-delay="600">
+                                <div className={styles.image_section}>
+                                    <img src="./Images/partners/sample_image.webp" alt="" id={styles['image_']} />
+                                </div>
+                                <h3 className={styles.nameheading}>Theo Kapodistrias</h3>
+                                <div className={styles.speak_caption}> Executive Director & Licensee </div>
+                            </Link>
+                            <Link className={styles.item} onClick={() => { setmodal(true) }}
+                                data-aos="fade-right"
+                                data-aos-easing="linear"
+                                data-aos-duration="2500"
+                                data-aos-delay="600">
+                                <div className={styles.image_section}>
+                                    <img src="./Images/partners/sample_image.webp" alt="" id={styles['image_']} />
+                                </div>
+                                <h3 className={styles.nameheading}>Theo Kapodistrias</h3>
+                                <div className={styles.speak_caption}> Executive Director & Licensee </div>
+                            </Link>
+                        </div>
+                    
                 </div>
             </div>
         </>

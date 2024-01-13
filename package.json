@@ -32,6 +32,7 @@
     "react-tilt": "^1.0.2",
     "react-tsparticles": "^2.12.2",
     "styled-components": "^6.1.6",
+    "swiper": "^11.0.5",
     "tsparticles": "^3.0.3",
     "web-vitals": "^2.1.4"
   },

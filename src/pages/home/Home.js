@@ -7,7 +7,7 @@ import ThemeInfo from '../../components/Home/ThemeInfo'
 import Newsletter from '../../components/Newsletter/newsletter'
 import Nomination from '../../components/Home/nomination'
 import Welcome from '../../components/animation/Welcome'
-
+import Swiperr from "../../components/speaker/swiper.js"
 const Home = () => {
     return(
         <div>
@@ -15,7 +15,7 @@ const Home = () => {
             {/* <Welcome/> */}
             <Nomination/>
             <ThemeInfo/>
-            <Speaker/>
+            <Swiperr/>
             <Schedule/>
             <Newsletter/>
             <Footer/>
