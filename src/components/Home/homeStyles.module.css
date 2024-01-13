@@ -122,6 +122,12 @@ body {
     justify-content: center;
   }
 
+	.content {
+		max-width: 85vw;
+		padding: 0 0 3rem 3rem;
+		font-weight: 450;
+		margin-left: 5px;
+	}
   .content {
     max-width: 85vw;
     padding: 0 0 3rem 6rem;
@@ -212,7 +218,7 @@ body {
   padding: 10px;
 }
 
-@media (min-width: 310px) and (max-width: 560px) {
+@media (min-width: 310px) and (max-width: 436px) {
   .innerbox {
     display: flex;
     flex-direction: column;
@@ -223,6 +229,59 @@ body {
     right: -110px;
     bottom: 100px;
     width: 90vw;
+    height: 500px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
+}
+@media (min-width: 760px) and (max-width: 1050px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -21px;
+    bottom: 100px;
+    width: 380px;
+    height: 500px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 40px;
+    color: white;
+  }
+}
+@media (min-width: 437px) and (max-width: 570px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: -102px;
+    bottom: 79px;
+    width: 380px;
+    height: 491px;
+    background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
+    border-radius: 20px;
+    color: white;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px black;
+  }
+}
+ 
+@media (min-width: 670px) and (max-width: 760px) {
+  .innerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -46px;
+    bottom: 100px;
+    width: 380px;
     height: 500px;
     background: linear-gradient(180deg, #ff0000 0%, #333333 99.99%);
     border-radius: 40px;
@@ -752,13 +811,13 @@ body {
     font-size: 180%;
   }
   .scheduleBox1Child2 div .spanHead1 {
-    font-size: 160%;
+    font-size: 120%;
   }
   .scheduleBox3Child1 div span {
     font-size: 180%;
   }
   .scheduleBox3Child2 div .span3Head1 {
-    font-size: 160%;
+    font-size: 120%;
   }
   .scheduleBox2Child2 div span {
     font-size: 180%;
@@ -768,7 +827,7 @@ body {
     margin-left: 50%;
   }
   .scheduleBox2Child1 div .span2Head {
-    font-size: 160%;
+    font-size: 120%;
   }
   .scheduleBox2Child1 {
     width: 90%;

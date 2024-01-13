@@ -40,7 +40,7 @@ const ThemeInfo = () => {
             data-aos="fade-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000">
-              The theme for TEDxIITGuwahati 2024 is Resurgence. What’s that, you ask? It’s about fathoming the importance of taking break in process of reaching our goals.
+              The theme for TEDxIITGuwahati 2024 is Echoes of Stillness. What’s that, you ask? It’s about fathoming the importance of taking break in process of reaching our goals.
             </p>
             <p className={styles.parastyle}
             data-aos="fade-up"
