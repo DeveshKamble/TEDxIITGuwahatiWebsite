@@ -173,10 +173,6 @@
   cursor: pointer;
 }
 
-.socials{
-  size: ;
-}
-
 .imgBox img:hover {
   background-position: 0px 0px;
   background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
