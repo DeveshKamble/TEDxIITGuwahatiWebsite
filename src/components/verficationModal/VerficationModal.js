@@ -70,7 +70,8 @@ const VerficationModal = ({userType, func}) => {
     }
 
     function getParams() {
-
+        const my_form = document.createElement('FORM');
+        my_form.name = 'my_form';
         const my_tb = document.createElement('INPUT');
         my_tb.type = 'TEXT';
         my_tb.name = 'otp';
