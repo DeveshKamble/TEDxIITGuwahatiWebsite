@@ -58,22 +58,20 @@
 
 .imgBoxm {
   padding: 20px 50px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
 }
-
 
 .imgBoxm img {
   width: 100%;
   height: 100%;
   cursor: pointer;
   transform: scale(1, 1);
-}
-
-.imgBoxm img {
   --color: #ee3624;
   --border: 10px;
   --offset: 20px;
   --gap: 5px;
-
   --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),
     var(--color) 0;
   --_o: calc(3 * var(--offset));
@@ -82,6 +80,19 @@
     linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
   background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
   background-repeat: no-repeat;
-  transition: 0.5s;
   cursor: pointer;
+}
+
+.imgBoxm.scrolled img {
+  background-position: 0px 0px;
+  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+  filter: grayscale(0);
+}
+
+.hovereffm {
+  position: absolute;
+  top: 41.2px;
+  right: 93px;
+  display: flex;
+  flex-direction: column;
 }

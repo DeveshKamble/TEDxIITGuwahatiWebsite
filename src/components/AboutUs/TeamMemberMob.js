@@ -1,54 +1,45 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './TeamMember.module.css';
 import { SocialIcon } from 'react-social-icons';
-import useAos from '../../utilities/Hooks/useAOS'
+import useAos from '../../utilities/Hooks/useAOS';
 
 const TeamMemberMob = ({ title, designation, image, handle }) => {
-    const aos = useAos();
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const aos = useAos();
 
   useEffect(() => {
     const handleScroll = () => {
-      const imageElement = document.querySelector(`.${styles.imgBoxm}`);
-      if (imageElement) {
-        const rect = imageElement.getBoundingClientRect();
-        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-        // Check if the image is in the center of the screen
-        const isInCenter = rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2;
-        setIsScrolled(isInCenter);
+      if (window.scrollY > window.innerHeight/2) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Empty dependency array ensures that the effect runs only once on mount
+  }, [setScrolled]);
 
+  console.log("window height:" + window.innerHeight);
+  console.log(scrolled);
   return (
     <>
       <div
-        className={styles.imgBoxm}
+        className={`${styles.imgBoxm} ${scrolled ? styles.scrolled : ''}`}
         style={{
           position: 'relative',
         }}
       >
         <img src={`/Images/Team/${image}`} alt="Img" />
-        <div className={styles.redboxm}></div>
         {(
           <div
             className={styles.hovereffm}
-            style={{
-              position: 'absolute',
-              top: '41.2px',
-              right: '93px',
-              display: 'flex',
-              flexDirection: 'column',
-            }
-        }
-        
-        data-aos="fade-up"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-back"
+            data-aos-duration="1500"
+            data-aos-delay="700"
           >
             <SocialIcon url="https://www.linkedin.com" target="_blank" href={handle} />
           </div>
