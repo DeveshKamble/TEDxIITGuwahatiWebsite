@@ -1,31 +1,30 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './TeamMember.module.css';
 import { SocialIcon } from 'react-social-icons';
-import useAos from '../../utilities/Hooks/useAOS'
+import useAos from '../../utilities/Hooks/useAOS';
 
 const TeamMemberMob = ({ title, designation, image, handle }) => {
-    const aos = useAos();
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const aos = useAos();
 
   useEffect(() => {
     const handleScroll = () => {
-      const imageElement = document.querySelector(`.${styles.imgBoxm}`);
-      if (imageElement) {
-        const rect = imageElement.getBoundingClientRect();
-        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-        // Check if the image is in the center of the screen
-        const isInCenter = rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2;
-        setIsScrolled(isInCenter);
+      if (window.scrollY > window.innerHeight/2) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Empty dependency array ensures that the effect runs only once on mount
+  }, [setScrolled]);
 
+  console.log("window height:" + window.innerHeight);
+  console.log(scrolled);
+  //Might get improved with using map and passing key in source file so that reconciler render every elemnt differently
   return (
     <>
       <a href={handle} className={styles.link}>
