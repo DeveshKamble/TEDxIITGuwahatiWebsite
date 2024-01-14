@@ -33,8 +33,8 @@ function App() {
         <Route path="/Terms" element={<Terms />} />
         <Route path="/Privacy" element={<Privacy />} />
         <Route path="/Registration" element={<Registration/>}></Route>
-        <Route path="/payment_redirect" element={<PaymentRedirect/>}/>
-        <Route path="/success" element={<Success/>}/>
+        {/* <Route path="/payment_redirect" element={<PaymentRedirect/>}/>
+        <Route path="/success" element={<Success/>}/> */}
       </Routes>
     </Router>
   );
