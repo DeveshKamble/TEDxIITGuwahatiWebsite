@@ -18,7 +18,7 @@ const EXPIRY_TIME = {
 }
 
 const VerficationModal = ({userType, func}) => {
-    const [details, setDetails] = useState({ name: '', email: ''})
+    const [details, setDetails] = useState({ name: '', email: '', phone: ''})
     const otpDetails = useRef()
     const [otp, setotp] = useState("")
     const [step, setStep] = useState(1);
@@ -74,19 +74,19 @@ const VerficationModal = ({userType, func}) => {
         my_form.name = 'my_form';
         const my_tb = document.createElement('INPUT');
         my_tb.type = 'TEXT';
-        my_tb.name = 'otp';
-        my_tb.value = otpDetails.current.otp;
+        my_tb.name = 'message';
+        my_tb.value = otp;
         my_form.appendChild(my_tb);
 
         const my_tb2 = document.createElement('INPUT');
         my_tb2.type = 'TEXT';
-        my_tb2.name = 'to';
+        my_tb2.name = 'to_email';
         my_tb2.value = details.email;
         my_form.appendChild(my_tb2);
 
         const my_tb3 = document.createElement('INPUT');
         my_tb3.type = 'TEXT';
-        my_tb3.name = 'user_name';
+        my_tb3.name = 'to_name';
         my_tb3.value = details.name;
         my_form.appendChild(my_tb3);
 
@@ -215,7 +215,8 @@ const VerficationModal = ({userType, func}) => {
                 ×<div className={styles.circle}>×</div>
                 </button>
             </div>
-            {step == 1 && <div className={styles.Note}><p className={`warning`}>Important: 
+            {step == 1 && <div className={styles.Note}><p className={`warning`}>
+                <b>Important: </b>
                 <br />
                 1. Please Note that the Ticket Design is different for IITG Students, So Please make sure to purchase right ticket.
                 <br />
@@ -231,6 +232,7 @@ const VerficationModal = ({userType, func}) => {
                             value={details.name}
                             onChange={modifyDetails}
                             className="tedx_input"
+                            autoFocus
                             required
                         ></input>}
                 </div>
@@ -252,6 +254,18 @@ const VerficationModal = ({userType, func}) => {
                         data-id="email"
                         onChange={modifyDetails}
                         className={`tedx_input`}
+                        required
+                    ></input>}
+                </div>
+                <div className={styles.emailContainer}>
+                    {step == 1 && <h2>Email:</h2>}
+                    {userType == USER_TYPE.REGISTERED_STUDENT && step == 1 && <input placeholder='Registered IITG email'
+                        type="text"
+                        value={details.email}
+                        data-id="email"
+                        onChange={modifyDetails}
+                        className={`tedx_input`}
+                        autoFocus
                         required
                     ></input>}
                 </div>
@@ -281,6 +295,9 @@ const VerficationModal = ({userType, func}) => {
 
                     {/* {userType == USER_TYPE.CIVILIAN && <button disabled={isSubmitDisabled() || status.code == STATUS_CODE.PENDING} onClick={() => submitHandler()} className="btn submit-btn">{status.code == STATUS_CODE.PENDING && <CircleAnimation />}Proceed to Payment</button>} */}
                 </div>
+            </div>
+            <div className={styles.alertContainer}>
+
             </div>
         </div>
         
