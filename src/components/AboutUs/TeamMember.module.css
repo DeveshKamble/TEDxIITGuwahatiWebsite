@@ -34,7 +34,6 @@
 .imgBox img:hover {
   background-position: 0px 0px;
   background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
-  filter: grayscale(0);
 }
 
 .imgTitle {
@@ -84,4 +83,8 @@
   background-repeat: no-repeat;
   transition: 0.5s;
   cursor: pointer;
+}
+
+.link{
+  color: black;
 }

@@ -47,47 +47,47 @@ const AboutUs = () => {
               <div className={styles.teamImg}>
                 <div>
                   {windowWidth > 890 ? 
-                  <TeamMember title="Sravya Vardhani" designation="Organizer" image="Sravya_square.jpg" handle="https://www.linkedin.com/in/johndoe" /> :
-                  <TeamMemberMob title="Sravya Vardhani" designation="Organizer" image="Sravya_square.jpg" handle="https://www.linkedin.com/in/johndoe" />
+                  <TeamMember title="Sravya Vardhani" designation="Organizer" image="Sravya_square.jpg" handle="https://www.linkedin.com/in/sravya-devarakonda/" /> :
+                  <TeamMemberMob title="Sravya Vardhani" designation="Organizer" image="Sravya_square.jpg" handle="https://www.linkedin.com/in/sravya-devarakonda/" />
                   }
                 </div>
                 <div>
                   {windowWidth > 890 ?
-                    <TeamMember title="Pranjal Saxena" designation="Co-Organizer & Content Head" image="Pranjal_square.jpg" handle="https://www.linkedin.com/in/johndoe" /> :
-                    <TeamMemberMob title="Pranjal Saxena" designation="Co-Organizer & Content Head" image="Pranjal_square.jpg" handle="https://www.linkedin.com/in/johndoe" />
+                    <TeamMember title="Pranjal Saxena" designation="Co-Organizer & Content Head" image="Pranjal_square.jpg" handle="http://linkedin.com/in/pranjalsaxena04" /> :
+                    <TeamMemberMob title="Pranjal Saxena" designation="Co-Organizer & Content Head" image="Pranjal_square.jpg" handle="http://linkedin.com/in/pranjalsaxena04" />
                   }
                 </div>
 
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Ravi Garlay" designation="Content Core" image="Ravi_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
-                  <TeamMemberMob title="Ravi Garlay" designation="Content Core" image="Ravi_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
+                  <TeamMember title="Ravi Garlay" designation="Content Core" image="Ravi_square.jpg" handle="https://www.linkedin.com/in/ravi-garlay-1a8921223/" />:
+                  <TeamMemberMob title="Ravi Garlay" designation="Content Core" image="Ravi_square.jpg" handle="https://www.linkedin.com/in/ravi-garlay-1a8921223/" />}
                 </div>
                 
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Kanv Choudary" designation="Content Core" image="Kanv_square.png" handle="https://www.linkedin.com/in/johndoe" />:
-                  <TeamMemberMob title="Kanv Choudary" designation="Content Core" image="Kanv_square.png" handle="https://www.linkedin.com/in/johndoe" />}
+                  <TeamMember title="Kanv Choudary" designation="Content Core" image="Kanv_square.png" handle="https://www.linkedin.com/in/kanvchaudhary" />:
+                  <TeamMemberMob title="Kanv Choudary" designation="Content Core" image="Kanv_square.png" handle="https://www.linkedin.com/in/kanvchaudhary" />}
                 </div>
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Rajeev Verma" designation="Design Head" image="Rajeev.jpg" handle="https://www.linkedin.com/in/johndoe" />:
-                  <TeamMemberMob title="Rajeev Verma" designation="Design Head" image="Rajeev.jpg" handle="https://www.linkedin.com/in/johndoe" />}
+                  <TeamMember title="Rajeev Verma" designation="Design Head" image="Rajeev.jpg" handle="https://www.linkedin.com/in/vrajeev/" />:
+                  <TeamMemberMob title="Rajeev Verma" designation="Design Head" image="Rajeev.jpg" handle="https://www.linkedin.com/in/vrajeev/" />}
                 </div>
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Kodudula Ashish Reddy" designation="WebOps Head" image="Ashish_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
-                  <TeamMemberMob title="Kodudula Ashish Reddy" designation="WebOps Head" image="Ashish_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
+                  <TeamMember title="Kodudula Ashish Reddy" designation="WebOps Head" image="Ashish_square.jpg" handle="https://www.linkedin.com/in/kodudula-ashish-reddy-585115224/" />:
+                  <TeamMemberMob title="Kodudula Ashish Reddy" designation="WebOps Head" image="Ashish_square.jpg" handle="https://www.linkedin.com/in/kodudula-ashish-reddy-585115224/" />}
                 </div>
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Harsh Gupta" designation="Marketing Head" image="Harsh_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
-                  <TeamMemberMob title="Harsh Gupta" designation="Marketing Head" image="Harsh_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
+                  <TeamMember title="Harsh Gupta" designation="Marketing Head" image="Harsh_square.jpg" handle="https://www.linkedin.com/in/harsh-gupta-a2753b228/" />:
+                  <TeamMemberMob title="Harsh Gupta" designation="Marketing Head" image="Harsh_square.jpg" handle="https://www.linkedin.com/in/harsh-gupta-a2753b228/" />}
                 </div>
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Divyansh Dadheech" designation="Events Head" image="Divyansh_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
-                  <TeamMemberMob title="Divyansh Dadheech" designation="Events Head" image="Divyansh_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
+                  <TeamMember title="Divyansh Dadheech" designation="Events Head" image="Divyansh_square.jpg" handle="https://www.linkedin.com/in/divyansh-dadheech/" />:
+                  <TeamMemberMob title="Divyansh Dadheech" designation="Events Head" image="Divyansh_square.jpg" handle="https://www.linkedin.com/in/divyansh-dadheech/" />}
                 </div>
                 <div>
                 {windowWidth > 890 ?
@@ -96,23 +96,23 @@ const AboutUs = () => {
                 </div>
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Sankalp Setia" designation="Speakers Head" image="Sankalp_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
-                  <TeamMemberMob title="Sankalp Setia" designation="Speakers Head" image="Sankalp_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
+                  <TeamMember title="Sankalp Setia" designation="Speakers Head" image="Sankalp_square.jpg" handle="https://www.linkedin.com/in/sankalp-setia/" />:
+                  <TeamMemberMob title="Sankalp Setia" designation="Speakers Head" image="Sankalp_square.jpg" handle="https://www.linkedin.com/in/sankalp-setia/" />}
                 </div>
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Pankaj Kumar Jha" designation="Speakers Core" image="Pankaj1_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
-                  <TeamMemberMob title="Pankaj Kumar Jha" designation="Speakers Core" image="Pankaj1_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
+                  <TeamMember title="Pankaj Kumar Jha" designation="Speakers Core" image="Pankaj1_square.jpg" handle="https://www.linkedin.com/in/ar-pkjha/" />:
+                  <TeamMemberMob title="Pankaj Kumar Jha" designation="Speakers Core" image="Pankaj1_square.jpg" handle="https://www.linkedin.com/in/ar-pkjha/" />}
                 </div>
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Triparna Kalita" designation="Speakers Core" image="Triparna Di_square.jpg" handle="https://www.linkedin.com/in/johndoe" />:
-                  <TeamMemberMob title="Triparna Kalita" designation="Speakers Core" image="Triparna Di_square.jpg" handle="https://www.linkedin.com/in/johndoe" />}
+                  <TeamMember title="Triparna Kalita" designation="Speakers Core" image="Triparna Di_square.jpg" handle="https://www.linkedin.com/in/triparna-kalita-b1aaa5160" />:
+                  <TeamMemberMob title="Triparna Kalita" designation="Speakers Core" image="Triparna Di_square.jpg" handle="https://www.linkedin.com/in/triparna-kalita-b1aaa5160" />}
                 </div>
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Punakshit Singh" designation="PR & Media Head" image="Punakshit.jpg" handle="https://www.linkedin.com/in/johndoe" />:
-                  <TeamMemberMob title="Punakshit Singh" designation="PR & Media Head" image="Punakshit.jpg" handle="https://www.linkedin.com/in/johndoe" />}
+                  <TeamMember title="Punakshit Singh" designation="PR & Media Head" image="Punakshit.jpg" handle="https://www.linkedin.com/in/punakshit-singh-6819b0253/" />:
+                  <TeamMemberMob title="Punakshit Singh" designation="PR & Media Head" image="Punakshit.jpg" handle="https://www.linkedin.com/in/punakshit-singh-6819b0253/" />}
                 </div>
               </div>
             </div>

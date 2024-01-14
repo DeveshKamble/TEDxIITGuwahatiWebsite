@@ -16,20 +16,22 @@ const TeamMember = ({title, designation, image, handle}) => {
 
     return (
         <>
-            <div className={styles.imgBox} style={{
-                position: "relative",
-            }}>
-                <img src={`/Images/Team/${image}`} alt="Img" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
-                {isHovered && <div className={styles.hovereff} style={{
-                    position: 'absolute', top: '41.2px', right: '93px', display: 'flex', flexDirection: 'column',
+            <a href={handle} className={styles.link} target='blank'>
+                <div className={styles.imgBox} style={{
+                    position: "relative",
                 }}>
-                    <SocialIcon url="https://www.linkedin.com" target="_blank" href={handle} />
-                </div> }
-            </div>
-            <div className={styles.imgTitle}>
-                <div className={styles.imgTitleName}>{title}</div>
-                <div className={styles.imgTitlePost}>{designation}</div>
-            </div>
+                    <img src={`/Images/Team/${image}`} alt="Img" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/>
+                    {isHovered && <div className={styles.hovereff} style={{
+                        position: 'absolute', top: '41.2px', right: '93px', display: 'flex', flexDirection: 'column',
+                    }}>
+                        <SocialIcon url="https://www.linkedin.com" bgColor='#e60028' className={styles.icon}/>
+                    </div> }
+                </div>
+                <div className={styles.imgTitle}>
+                    <div className={styles.imgTitleName}>{title}</div>
+                    <div className={styles.imgTitlePost}>{designation}</div>
+                </div>
+            </a>
         </>
     )
 }

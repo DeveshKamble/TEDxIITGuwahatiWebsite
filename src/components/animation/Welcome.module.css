@@ -2,6 +2,7 @@
     display: flex;
     height: 500px;
     /* background: linear-gradient(90deg, rgba(230,0,40,1) 0%, rgba(0,0,0,1) 44%); */
+    background-image: url('../../../public/Images/xpattern.jpg');
     justify-content: space-around;
 }
 
