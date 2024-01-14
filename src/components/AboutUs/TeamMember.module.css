@@ -87,6 +87,7 @@
   background-position: 0px 0px;
   background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
   filter: grayscale(0);
+  transition:cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 
 .hovereffm {

@@ -39,7 +39,7 @@ const TeamMemberMob = ({ title, designation, image, handle }) => {
             data-aos="fade-up"
             data-aos-easing="ease-in-back"
             data-aos-duration="1500"
-            data-aos-delay="700"
+            data-aos-delay="250"
           >
             <SocialIcon url="https://www.linkedin.com" target="_blank" href={handle} />
           </div>
