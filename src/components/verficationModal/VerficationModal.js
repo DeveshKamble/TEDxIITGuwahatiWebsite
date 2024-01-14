@@ -69,6 +69,7 @@ const VerficationModal = ({userType, func}) => {
         return false
     }
 
+
     function getParams() {
         const my_form = document.createElement('FORM');
         my_form.name = 'my_form';
@@ -240,32 +241,31 @@ const VerficationModal = ({userType, func}) => {
                 <div className={styles.emailContainer}>
                     {step == 1 && <h2>Email:</h2>}
                     {userType == USER_TYPE.REGISTERED_STUDENT && step == 1 && <input placeholder='Registered IITG email'
-                        type="text"
+                        type="email"
                         value={details.email}
                         data-id="email"
                         onChange={modifyDetails}
-                        className={`tedx_input`}
-                        autoFocus
+                        className={isFormValid()? styles.validInput:styles.emailInput}
                         required
                     ></input>}
                     {userType == USER_TYPE.CIVILIAN && step == 1 && <input placeholder='Email'
-                        type="text"
+                        type="email"
                         value={details.email}
                         data-id="email"
                         onChange={modifyDetails}
-                        className={`tedx_input`}
+                        className={isFormValid()? styles.validInput:styles.emailInput}
                         required
                     ></input>}
                 </div>
                 <div className={styles.emailContainer}>
-                    {step == 1 && <h2>Email:</h2>}
-                    {userType == USER_TYPE.REGISTERED_STUDENT && step == 1 && <input placeholder='Registered IITG email'
-                        type="text"
-                        value={details.email}
-                        data-id="email"
+                    {step == 1 && <h2>Phone:</h2>}
+                    {step == 1 && <input placeholder='Phone number'
+                        type="tel"
+                        value={details.phone}
+                        data-id="phone"
                         onChange={modifyDetails}
-                        className={`tedx_input`}
-                        autoFocus
+                        className={styles.phoneInput}
+                        maxLength = {10}
                         required
                     ></input>}
                 </div>
