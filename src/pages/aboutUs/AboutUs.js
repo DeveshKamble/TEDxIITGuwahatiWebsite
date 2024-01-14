@@ -23,11 +23,11 @@ const AboutUs = () => {
           <div className={styles.mainContent}>
             <div className={styles.teamHeader}>
               <div className={styles.teamHeading}>
-                <span>Meet our leadership team</span>
+                <span>Meet our Core team</span>
               </div>
               <div className={styles.teamHeader2}>
                 <p>
-                  The leadership team here at TEDxIITGuwahati is made up of a diverse
+                  The Core team here at TEDxIITGuwahati is made up of a diverse
                   bunch of awesome humans!
                 </p>
               </div>
@@ -36,10 +36,10 @@ const AboutUs = () => {
                   We are driven by passion and curiosity. We are inspired by
                   ideas. And we want to leave the world better than we found it.
                   In our day lives you can find us working in design,
-                  conservation, innovation, marketing, finance, NGOs, arts,
-                  business, public policy, health and everything in between. We
+                  computer science, chemistry, biology, finance, NGOs, arts,
+                  business, psycology, health and everything in between. We
                   work year round to bring TEDxIITGuwahati and all of our activities
-                  to life
+                  to life.
                 </p>
               </div>
             </div>

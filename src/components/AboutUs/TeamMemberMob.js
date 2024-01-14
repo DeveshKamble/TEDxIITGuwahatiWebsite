@@ -28,36 +28,38 @@ const TeamMemberMob = ({ title, designation, image, handle }) => {
 
   return (
     <>
-      <div
-        className={styles.imgBoxm}
-        style={{
-          position: 'relative',
-        }}
-      >
-        <img src={`/Images/Team/${image}`} alt="Img" />
-        <div className={styles.redboxm}></div>
-        {(
-          <div
-            className={styles.hovereffm}
-            style={{
-              position: 'absolute',
-              top: '41.2px',
-              right: '93px',
-              display: 'flex',
-              flexDirection: 'column',
-            }
-        }
-        
-        data-aos="fade-up"
-          >
-            <SocialIcon url="https://www.linkedin.com" target="_blank" href={handle} />
-          </div>
-        )}
-      </div>
-      <div className={styles.imgTitle}>
-        <div className={styles.imgTitleName}>{title}</div>
-        <div className={styles.imgTitlePost}>{designation}</div>
-      </div>
+      <a href={handle} className={styles.link}>
+        <div
+          className={styles.imgBoxm}
+          style={{
+            position: 'relative',
+          }}
+        >
+          <img src={`/Images/Team/${image}`} alt="Img" />
+          <div className={styles.redboxm}></div>
+          {(
+            <div
+              className={styles.hovereffm}
+              style={{
+                position: 'absolute',
+                top: '41.2px',
+                right: '93px',
+                display: 'flex',
+                flexDirection: 'column',
+              }
+          }
+          
+          data-aos="fade-up"
+            >
+              <SocialIcon url="https://www.linkedin.com" bgColor='#e60028' />
+            </div>
+          )}
+        </div>
+        <div className={styles.imgTitle}>
+          <div className={styles.imgTitleName}>{title}</div>
+          <div className={styles.imgTitlePost}>{designation}</div>
+        </div>
+      </a>
     </>
   );
 };

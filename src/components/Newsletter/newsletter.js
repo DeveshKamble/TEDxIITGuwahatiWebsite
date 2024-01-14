@@ -18,7 +18,7 @@ const Newsletter = () => {
                 console.log(data)
                 setSuccessMsg(true)
                 formEle.reset()
-                setTimeout(() => { setSuccessMsg(false) }, 5000)
+                setTimeout(() => { setSuccessMsg(false) }, 2500)
             })
             .catch((err) => { console.log(err) })
     }

@@ -14,7 +14,7 @@ const Terms = () => {
           <div className={styles.termsheadingwrapper}>
             <h1 className={styles.h1}>Terms Of Use</h1>
             <div className={styles.dateupdatedwrapper}>
-              <div className={styles.p2}>Date updated: April 1, 2022</div>
+              <div className={styles.p2}>Date updated: 11 January, 2024</div>
             </div>
           </div>
 
