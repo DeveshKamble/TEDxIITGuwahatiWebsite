@@ -24,6 +24,7 @@ const TeamMemberMob = ({ title, designation, image, handle }) => {
 
   console.log("window height:" + window.innerHeight);
   console.log(scrolled);
+  //Might get improved with using map and passing key in source file so that reconciler render every elemnt differently
   return (
     <>
       <div
