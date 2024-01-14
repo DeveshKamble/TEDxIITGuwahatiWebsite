@@ -76,8 +76,8 @@ const AboutUs = () => {
                 </div>
                 <div>
                 {windowWidth > 890 ?
-                  <TeamMember title="Kodudula Ashish Reddy" designation="WebOps Head" image="Ashish_square.jpg" handle="https://www.linkedin.com/in/kodudula-ashish-reddy-585115224/" />:
-                  <TeamMemberMob title="Kodudula Ashish Reddy" designation="WebOps Head" image="Ashish_square.jpg" handle="https://www.linkedin.com/in/kodudula-ashish-reddy-585115224/" />}
+                  <TeamMember title="Kodudula Ashish Reddy" designation="WebOps Head" image="Ashish_new.jpeg" handle="https://www.linkedin.com/in/kodudula-ashish-reddy-585115224/" />:
+                  <TeamMemberMob title="Kodudula Ashish Reddy" designation="WebOps Head" image="Ashish_new.jpeg" handle="https://www.linkedin.com/in/kodudula-ashish-reddy-585115224/" />}
                 </div>
                 <div>
                 {windowWidth > 890 ?
