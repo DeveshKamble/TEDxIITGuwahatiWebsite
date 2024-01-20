@@ -38,6 +38,11 @@ const BuyTickets = () => {
                 BUY TICKETS
               </button>
             </a>
+            <a href='https://forms.gle/LWEi8mDYswThhX4BA' style={{ textAlign: 'center', color: 'white', textDecoration: 'none', margin: '5px' }}>
+              <button style={{ textAlign: 'center', border: '2px solid white', borderRadius: '10px', padding: '10px', marginBottom:'5px' }}>
+                GRAB MERCH
+              </button>
+            </a>
             <a href='/Partners' style={{ textAlign: 'center', color: 'white', textDecoration: 'none', margin: '5px' }}>
               <button style={{ textAlign: 'center', border: '2px solid white', borderRadius: '10px', padding: '10px' }}>
                 SPONSOR
