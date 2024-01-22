@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   padding: 10vw;
   padding-top: 20px;
+  padding-bottom: 5vw;
 }
 
 .header {

@@ -35,15 +35,16 @@ const ConferenceVenue = () => {
                 It's time that we give the leaders around us a stage to discuss their ideas worth spreading. Join us at our IN-PERSON event to be held at Indian Institute of Technology in Guwahati.
               </p>
               <p style={{ fontSize: '1.1em', lineHeight: '1.5' }}>Senate Hall<br />Administration Building, IIT Guwahati, India <br />781039</p>
-              <a
+              {/* <a
                 href="https://goo.gl/maps/wg5hYVDZVbegCz888"
                 target='blank'
                 style={{ display: 'block', marginTop: '10px', textDecoration: 'none', color: '#EB0028' }}
               >
                 View Location
-              </a>
+              </a> */}
               <a
-                href="/Registration"
+                href="/https://goo.gl/maps/wg5hYVDZVbegCz888"
+                target='blank'
                 style={{
                   display: 'inline-block',
                   padding: '10px 20px',
@@ -55,7 +56,7 @@ const ConferenceVenue = () => {
                   fontSize: '1.2em',
                 }}
               >
-                Registration
+                View Location
               </a>
             </div>
           </div>

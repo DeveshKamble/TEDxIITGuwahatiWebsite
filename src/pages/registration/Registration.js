@@ -6,6 +6,7 @@ import Passes from '../../components/registration/Passes'
 import Venue from '../../components/Home/Venue'
 import Attend from '../../components/registration/Attend'
 import GoogleMap from './google_map.js'
+import Merch from '../../components/registration/Merch.jsx'
 
 
 const Registration = () => {
@@ -16,6 +17,7 @@ const Registration = () => {
         <Passes/>
         <Attend/>
         <Venue/>
+        <Merch/>
         <Newsletter/>
         <Footer/>
         <ScrollButton/>
