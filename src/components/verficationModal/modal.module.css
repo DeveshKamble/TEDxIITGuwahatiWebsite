@@ -76,11 +76,16 @@
     align-items: flex-end;
 }
 
+.phoneInput::-webkit-outer-spin-button, 
+.phoneInput::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
 .nameContainer h2,.emailContainer h2, .amountContainer h2{
     font-size: 1.3em;
 }
 
-.nameContainer input,.emailContainer input{
+.nameContainer input{
     width: 75%;
     font-size: 1.2em;
     font-weight: 500;
@@ -88,6 +93,14 @@
     border: none;
     border-bottom: 1.5px solid #0a2628;
     color: #e62b1e;
+}
+.emailContainer input{
+    width: 75%;
+    font-size: 1.2em;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid #0a2628;
 }
 
 .amountContainer{
@@ -166,6 +179,8 @@
     border-color: #e62b1e;
     box-shadow: 0 10px 10px -5px rgb(0, 0, 0, 0.25);
 }
+
+
 
 @media(max-width:900px) {
     #TicketModal{
@@ -324,4 +339,11 @@
     .btnContainer button{
         font-size: 0.9em;
     }
+}
+
+.validInput{
+    color: green;
+}
+.emailInput,.phoneInput{
+    color: #e62b1e;
 }
