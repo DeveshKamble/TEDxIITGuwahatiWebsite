@@ -24,7 +24,7 @@ const Speaker_1 = () => {
                             <img src="./Images/partners/sample_image.webp" alt="" className={styles.image_1} />
                         </div>
                         <div className={styles.heading_1}>
-                            <h1 className={styles.head}>Ashish Bhaiya</h1>
+                            <h1 className={styles.head}>Chiradeep</h1>
                             <p className={styles.des}>Ultra pro max developer</p>
                         </div>
                     </Link>
@@ -37,7 +37,7 @@ const Speaker_1 = () => {
                             <img src="./Images/partners/sample_image.webp" alt="" className={styles.image_1} />
                         </div>
                         <div className={styles.heading_1}>
-                            <h1 className={styles.head}>Ashish Bhaiya</h1>
+                            <h1 className={styles.head}>Durgesh</h1>
                             <p className={styles.des}>Ultra pro max developer</p>
                         </div>
                     </Link>
@@ -50,7 +50,7 @@ const Speaker_1 = () => {
                             <img src="./Images/partners/sample_image.webp" alt="" className={styles.image_1} />
                         </div>
                         <div className={styles.heading_1}>
-                            <h1 className={styles.head}>Ashish Bhaiya</h1>
+                            <h1 className={styles.head}>Devesh</h1>
                             <p className={styles.des}>Ultra pro max developer</p>
                         </div>
                     </Link>
@@ -63,7 +63,7 @@ const Speaker_1 = () => {
                             <img src="./Images/partners/sample_image.webp" alt="" className={styles.image_1} />
                         </div>
                         <div className={styles.heading_1}>
-                            <h1 className={styles.head}>Ashish Bhaiya</h1>
+                            <h1 className={styles.head}>Kunal</h1>
                             <p className={styles.des}>Ultra pro max developer</p>
                         </div>
                     </Link>
@@ -76,7 +76,7 @@ const Speaker_1 = () => {
                             <img src="./Images/partners/sample_image.webp" alt="" className={styles.image_1} />
                         </div>
                         <div className={styles.heading_1}>
-                            <h1 className={styles.head}>Ashish Bhaiya</h1>
+                            <h1 className={styles.head}>Shivam</h1>
                             <p className={styles.des}>Ultra pro max developer</p>
                         </div>
                     </Link>
@@ -89,7 +89,7 @@ const Speaker_1 = () => {
                             <img src="./Images/partners/sample_image.webp" alt="" className={styles.image_1} />
                         </div>
                         <div className={styles.heading_1}>
-                            <h1 className={styles.head}>Ashish Bhaiya</h1>
+                            <h1 className={styles.head}>Shaurya</h1>
                             <p className={styles.des}>Ultra pro max developer</p>
                         </div>
                     </Link>
@@ -102,7 +102,7 @@ const Speaker_1 = () => {
                             <img src="./Images/partners/sample_image.webp" alt="" className={styles.image_1} />
                         </div>
                         <div className={styles.heading_1}>
-                            <h1 className={styles.head}>Ashish Bhaiya</h1>
+                            <h1 className={styles.head}>Saketh</h1>
                             <p className={styles.des}>Ultra pro max developer</p>
                         </div>
                     </Link>
@@ -115,7 +115,7 @@ const Speaker_1 = () => {
                             <img src="./Images/partners/sample_image.webp" alt="" className={styles.image_1} />
                         </div>
                         <div className={styles.heading_1}>
-                            <h1 className={styles.head}>Ashish Bhaiya</h1>
+                            <h1 className={styles.head}>Sandeep</h1>
                             <p className={styles.des}>Ultra pro max developer</p>
                         </div>
                     </Link>
