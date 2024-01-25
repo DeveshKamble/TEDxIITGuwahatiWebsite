@@ -19,6 +19,23 @@
 
 }
 
+.email{
+  padding-top:10px;
+  color:white;
+  
+}
+
+a{
+  cursor:pointer;
+}
+
+.gmail{
+  cursor:pointer;
+  color:red;
+}
+
+
+
 .footer_social{
   padding-bottom:20px;
 }
@@ -118,10 +135,6 @@
   font-weight: 600;
 }
 
-.parastyle{
-  width:85vw;
-}
-
 .credits {
   clear: both;
   color: #fff;
@@ -135,5 +148,4 @@
 .logoTED img{
   width: 256px;
   display: block;
-  padding: 6px;
 }
