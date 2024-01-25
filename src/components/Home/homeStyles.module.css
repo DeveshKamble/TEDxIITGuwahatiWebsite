@@ -940,3 +940,38 @@ body {
     width: 40%;
   }
 }
+
+/* Speakers Heading*/
+
+.speaker{
+  color: #6EC1E400;
+  font-family: "Roboto",Sans-serif;
+  font-size: 120px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 73px;
+  -webkit-text-stroke-color: #EE372459;
+  stroke: #EE372459;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_container{
+  justify-content: center;
+  align-items: center;
+}
+
+.event{
+  position: absolute;
+    bottom: 115px;
+    right: 12vw;
+    text-align: center;
+}
+
+.arrow1>div>div{
+  position: absolute;
+  right: 10%;
+  top: -37px;
+}
