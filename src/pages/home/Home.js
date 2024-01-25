@@ -6,7 +6,9 @@ import ThemeInfo from '../../components/Home/ThemeInfo'
 import Newsletter from '../../components/Newsletter/newsletter'
 import Nomination from '../../components/Home/nomination'
 import Welcome from '../../components/animation/Welcome'
-import Swiperr from "../../components/speaker/swiper.js"
+// import Swiperr from "../../components/speaker/swiper.js"
+import SpeakersSection from '../../components/Home/SpeakersSection'
+import Speaker_1 from '../../components/speaker/speaker_1.js'
 const Home = () => {
     return(
         <div>
@@ -15,6 +17,7 @@ const Home = () => {
             <Nomination/>
             <ThemeInfo/>
             <SpeakersSection/>
+            {/* <Swiperr/> */}
             <Speaker_1/>
             <Schedule/>
             <Newsletter/>
