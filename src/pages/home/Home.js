@@ -9,6 +9,7 @@ import Welcome from '../../components/animation/Welcome'
 // import Swiperr from "../../components/speaker/swiper.js"
 import SpeakersSection from '../../components/Home/SpeakersSection'
 import Speaker_1 from '../../components/speaker/speaker_1.js'
+
 const Home = () => {
     return(
         <div>

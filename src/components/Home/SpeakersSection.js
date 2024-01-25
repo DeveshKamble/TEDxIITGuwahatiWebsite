@@ -25,10 +25,10 @@ const SpeakersSection = () => {
                                     </div>
                                 </div>
 
-                                {/* Heading Widget - TEDx Hyderabad Women 2023 */}
+                                {/* Heading Widget */}
                                 <div className={styles.event} data-element_type="widget" data-settings={{ "_position": "absolute" }} data-widget_type="heading.default">
                                     <div >
-                                        <h2 style={{color:'red'}}>TEDx<span style={{ color: "#000" }}>IIT Guwahati</span>2023</h2>
+                                        <h2 style={{color:'red'}}>TEDx<span style={{ color: "#000" }}>IITGuwahati</span>2024</h2>
                                     </div>
                                 </div>
 
