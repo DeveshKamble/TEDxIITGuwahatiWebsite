@@ -9,9 +9,14 @@ import useWindowWidth from '../../utilities/Hooks/UseWindowWidth.js'
 import Footer from '../../components/footer/Footer';
 import Newsletter from '../../components/Newsletter/newsletter';
 import ScrollButton from '../../components/scrollButton/scrollButton';
+import { useEffect } from 'react';
 
 const Partners = () => {
   const windowWidth =useWindowWidth();
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
 
   return (
       <div className={styles.main}>

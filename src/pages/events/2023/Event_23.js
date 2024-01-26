@@ -37,6 +37,11 @@ const Event_23 = () => {
   const closeModal = () => {
     setSelectedSpeaker(null);
   };
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
   return (
     <div>
       <Navbar />

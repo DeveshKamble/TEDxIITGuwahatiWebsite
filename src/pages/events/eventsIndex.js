@@ -16,7 +16,7 @@ const Events = () => {
   const { ref: myref5, inView: boxisvisible5, entry5 } = useInView();
   const [redl, setredl] = useState(0);
   useEffect(() => {
-    
+    window.scrollTo(0, 0)
   }, []);
 
   return (

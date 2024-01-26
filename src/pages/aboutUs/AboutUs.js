@@ -6,9 +6,14 @@ import AboutCarousel from "../../components/AboutUs/AboutCarousel";
 import TeamMember from "../../components/AboutUs/TeamMember";
 import TeamMemberMob from "../../components/AboutUs/TeamMemberMob";
 import useWindowWidth from '../../utilities/Hooks/UseWindowWidth'
+import { useEffect } from 'react';
 
 const AboutUs = () => {
   const windowWidth = useWindowWidth();
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
 
   return (
     <>
