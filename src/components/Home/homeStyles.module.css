@@ -975,3 +975,10 @@ body {
   right: 10%;
   top: -37px;
 }
+
+.center_elm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

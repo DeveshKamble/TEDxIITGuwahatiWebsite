@@ -5,7 +5,7 @@ const SpeakersSection = () => {
     return (
         <section data-element_type="section" data-settings={{ "background_background": "classic" }} >
             <div >
-                <div style={{display:'flex',justifyContent:'center'}}>
+                <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
                     <div style={{position:'relative'}} data-id="23ddffa" data-element_type="column">
                         <div >
                             <div >
@@ -20,15 +20,9 @@ const SpeakersSection = () => {
 
                                 {/* Heading Widget - Speakers */}
                                 <div data-element_type="widget" data-widget_type="heading.default">
-                                    <div >
+                                    <div className={styles.center_elm}>
                                         <h2 className={styles.speaker}>Speakers</h2>
-                                    </div>
-                                </div>
-
-                                {/* Heading Widget - TEDx Hyderabad Women 2023 */}
-                                <div className={styles.event} data-element_type="widget" data-settings={{ "_position": "absolute" }} data-widget_type="heading.default">
-                                    <div >
-                                        <h2 style={{color:'red'}}>TEDx<span style={{ color: "#000" }}>IIT Guwahati</span>2023</h2>
+                                        <h2 style={{color:'red',position:'absolute'}}>TEDx<span style={{ color: "#000" }}>IIT Guwahati</span>2023</h2>
                                     </div>
                                 </div>
 
