@@ -22,7 +22,7 @@ const SpeakersSection = () => {
                                 <div data-element_type="widget" data-widget_type="heading.default">
                                     <div className={styles.center_elm}>
                                         <h2 className={styles.speaker}>Speakers</h2>
-                                        <h2 className={styles.h2x}style={{color:'red',position:'absolute'}}>TEDx<span style={{ color: "#000" }}>IIT Guwahati</span>2023</h2>
+                                        <h2 className={styles.h2x}style={{color:'red',position:'absolute'}}>TEDx<span style={{ color: "#000" }}>IIT Guwahati</span>2024</h2>
                                     </div>
                                 </div>
  
