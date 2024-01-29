@@ -4,8 +4,14 @@ import { useState } from 'react'
 import Footer from '../../components/footer/Footer'
 import Newsletter from '../../components/Newsletter/newsletter'
 import ScrollButton from '../../components/scrollButton/scrollButton'
+import { useEffect } from 'react';
+
 const ContactUs = () => {
     const [successMsg, setSuccessMsg] = useState(false)
+
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+      },[])
 
     function Submit(e) {
         const formEle = document.querySelector("form")

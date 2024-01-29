@@ -3,8 +3,14 @@ import NavBar from '../../components/navbar/Navbar'
 import Newsletter from '../../components/Newsletter/newsletter'
 import Footer from '../../components/footer/Footer'
 import ScrollButton from '../../components/scrollButton/scrollButton'
+import { useEffect } from 'react';
 
 const Privacy = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
     return(
         <>
         <NavBar></NavBar>

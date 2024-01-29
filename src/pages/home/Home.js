@@ -9,7 +9,14 @@ import Welcome from '../../components/animation/Welcome'
 // import Swiperr from "../../components/speaker/swiper.js"
 import SpeakersSection from '../../components/Home/SpeakersSection'
 import Speaker_1 from '../../components/speaker/speaker_1.js'
+import { useEffect } from 'react';
+
 const Home = () => {
+
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+      },[])
+
     return(
         <div>
             <Navbar/>

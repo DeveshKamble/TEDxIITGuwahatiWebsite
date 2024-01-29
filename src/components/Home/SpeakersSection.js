@@ -3,9 +3,9 @@ import styles from './homeStyles.module.css'
 
 const SpeakersSection = () => {
     return (
-        <section data-element_type="section" data-settings={{ "background_background": "classic" }} >
+        <section data-element_type="section" data-settings={{ "background_background": "classic" }} className={styles.speakerHead}>
             <div >
-                <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+                <div style={{display:'flex',justifyContent:'center',alignItems:'center', marginBottom:'40px'}}>
                     <div style={{position:'relative'}} data-id="23ddffa" data-element_type="column">
                         <div >
                             <div >
