@@ -982,3 +982,33 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@media (width >500px) and (width < 721px){
+  .speaker{
+    /* font-size: 56px; */
+  }
+  
+  .h2x{
+    /* font-size: 18.5px; */
+  }
+}
+
+@media (width >370px) and (width < 500px){
+  .speaker{
+    font-size: 56px;
+  }
+  
+  .h2x{
+    font-size: 18.5px;
+  }
+}
+
+@media (width < 371px){
+  .speaker{
+    font-size: 44px;
+  }
+  
+  .h2x{
+    font-size: 12.5px;
+  }
+}
