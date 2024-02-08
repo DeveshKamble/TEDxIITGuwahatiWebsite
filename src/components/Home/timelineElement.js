@@ -11,12 +11,12 @@ let timelineElements = [
   },
   {
     id: 1,
-    title: "Talk 1 (Captain)",
+    title: "Talk 1",
     date: "10:30 - 11:00",
   },
   {
     id: 1,
-    title: "Talk 2 (Mrinal",
+    title: "Talk 2",
     date: "11:00 - 11:30",
   },
   {
@@ -26,12 +26,12 @@ let timelineElements = [
   },
   {
     id: 1,
-    title: "Talk 3 (Rituparna)",
+    title: "Talk 3",
     date: "11:50 - 12:20",
   },
   {
     id: 1,
-    title: "Talk 4 (Rajat)",
+    title: "Talk 4",
     date: "12:20 - 12:50",
   },
   {
@@ -46,12 +46,12 @@ let timelineElements = [
   },
   {
     id: 1,
-    title: "Talk 5 (Asutosh)",
+    title: "Talk 5",
     date: "2:15 - 2:45",
   },
   {
     id: 1,
-    title: "Talk 6 (Ilina)",
+    title: "Talk 6",
     date: "2:45 - 3:15",
   },
   {
@@ -61,12 +61,12 @@ let timelineElements = [
   },
   {
     id: 1,
-    title: "Talk 7 ()",
+    title: "Talk 7 ",
     date: "3:35 - 4:05",
   },
   {
     id: 1,
-    title: "Talk 8",
+    title: "Talk ",
     date: "4:05 - 4:35",
   },
   {
