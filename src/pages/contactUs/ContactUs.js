@@ -4,8 +4,14 @@ import { useState } from 'react'
 import Footer from '../../components/footer/Footer'
 import Newsletter from '../../components/Newsletter/newsletter'
 import ScrollButton from '../../components/scrollButton/scrollButton'
+import { useEffect } from 'react';
+
 const ContactUs = () => {
     const [successMsg, setSuccessMsg] = useState(false)
+
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+      },[])
 
     function Submit(e) {
         const formEle = document.querySelector("form")
@@ -20,7 +26,7 @@ const ContactUs = () => {
                 console.log(data)
                 setSuccessMsg(true)
                 formEle.reset()
-                setTimeout(() => { setSuccessMsg(false) }, 5000)
+                setTimeout(() => { setSuccessMsg(false) }, 2500)
             })
             .catch((err) => { console.log(err) })
     }
@@ -31,10 +37,10 @@ const ContactUs = () => {
             <div className={styles.main}>
                 <div className={styles.content}>
                     <div>
-                    <p className={styles.title}>Contact TEDxIITGuwahati</p>
+                    <p className={styles.title}>Leave Us a Message!!</p>
                     <p className={styles.para}>If you would like to subscribe to our Newsletter, have a question about an upcoming event, would like to explore a partnership with TEDxGuwahati, or want to send us a comment or suggestion, simply fill out the form below and we’ll get back to you shortly.</p>
                     </div>
-                    <img className={styles.image} src="/Images/contactUs/contactUsImage_cropped.jpg" alt="image" />
+                    <img className={styles.image} src="/Images/contactUs/contactUsImage2.jpg" alt="image" />
                 </div>
                 <div className={styles.formContainer}>
                     <form name='submit-to-google-sheet' className={styles.form} onSubmit={(e) => Submit(e)}>

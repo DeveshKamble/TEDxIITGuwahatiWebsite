@@ -49,7 +49,7 @@ const NavBar = () => {
                                 <NavLink to='/AboutUs' className={styles.lin1} style={({isActive})=>showActivePage(isActive,'red')} >ABOUT US</NavLink>
                                 <NavLink to='/Events' className={styles.lin1} style={({isActive})=>showActivePage(isActive,'red')} >EVENTS</NavLink>
                                 <NavLink to='/Partners' className={styles.lin1} style={({isActive})=>showActivePage(isActive,'red')} >SPONSORS</NavLink>
-                                <NavLink to='/Registration' className={styles.lin1} id={styles["red1"]}>BUY TICKET</NavLink>
+                                <NavLink to='/Registration' className={styles.lin1} id={styles["red1"]}>BUY TICKETS</NavLink>
                                 <NavLink to='/ContactUs' className={styles.lin1} style={({isActive})=>showActivePage(isActive,'red')} >CONTACT US</NavLink>
                             </div>
                         </div>

@@ -3,8 +3,14 @@ import NavBar from '../../components/navbar/Navbar'
 import Newsletter from '../../components/Newsletter/newsletter';
 import Footer from '../../components/footer/Footer';
 import ScrollButton from '../../components/scrollButton/scrollButton'
+import { useEffect } from 'react';
 
 const Terms = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
   return (
     <>
       <NavBar></NavBar>
@@ -14,7 +20,7 @@ const Terms = () => {
           <div className={styles.termsheadingwrapper}>
             <h1 className={styles.h1}>Terms Of Use</h1>
             <div className={styles.dateupdatedwrapper}>
-              <div className={styles.p2}>Date updated: April 1, 2022</div>
+              <div className={styles.p2}>Date updated: 11 January, 2024</div>
             </div>
           </div>
 
@@ -56,11 +62,11 @@ const Terms = () => {
                 <ul role="list" className={styles.termslist}>
                   <li className={styles.termslistitem}>
                     <p className={styles.p2}> Our Services allow you to:</p>
-                    <ul>
-                      <li>(b) Register for and pay for attendance at Events; and</li>
+                    <ul className={styles.abcd_list}>
+                      <li>(a) Register for and pay for attendance at Events; and</li>
                       <li>
-                        (c) Access:
-                        <ul className="ul1">
+                        (b) Access:
+                        <ul className={styles.num_list}>
                           <li className="li2">(i) inspiring, innovative and educational talks</li>
                           <li className="li2">(ii) An online collection of resources including talks, performances, news, ideas, and other information.&nbsp;</li>
                         </ul>
@@ -85,9 +91,9 @@ const Terms = () => {
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>You are responsible for any content that you submit, post and/or the Services, including data, text, files, information, usernames, photos, profiles, audio and video clips, works of authorship, applications, links and other materials (User Content).</p>
                 </li>
-                <li className={styles.termslistitem}>
+                <li className={styles.x}>
                   <p className={styles.p2}> You must not submit, post or display any User Content that:</p>
-                  <ul className="ul1">
+                  <ul className={styles.abcd_list}>
                     <li className="li2">(a) constitutes (as determined by us in our sole discretion) a personal attack, a co-ordinated group attack, name-calling, trolling or abuse;</li>
                     <li className="li2">(b) you do not have permission, right or license to use;</li>
                     <li className="li2">(c) is objectionable, indecent, profane, offensive, discriminatory, unlawful, deceptive or harmful;</li>
@@ -114,7 +120,7 @@ const Terms = () => {
               <ul role="list" className={styles.termslist}>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>You must not:</p>
-                  <ul className="ul1">
+                  <ul className={styles.null_list}>
                     <li className="li2"> copy, modify, or create derivative works based on the content available through the Services and/or based on the Services generally;</li>
                     <li className="li2"> infringe the intellectual property rights, privacy or confidentiality of any third party;</li>
                     <li className="li2"> engage in any activity that is illegal and/or that may result in injury, death, property damage, and/or liability of any kind; and/or</li>
@@ -148,7 +154,7 @@ const Terms = () => {
                 </li>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>You must not (without our consent):</p>
-                  <ul>
+                  <ul className={styles.abcd_list}>
                     <li>(a) adapt, reproduce, store, distribute, print, display, perform, publish, or create derivative works from any part of the content or material downloaded from the site;</li>
                     <li>(b) use our name, logo and other trademarks, service marks, graphics, and logos or any third-party trademarks appearing on the site; and/or</li>
                     <li>(c) create links to the Services.&nbsp;</li>
@@ -173,7 +179,7 @@ const Terms = () => {
                   <p className={styles.p2}>
                     Nothing available through the Services amounts to an offer by us or any third-party provider to:
                   </p>
-                  <ul>
+                  <ul className={styles.null_list}>
                     <li>provide any goods or services to you; or</li>
                     <li>enter into any contract with you.&nbsp;</li>
                   </ul>
@@ -244,12 +250,12 @@ const Terms = () => {
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>To attend a:</p>
                 </li>
-                <ul>
+                <ul className={styles.abcd_list}>
                   <li>
                     <p className={styles.p2}>
                       (a) physical and/or digital Event, you must:
                     </p>
-                    <ul>
+                    <ul className={styles.num_list}>
                       <li>(i) register via <a href="/Registration">tedxsydney.com/community/</a> to become a member of the TEDxSydney community;</li>
                       <li>(ii) have registered successfully and paid for your attendance in full;</li>
                       <li>(iii) agree to abide by our attendee code of conduct (to the extent applicable to the physical or digital Event) set out at clause 10;</li>
@@ -260,7 +266,7 @@ const Terms = () => {
                   <li>(b) a digital Event, you must be 12 years of age or older; or</li>
                   <li>
                     (c) a physical Event:
-                    <ul>
+                    <ul className={styles.num_list}>
                       <li>(i) be 18 years of age or older, or if you are under 18 years of age and it is a physical Event, be accompanied by an adult over 18 years old who has also registered to attend the Event;</li>
                       <li>(ii) consent to us (or someone on our behalf) or our partners taking and sharing photographs, and audio and video recordings of you at an Event (<strong>Recordings</strong>).</li>
                     </ul>
@@ -278,7 +284,7 @@ const Terms = () => {
               <ul role="list" className={styles.termslist}>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>If you have paid registration fees for an Event and are unable to attend, you may transfer your registration without cost, provided:</p>
-                  <ul>
+                  <ul className={styles.abcd_list}>
                     <li>(a) the transferee meets the requirements in clause 2, including registering via <a href="/Registration">Register</a> to become a member of the TEDxIITGuwahati community; and</li>
                     <li>(b) you submit your transfer request by emailing us at iitg.tedx@gmail.com at least 2 full days before the Event.</li>
                   </ul>
@@ -288,7 +294,7 @@ const Terms = () => {
                 </li>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>We reserve the right to cancel, reschedule, or reframe the delivery of an Event in our sole discretion. If that happens, then the following terms apply.</p>
-                  <ul>
+                  <ul  className={styles.abcd_list}>
                     <li>(a) We will notify you of any changes to an Event as soon as is reasonably practicable.</li>
                     <li>(b) Where we reschedule or reframe the delivery of an Event, we will automatically transfer your registration to the rescheduled/reframed Event. Clause 1 will continue to apply, and you may transfer your registration pursuant to it.</li>
                     <li>(c) If we cancel, reschedule, or reframe the delivery of an Event due to government restrictions or mandates arising as a result of COVID-19 (and/or any other cause independent of human control), we will outline the options that we are able to offer in respect of your registration at that time.</li>
@@ -312,7 +318,7 @@ const Terms = () => {
                 </li>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>At an Event, you agree to:</p>
-                  <ul>
+                  <ul  className={styles.abcd_list}>
                     <li>(a) respect people’s space and everyone’s ability to participate in the event;</li>
                     <li>(b) respect confidentiality requests by speakers and other attendees; and</li>
                     <li>(c) look out for your fellow attendees.</li>
@@ -320,7 +326,7 @@ const Terms = () => {
                 </li>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>These following behaviors don’t belong and will not be accepted at our Events.</p>
-                  <ul>
+                  <ul  className={styles.abcd_list}>
                     <li>(a) Sexual harassment of any kind, including unwelcome sexual attention and inappropriate physical contact.</li>
                     <li>(b) Being disruptive, drinking excessively, bullying, stalking, following, or threatening anyone.</li>
                     <li>(c) Homophobia, racism, or behavior that unlawfully discriminates against a group or class of people.</li>
@@ -329,7 +335,7 @@ const Terms = () => {
                 </li>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>We reserve the right to:</p>
-                  <ul>
+                  <ul  className={styles.abcd_list}>
                     <li>(a) bar from our Events in their entirety or in part;</li>
                     <li>(b) cancel the Event or TEDxSydney registration of; and/or</li>
                     <li>(c) remove from an Event,</li>
@@ -355,7 +361,7 @@ const Terms = () => {
               <ul role="list" className={styles.termslist}>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>To the extent permitted by law, we make no representations, and provide no warranties of any kind, including:</p>
-                  <ul>
+                  <ul  className={styles.abcd_list}>
                     <li>(a) that your use of the Services will be uninterrupted or error-free, free from loss, corruption, attack, viruses, interference, hacking, or other security intrusion; or</li>
                     <li>(b) that any information or other content posted or otherwise made available to you (including at an Event) by us or by third parties is complete, accurate, verified, audited, adequate, reliable, up-to-date, or suitable for any particular purpose, or that reasonable care has been taken in compiling, preparing and posting such information and third-party content.</li>
                   </ul>
@@ -372,10 +378,10 @@ const Terms = () => {
                 </li>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>To the extent permitted by law:</p>
-                  <ul>
+                  <ul className={styles.abcd_list}>
                     <li>(a) the Services and all third-party content available to you through the Services are (except as expressly stated by us) provided “as is” and “as available” for your use without warranties of any kind, either express or implied, including all implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement; and</li>
                     <li>(b) we are not liable for any direct, indirect loss or Consequential Loss resulting from:</li>
-                    <ul>
+                    <ul className={styles.num_list}>
                       <li>
                         <p className={styles.p2}>(i) any action taken, or reliance made by you on any information or other third-party content available to you through the Services;</p>
                       </li>
@@ -399,10 +405,10 @@ const Terms = () => {
                 </li>
                 <li className={styles.termslistitem}>
                   <p>TEDxIITGuwahati’s liability for its failure to comply with a guarantee limited to:</p>
-                  <ul>
+                  <ul className={styles.abcd_list}>
                     <li>(a) in the case of goods, to one or more of the following:</li>
-                    <ul>
-                      <li>
+                    <ul className={styles.num_list}>
+                      <li >
                         <p className={styles.p2}>(i) the replacement of the goods or the supply of equivalent goods;</p>
                       </li>
                       <li>
@@ -416,9 +422,9 @@ const Terms = () => {
                       </li>
                     </ul>
                   </ul>
-                  <ul>
+                  <ul className={styles.abcd_list}>
                     <li>(b) in the case of services any cost of the following as determined by us:</li>
-                    <ul>
+                    <ul className={styles.num_list}>
                       <li>
                         <p className={styles.p2}>(i) the supplying of the services again; or</p>
                       </li>
@@ -430,7 +436,7 @@ const Terms = () => {
                 </li>
                 <li className={styles.termslistitem}>
                   <p>In this clause 12:</p>
-                  <ul>
+                  <ul className={styles.abcd_list}>
                     <li>(a) “Consequential Loss” includes losses which do not arise naturally from a breach of contract in the usual course, loss of profits, loss of revenue, loss of data, lost production, loss of business, loss of the benefit of any contract or other agreement or arrangement, death or personal injury, damage to health, damage to reputation, and legal costs; and</li>
                   </ul>
                 </li>

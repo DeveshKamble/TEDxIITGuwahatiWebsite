@@ -3,30 +3,36 @@ import NavBar from '../../components/navbar/Navbar'
 import Newsletter from '../../components/Newsletter/newsletter'
 import Footer from '../../components/footer/Footer'
 import ScrollButton from '../../components/scrollButton/scrollButton'
+import { useEffect } from 'react';
 
 const Privacy = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
     return(
         <>
         <NavBar></NavBar>
  <div className={styles.termssection}>
       <div className={styles.containertterms}>
         <div className={styles.termsheadingwrapper}>
-          <h1 className={styles.h1}>Privacy Policy</h1>
+          <h1 className={styles.h1}> &nbsp; Privacy Policy</h1>
           <div className={styles.dateupdatedwrapper}>
-            <div className={styles.p2}>Date updated: January 11, 2024</div>
+            <div className={styles.p2}>Date updated:11 January, 2024</div>
           </div>
         </div>
         <div className={styles.termscontentwrapper}>
           <div className={styles.contentblock}>
             <h2 className={styles.h2term}>Introduction:</h2>
             <div className={styles.termtextwrapper}>
-              <p className="p2 custom">Welcome to TEDxIITGuwahati.</p>
+              <p className="p2 custom">&nbsp; &nbsp; Welcome to TEDxIITGuwahati.</p>
               <ul role="list" className={styles.termslist}>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}>
                     TEDxIITGuwahati (“us”, “we”, or “our”) operates{' '}
                     <a href="/" className="p2-link">
-                      Website
+                      tedxiitguwahati.com
                     </a>{' '}
                     (hereinafter referred to as “Service”).
                   </p>
@@ -35,13 +41,13 @@ const Privacy = () => {
                   <p className={styles.p2}>
                     Our Privacy Policy governs your visit to{' '}
                     <a href="/" className="p2-link">
-                      this website
+                      tedxiitguwahati.com
                     </a>
                     , and explains how we collect, safeguard and disclose information that results from your use of our Service.
                   </p>
                 </li>
                 <li className={styles.termslistitem}>
-                  <p className={styles.p2}> we respect your privacy and take all reasonable steps to ensure personal information we collect, use, hold or disclose is done so in accordance with the Privacy Act 1988.</p>
+                  <p className={styles.p2}> we respect your privacy and take all reasonable steps to ensure personal information we collect, use, hold. </p>
                 </li>
                 <li className={styles.termslistitem}>
                   <p className={styles.p2}> This policy sets out how we handle the information we collect about you.</p>
@@ -73,7 +79,7 @@ const Privacy = () => {
         <ul role="list" className={styles.termslist}>
           <li className={styles.termslistitem}>
             <p className={styles.p2}>
-              We may collect your name, address, telephone number, email address, and other information you give to us. We collect personal information about you through our website, over the phone and by email.
+              We may collect your name, address, telephone number, email address, and other information you give to us. We collect personal information about you through our website, over the phone, and by email.
             </p>
             <p className={styles.p2}>
               Personal information is held securely, is subject to various security protections, and is held only for as long as the information remains relevant to the purpose for which it was collected.
@@ -117,12 +123,12 @@ const Privacy = () => {
           </li>
         </ul>
       </div>
-      <div className={styles.termtextwrapper}>
+      <div className={styles.termtextwrapper_unique}>
         We collect, hold, use, and disclose personal information about you for a number of reasons, including:
         <p className={styles.p2}></p>
       </div>
       <div className={styles.termtextwrapper}>
-        <ul role="list" className={styles.termslist}>
+        <ul role="list" class >
           <li className={styles.termslistitem}>
             <p className={styles.p2}>conducting the TEDxIITGuwahati events and activations;</p>
           </li>
@@ -138,7 +144,7 @@ const Privacy = () => {
       <div className={styles.termtextwrapper}>
         <ul role="list" className={styles.termslist}>
           <li className={styles.termslistitem}>
-            <p className={styles.p2}>encouraging connection between TEDxIITGuwahati members (including by using your details to create lanyards for the TEDxIITGuwahati's event);</p>
+            <p className={styles.p2}>encouraging connection between TEDxIITGuwahati members (including by using your details to create lanyards for the TEDxIITGuwahati event);</p>
           </li>
         </ul>
       </div>
@@ -218,7 +224,7 @@ const Privacy = () => {
         <ul role="list" className={styles.termslist}>
           <li className={styles.termslistitem}>
             <p className={styles.p2}>
-              No, we, in the course of providing products and services, do not disclose personal information to overseas entities. We use Indian data servers to process information.
+              No, we, in the course of providing products and services, do not disclose personal information to overseas entities. We use Australian data servers to process information.
             </p>
           </li>
         </ul>
@@ -244,7 +250,7 @@ const Privacy = () => {
         <ul role="list" className={styles.termslist}>
           <li className={styles.termslistitem}>
             <p className={styles.p2}>
-              If you consider a breach of the Indian Privacy laws or your rights in relation to privacy has occurred, you can reach us via the Contact Us page on our website <a href="/Con">here</a> and we will attempt to resolve your complaint.
+              If you consider a breach of your Privacy or your rights in relation to privacy has occurred, you can reach us via the Contact Us page on our website <a href="/ContactUs">here</a> and we will attempt to resolve your complaint.
             </p>
           </li>
         </ul>
@@ -267,4 +273,4 @@ const Privacy = () => {
     )
 }
 
-export default Privacy
+export default Privacy;

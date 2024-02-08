@@ -230,7 +230,12 @@
 
 .linkSpan {
   border: 3px solid red;
-  padding: 5px;
+  padding: 5px 10px;
+}
+
+.linkSpan:hover{
+  transform: scale(1.1);
+  transition: all 0.25s ease-in-out;
 }
 
 .link {
@@ -302,4 +307,15 @@
   .circle:nth-last-child(2) {
     display: none;
   }
+}
+
+#overlay {
+  position: fixed;
+  /* opacity: 1; */
+  z-index: 9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.846);
 }

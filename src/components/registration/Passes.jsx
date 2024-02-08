@@ -1,8 +1,24 @@
 import styles from "./Passes.module.css";
+import React, {useState, useTransition } from 'react';
 import { useInView } from "react-intersection-observer";
 import useAOS from "../../utilities/Hooks/useAOS";
+import Modal from "../verficationModal/VerficationModal"
 
 const Passes = () => {
+  const [selectedPass, setselectedPass] = useState(null)
+  const [isPending, startTransition] = useTransition();
+
+  const openModal = (userType)=>{
+    startTransition(() => {
+      setselectedPass(userType);
+    });
+  };
+  const closeModal = ()=>{
+    startTransition(() => {
+      setselectedPass(null);
+    });
+  };
+
   const aos = useAOS();
   const { ref: upperRef, inView: upperVisibility } = useInView();
   const { ref: ticket1Ref, inView: ticket1Visibility } = useInView();
@@ -82,7 +98,7 @@ const Passes = () => {
               <p className={styles.footer}>& more benefits</p>
             </div>
             <div className={styles.buttonContainer}>
-              <button className={styles.bookButton}>Book Now</button>
+              <button className={styles.bookButton} onClick = {()=>{openModal("Civilian")}}>Book Now</button>
             </div>
           </div>
           <div className={styles.nudges}>
@@ -146,7 +162,7 @@ const Passes = () => {
               <p className={styles.footer}>& benefits of general pass</p>
             </div>
             <div className={styles.buttonContainer}>
-              <button className={styles.bookButton}>Book Now</button>
+              <button className={styles.bookButton} onClick = {()=>{openModal("Student")}} >Book Now</button>
             </div>
           </div>
           <div className={styles.nudges}>
@@ -178,15 +194,13 @@ const Passes = () => {
           <a
             href="/Terms"
             className={styles.link}
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-            data-aos-delay="200"
           >
             TERMS & CONDITIONS<p className={styles.arrow}> &#8594; </p>
           </a>
         </span>
       </div>
+      {selectedPass && <Modal userType = {selectedPass} func = {closeModal} isPending={isPending} />}
+      {selectedPass && <div id={styles.overlay}></div>}
     </div>
   );
 };

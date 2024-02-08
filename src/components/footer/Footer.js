@@ -36,16 +36,20 @@ const Footer = () => {
                     <a href="https://www.threads.net/@tedxiitguwahati" target="_blank" rel="noopener noreferrer" className={footerCSS.social_icon}>
                         <FaThreads />
                     </a>
+
+                    <div className={footerCSS.email}>
+                        <p>Mail us at <a className={footerCSS.gmail}>iitg.tedx@gmail.com</a></p>
+                    </div>
                 </div>
             </div>
             <div className={footerCSS.footer_col_2}>
                 <h4 className={footerCSS.quick_links}>Quick Links</h4>
                 <a href="/Events" title="Events" className={footerCSS.links_col_2}>Events</a>
                 <a href="/AboutUs" title="About Us" className={footerCSS.links_col_2}>About Us</a>
-                <a href="/ContactUs" title="Contact Us" className={footerCSS.links_col_2}>Contact Us</a>
+                <a href="/Partners" title="Sponsors" className={footerCSS.links_col_2}>Sponsors</a>
                 <a href="/Privacy" title="Privacy Policies" className={footerCSS.links_col_2}>Privacy Policies</a>
                 <a href="/Terms" title="Terms and Conditions" className={footerCSS.links_col_2}>Terms and Conditions</a>
-                <a href="#" title="Refund Policies" className={footerCSS.links_col_2}>Refund Policies</a>
+                
             </div>
                 
             <div className={footerCSS.footer_col_3}>
@@ -66,10 +70,11 @@ const Footer = () => {
             </div>
             </div>
             <div className={footerCSS.credits}>
-                © Copy right  by TEDxIITGuwahati. This independent TEDx events is operated under license from TED.
+                © Copyright  by TEDxIITGuwahati. This independent TEDx events is operated under license from TED.
             </div>
         </footer>
     );
 };
 
 export default Footer;
+

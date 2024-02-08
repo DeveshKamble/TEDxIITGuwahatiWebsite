@@ -19,6 +19,23 @@
 
 }
 
+.email{
+  padding-top:10px;
+  color:white;
+  
+}
+
+a{
+  cursor:pointer;
+}
+
+.gmail{
+  cursor:pointer;
+  color:red;
+}
+
+
+
 .footer_social{
   padding-bottom:20px;
 }

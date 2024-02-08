@@ -3,17 +3,23 @@
 
 .form_button{
   padding-top: 30px;
-    box-sizing:border-box;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
-    font-size: 0.8 rem;
-    line-height: 1.8;
-    /* font-weight: 400; */
+  box-sizing:border-box;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align:center;
+  font-size: 0.8 rem;
+  line-height: 1.8;
+  /* font-weight: 400; */
 
 
+}
+
+.buttonCont
+{
+  display: flex;
+  width: 70%;
 }
 
 .blinkingAnimation{
@@ -26,7 +32,7 @@
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 1.2rem;
-  background: rgba(230, 43, 30, 1);
+  background: #e60028;
   border: none;
   color: white;
   transition: all 0.5s;
@@ -79,3 +85,12 @@
       opacity: 0;
     }
   }
+
+@media screen and (width < 815px)
+{
+  .buttonCont{
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}

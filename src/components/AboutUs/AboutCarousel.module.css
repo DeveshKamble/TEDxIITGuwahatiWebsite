@@ -1,11 +1,11 @@
 .carouselImage{
-    width: 13% !important;
+    width: 7% !important;
     margin: 30px 0;
 }
 
 
 .TEDxIITGuwahatiLogo{
-    width: 40% !important;
+    width: 30% !important;
     margin-bottom: 16px;
 }
 .icon{
@@ -16,9 +16,8 @@
 
 .carouselContent{
     font-size: 20px;
-    width: 90%;
+    width: 75%;
     margin: auto;
-
     line-height: 32px;
 }
 
@@ -27,8 +26,9 @@
     color: red;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 30px auto;
-    background-color: transparent;
+    background-color: white;
     border: none;
     font-size: 20px;
     font-weight: bold;
@@ -58,6 +58,13 @@
         width: 60% !important;
         margin-bottom: 10px;
     }
+    .carouselContent{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 10;
+        overflow: hidden;
+    }
+    
 }
 @media (width < 540px){
     .carouselContent{
@@ -76,7 +83,7 @@
     }
     .carouselContent{
         font-size: 18px;
-        text-overflow: ellipsis;
+        -webkit-line-clamp: 8;
     }
     .button{
         width: 180px;
