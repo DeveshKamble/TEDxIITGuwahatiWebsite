@@ -1,1 +1,1 @@
-# Official Website of TEDxIITGuwahati's Resurgence
+# Official Website of TEDxIITGuwahati's Echoes of Stillness
